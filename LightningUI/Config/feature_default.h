@@ -1,0 +1,1967 @@
+#ifndef __FEATURE_DEFAULT_H__
+#define __FEATURE_DEFAULT_H__
+
+//定义默认平台类型
+#ifndef CVTE_MODEL_TYPE
+#define CVTE_MODEL_TYPE	CVTE_MODEL_TYPE_U701P_C
+#endif
+
+//定义默认显示类型
+#ifndef CVTE_DEF_DISPLAY_TYPE
+#define CVTE_DEF_DISPLAY_TYPE CVTE_DISPLAY_TYPE_U701P
+#endif
+
+//定义默认面板LED灯类型
+#ifndef CVTE_DEF_LED_TYPE
+#define CVTE_DEF_LED_TYPE CVTE_LED_TYPE_U701P
+#endif
+
+//定义默认触摸类型
+#ifndef CVTE_DEF_TOUCH_TYPE
+#define CVTE_DEF_TOUCH_TYPE CVTE_TOUCH_TYPE_U701P
+#endif
+
+//定义默认音频IC
+#ifndef CVTE_DEF_AUDIO_TYPE
+#define CVTE_DEF_AUDIO_TYPE CVTE_AUDIO_TYPE_ST7418
+#endif
+
+//定义默认的UI风格
+#ifndef CVTE_DEF_UI_STYLE
+#define CVTE_DEF_UI_STYLE	CVTE_UI_STYLE_LIGHTNINGUI
+#endif
+
+////////////////////////////////////////////////////////////////////////////////
+// RADIO OPTIONS
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+//EUROPE
+//欧洲收音FM最低频率
+#ifndef CVTE_DEF_RADIO_EUROPE_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_EUROPE_FM_FREQ_MIN				87500000    //Hz
+#endif
+
+//欧洲收音FM最高频率
+#ifndef CVTE_DEF_RADIO_EUROPE_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_EUROPE_FM_FREQ_MAX				108000000   //Hz
+#endif
+
+//欧洲收音FM步进频率
+#ifndef CVTE_DEF_RADIO_EUROPE_FM_STEP
+#define CVTE_DEF_RADIO_EUROPE_FM_STEP					5          // KHz
+#endif
+
+//欧洲收音AM最低频率
+#ifndef CVTE_DEF_RADIO_EUROPE_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_EUROPE_AM_FREQ_MIN				522000
+#endif
+
+//欧洲收音AM最高频率
+#ifndef CVTE_DEF_RADIO_EUROPE_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_EUROPE_AM_FREQ_MAX				1620000
+#endif
+
+//欧洲收音AM步进频率
+#ifndef CVTE_DEF_RADIO_EUROPE_AM_STEP
+#define CVTE_DEF_RADIO_EUROPE_AM_STEP					9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//U.S.A 1
+//美国1收音FM最低频率
+#ifndef CVTE_DEF_RADIO_USA_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_USA_FM_FREQ_MIN					87500000    //Hz
+#endif
+
+//美国1收音FM最高频率
+#ifndef CVTE_DEF_RADIO_USA_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_USA_FM_FREQ_MAX					107900000   //Hz
+#endif
+
+//美国1收音FM步进频率
+#ifndef CVTE_DEF_RADIO_USA_FM_STEP
+#define CVTE_DEF_RADIO_USA_FM_STEP						10          // KHz
+#endif
+
+//美国1收音AM最低频率
+#ifndef CVTE_DEF_RADIO_USA_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_USA_AM_FREQ_MIN					530000
+#endif
+
+//美国1收音AM最高频率
+#ifndef CVTE_DEF_RADIO_USA_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_USA_AM_FREQ_MAX					1710000
+#endif
+
+//美国1收音AM步进频率
+#ifndef CVTE_DEF_RADIO_USA_AM_STEP
+#define CVTE_DEF_RADIO_USA_AM_STEP						10          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//U.S.A 2
+//美国2收音FM最低频率
+#ifndef CVTE_DEF_RADIO_USA2_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_USA2_FM_FREQ_MIN					87500000    //Hz
+#endif
+
+//美国2收音FM最高频率
+#ifndef CVTE_DEF_RADIO_USA2_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_USA2_FM_FREQ_MAX					107900000   //Hz
+#endif
+
+//美国2收音FM步进频率
+#ifndef CVTE_DEF_RADIO_USA2_FM_STEP
+#define CVTE_DEF_RADIO_USA2_FM_STEP						20          // KHz
+#endif
+
+//美国2收音AM最低频率
+#ifndef CVTE_DEF_RADIO_USA2_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_USA2_AM_FREQ_MIN					530000
+#endif
+
+//美国2收音AM最高频率
+#ifndef CVTE_DEF_RADIO_USA2_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_USA2_AM_FREQ_MAX					1710000
+#endif
+
+//美国2收音AM步进频率
+#ifndef CVTE_DEF_RADIO_USA2_AM_STEP
+#define CVTE_DEF_RADIO_USA2_AM_STEP						10          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//EAST ERNEUROPE	对应MCU OIRT
+//东欧收音FM最低频率
+#ifndef CVTE_DEF_RADIO_EAST_ERNEUROPE_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_EAST_ERNEUROPE_FM_FREQ_MIN		65000000    //Hz
+#endif
+
+//东欧收音FM最高频率
+#ifndef CVTE_DEF_RADIO_EAST_ERNEUROPE_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_EAST_ERNEUROPE_FM_FREQ_MAX		74000000   //Hz
+#endif
+
+//东欧收音FM步进频率
+#ifndef CVTE_DEF_RADIO_EAST_ERNEUROPE_FM_STEP
+#define CVTE_DEF_RADIO_EAST_ERNEUROPE_FM_STEP			1          // KHz
+#endif
+
+//东欧收音AM最低频率
+#ifndef CVTE_DEF_RADIO_EAST_ERNEUROPE_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_EAST_ERNEUROPE_AM_FREQ_MIN		522000
+#endif
+
+//东欧收音AM最高频率
+#ifndef CVTE_DEF_RADIO_EAST_ERNEUROPE_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_EAST_ERNEUROPE_AM_FREQ_MAX		1629000
+#endif
+
+//东欧收音AM步进频率
+#ifndef CVTE_DEF_RADIO_EAST_ERNEUROPE_AM_STEP
+#define CVTE_DEF_RADIO_EAST_ERNEUROPE_AM_STEP			9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//JAPAN
+//日本收音FM最低频率
+#ifndef CVTE_DEF_RADIO_JAPAN_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_JAPAN_FM_FREQ_MIN				76000000    //Hz
+#endif
+
+//日本收音FM最高频率
+#ifndef CVTE_DEF_RADIO_JAPAN_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_JAPAN_FM_FREQ_MAX				90000000   //Hz
+#endif
+
+//日本收音FM步进频率
+#ifndef CVTE_DEF_RADIO_JAPAN_FM_STEP
+#define CVTE_DEF_RADIO_JAPAN_FM_STEP					10          // KHz
+#endif
+
+//日本收音AM最低频率
+#ifndef CVTE_DEF_RADIO_JAPAN_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_JAPAN_AM_FREQ_MIN				522000
+#endif
+
+//日本收音AM最高频率
+#ifndef CVTE_DEF_RADIO_JAPAN_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_JAPAN_AM_FREQ_MAX				1629000
+#endif
+
+//日本收音AM步进频率
+#ifndef CVTE_DEF_RADIO_JAPAN_AM_STEP
+#define CVTE_DEF_RADIO_JAPAN_AM_STEP					9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//KOREAN
+//韩国收音FM最低频率
+#ifndef CVTE_DEF_RADIO_KOREAN_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_KOREAN_FM_FREQ_MIN				87500000    //Hz
+#endif
+
+//韩国收音FM最高频率
+#ifndef CVTE_DEF_RADIO_KOREAN_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_KOREAN_FM_FREQ_MAX				108000000   //Hz
+#endif
+
+//韩国收音FM步进频率
+#ifndef CVTE_DEF_RADIO_KOREAN_FM_STEP
+#define CVTE_DEF_RADIO_KOREAN_FM_STEP					10          // KHz
+#endif
+
+//韩国收音AM最低频率
+#ifndef CVTE_DEF_RADIO_KOREAN_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_KOREAN_AM_FREQ_MIN				531000
+#endif
+
+//韩国收音AM最高频率
+#ifndef CVTE_DEF_RADIO_KOREAN_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_KOREAN_AM_FREQ_MAX				1629000
+#endif
+
+//韩国收音AM步进频率
+#ifndef CVTE_DEF_RADIO_KOREAN_AM_STEP
+#define CVTE_DEF_RADIO_KOREAN_AM_STEP					9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//SOUTHAMERICA
+//南美洲收音FM最低频率
+#ifndef CVTE_DEF_RADIO_SOUTHAMERICA_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_SOUTHAMERICA_FM_FREQ_MIN			87500000    //Hz
+#endif
+
+//南美洲收音FM最高频率
+#ifndef CVTE_DEF_RADIO_SOUTHAMERICA_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_SOUTHAMERICA_FM_FREQ_MAX			108000000   //Hz
+#endif
+
+//南美洲收音FM步进频率
+#ifndef CVTE_DEF_RADIO_SOUTHAMERICA_FM_STEP
+#define CVTE_DEF_RADIO_SOUTHAMERICA_FM_STEP				10          // KHz
+#endif
+
+//南美洲收音AM最低频率
+#ifndef CVTE_DEF_RADIO_SOUTHAMERICA_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_SOUTHAMERICA_AM_FREQ_MIN			520000
+#endif
+
+//南美洲收音AM最高频率
+#ifndef CVTE_DEF_RADIO_SOUTHAMERICA_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_SOUTHAMERICA_AM_FREQ_MAX			1600000
+#endif
+
+//南美洲收音AM步进频率
+#ifndef CVTE_DEF_RADIO_SOUTHAMERICA_AM_STEP
+#define CVTE_DEF_RADIO_SOUTHAMERICA_AM_STEP				5          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//TAIWANG 
+//台湾收音FM最低频率
+#ifndef CVTE_DEF_RADIO_TAIWANG_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_TAIWANG_FM_FREQ_MIN				87500000    //Hz
+#endif
+
+//台湾收音FM最高频率
+#ifndef CVTE_DEF_RADIO_TAIWANG_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_TAIWANG_FM_FREQ_MAX				108000000   //Hz
+#endif
+
+//台湾收音FM步进频率
+#ifndef CVTE_DEF_RADIO_TAIWANG_FM_STEP
+#define CVTE_DEF_RADIO_TAIWANG_FM_STEP					10          // KHz
+#endif
+
+//台湾收音AM最低频率
+#ifndef CVTE_DEF_RADIO_TAIWANG_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_TAIWANG_AM_FREQ_MIN				531000
+#endif
+
+//台湾收音AM最高频率
+#ifndef CVTE_DEF_RADIO_TAIWANG_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_TAIWANG_AM_FREQ_MAX				1629000
+#endif
+
+//台湾收音AM步进频率
+#ifndef CVTE_DEF_RADIO_TAIWANG_AM_STEP
+#define CVTE_DEF_RADIO_TAIWANG_AM_STEP					9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//ARABIA AUSTRALIA
+//阿拉伯/澳大利亚收音FM最低频率
+#ifndef CVTE_DEF_RADIO_ARABIA_AUSTRALIA_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_ARABIA_AUSTRALIA_FM_FREQ_MIN		87500000    //Hz
+#endif
+
+//阿拉伯/澳大利亚收音FM最高频率
+#ifndef CVTE_DEF_RADIO_ARABIA_AUSTRALIA_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_ARABIA_AUSTRALIA_FM_FREQ_MAX		108000000   //Hz
+#endif
+
+//阿拉伯/澳大利亚收音FM步进频率
+#ifndef CVTE_DEF_RADIO_ARABIA_AUSTRALIA_FM_STEP
+#define CVTE_DEF_RADIO_ARABIA_AUSTRALIA_FM_STEP			10          // KHz
+#endif
+
+//阿拉伯/澳大利亚收音AM最低频率
+#ifndef CVTE_DEF_RADIO_ARABIA_AUSTRALIA_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_ARABIA_AUSTRALIA_AM_FREQ_MIN		531000
+#endif
+
+//阿拉伯/澳大利亚收音AM最高频率
+#ifndef CVTE_DEF_RADIO_ARABIA_AUSTRALIA_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_ARABIA_AUSTRALIA_AM_FREQ_MAX		1602000
+#endif
+
+//阿拉伯/澳大利亚收音AM步进频率
+#ifndef CVTE_DEF_RADIO_ARABIA_AUSTRALIA_AM_STEP
+#define CVTE_DEF_RADIO_ARABIA_AUSTRALIA_AM_STEP			9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//LATIN AMERICA
+//拉丁美洲收音FM最低频率
+#ifndef CVTE_DEF_RADIO_LATIN_AMERICA_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_LATIN_AMERICA_FM_FREQ_MIN		87500000    //Hz
+#endif
+
+//拉丁美洲收音FM最高频率
+#ifndef CVTE_DEF_RADIO_LATIN_AMERICA_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_LATIN_AMERICA_FM_FREQ_MAX		108000000   //Hz
+#endif
+
+//拉丁美洲收音FM步进频率
+#ifndef CVTE_DEF_RADIO_LATIN_AMERICA_FM_STEP
+#define CVTE_DEF_RADIO_LATIN_AMERICA_FM_STEP			10          // KHz
+#endif
+
+//拉丁美洲收音AM最低频率
+#ifndef CVTE_DEF_RADIO_LATIN_AMERICA_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_LATIN_AMERICA_AM_FREQ_MIN		520000
+#endif
+
+//拉丁美洲收音AM最高频率
+#ifndef CVTE_DEF_RADIO_LATIN_AMERICA_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_LATIN_AMERICA_AM_FREQ_MAX		1620000
+#endif
+
+//拉丁美洲收音AM步进频率
+#ifndef CVTE_DEF_RADIO_LATIN_AMERICA_AM_STEP
+#define CVTE_DEF_RADIO_LATIN_AMERICA_AM_STEP			5          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//MIDDLE_EAST
+//中东收音FM最低频率
+#ifndef CVTE_DEF_RADIO_MIDDLE_EAST_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_MIDDLE_EAST_FM_FREQ_MIN			87500000    //Hz
+#endif
+
+//中东收音FM最高频率
+#ifndef CVTE_DEF_RADIO_MIDDLE_EAST_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_MIDDLE_EAST_FM_FREQ_MAX			108000000   //Hz
+#endif
+
+//中东收音FM步进频率
+#ifndef CVTE_DEF_RADIO_MIDDLE_EAST_FM_STEP
+#define CVTE_DEF_RADIO_MIDDLE_EAST_FM_STEP				10          // KHz
+#endif
+
+//中东收音AM最低频率
+#ifndef CVTE_DEF_RADIO_MIDDLE_EAST_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_MIDDLE_EAST_AM_FREQ_MIN			531000
+#endif
+
+//中东收音AM最高频率
+#ifndef CVTE_DEF_RADIO_MIDDLE_EAST_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_MIDDLE_EAST_AM_FREQ_MAX			1602000
+#endif
+
+//中东收音AM步进频率
+#ifndef CVTE_DEF_RADIO_MIDDLE_EAST_AM_STEP
+#define CVTE_DEF_RADIO_MIDDLE_EAST_AM_STEP				9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//AUST
+//奥匈帝国收音FM最低频率
+#ifndef CVTE_DEF_RADIO_AUST_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_AUST_FM_FREQ_MIN					87500000    //Hz
+#endif
+
+//奥匈帝国收音FM最高频率
+#ifndef CVTE_DEF_RADIO_AUST_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_AUST_FM_FREQ_MAX					108000000   //Hz
+#endif
+
+//奥匈帝国收音FM步进频率
+#ifndef CVTE_DEF_RADIO_AUST_FM_STEP
+#define CVTE_DEF_RADIO_AUST_FM_STEP						10          // KHz
+#endif
+
+//奥匈帝国收音AM最低频率
+#ifndef CVTE_DEF_RADIO_AUST_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_AUST_AM_FREQ_MIN					522000
+#endif
+
+//奥匈帝国收音AM最高频率
+#ifndef CVTE_DEF_RADIO_AUST_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_AUST_AM_FREQ_MAX					1710000
+#endif
+
+//奥匈帝国收音AM步进频率
+#ifndef CVTE_DEF_RADIO_AUST_AM_STEP
+#define CVTE_DEF_RADIO_AUST_AM_STEP						9          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//BRAZIL
+//巴西收音FM最低频率
+#ifndef CVTE_DEF_RADIO_BRAZIL_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_BRAZIL_FM_FREQ_MIN				87500000    //Hz
+#endif
+
+//巴西收音FM最高频率
+#ifndef CVTE_DEF_RADIO_BRAZIL_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_BRAZIL_FM_FREQ_MAX				108000000   //Hz
+#endif
+
+//巴西收音FM步进频率
+#ifndef CVTE_DEF_RADIO_BRAZIL_FM_STEP
+#define CVTE_DEF_RADIO_BRAZIL_FM_STEP					10          // KHz
+#endif
+
+//巴西收音AM最低频率
+#ifndef CVTE_DEF_RADIO_BRAZIL_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_BRAZIL_AM_FREQ_MIN				520000
+#endif
+
+//巴西收音AM最高频率
+#ifndef CVTE_DEF_RADIO_BRAZIL_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_BRAZIL_AM_FREQ_MAX				1620000
+#endif
+
+//巴西收音AM步进频率
+#ifndef CVTE_DEF_RADIO_BRAZIL_AM_STEP
+#define CVTE_DEF_RADIO_BRAZIL_AM_STEP					10          // KHz
+#endif
+
+///////////////////////////////////////////////////////////////////////////////
+//RUSSIA
+//俄罗斯收音FM最低频率
+#ifndef CVTE_DEF_RADIO_RUSSIA_FM_FREQ_MIN
+#define CVTE_DEF_RADIO_RUSSIA_FM_FREQ_MIN				65000000    //Hz
+#endif
+
+//俄罗斯收音FM最高频率
+#ifndef CVTE_DEF_RADIO_RUSSIA_FM_FREQ_MAX
+#define CVTE_DEF_RADIO_RUSSIA_FM_FREQ_MAX				108000000   //Hz
+#endif
+
+//俄罗斯收音FM步进频率
+#ifndef CVTE_DEF_RADIO_RUSSIA_FM_STEP
+#define CVTE_DEF_RADIO_RUSSIA_FM_STEP					10          // KHz
+#endif
+
+//俄罗斯收音AM最低频率
+#ifndef CVTE_DEF_RADIO_RUSSIA_AM_FREQ_MIN
+#define CVTE_DEF_RADIO_RUSSIA_AM_FREQ_MIN				522000
+#endif
+
+//俄罗斯收音AM最高频率
+#ifndef CVTE_DEF_RADIO_RUSSIA_AM_FREQ_MAX
+#define CVTE_DEF_RADIO_RUSSIA_AM_FREQ_MAX				1620000
+#endif
+
+//俄罗斯收音AM步进频率
+#ifndef CVTE_DEF_RADIO_RUSSIA_AM_STEP
+#define CVTE_DEF_RADIO_RUSSIA_AM_STEP					9          // KHz
+#endif
+
+/////////////////////////////////////////////////////////////////////////////////
+// MODULE ENABLE
+/////////////////////////////////////////////////////////////////////////////////
+//carplay功能开关
+#ifndef CVTE_EN_CARPLAY
+#define CVTE_EN_CARPLAY			CVTE_ENABLE
+#endif
+
+//ipod功能开关
+#ifndef CVTE_EN_IPOD
+#define CVTE_EN_IPOD			CVTE_ENABLE
+#endif
+
+//面板LED灯开关
+#ifndef CVTE_EN_LED
+#define CVTE_EN_LED				CVTE_ENABLE
+#endif
+
+//收音功能开关
+#ifndef CVTE_EN_RADIO
+#define CVTE_EN_RADIO			CVTE_ENABLE
+#endif
+
+//易连功能开关
+#ifndef CVTE_EN_EASYCONNECT
+#define CVTE_EN_EASYCONNECT		CVTE_ENABLE
+#endif
+
+//蓝牙电话功能开关
+#ifndef CVTE_EN_BT_PHONE
+#define CVTE_EN_BT_PHONE		CVTE_ENABLE
+#endif
+
+//蓝牙音乐功能开关
+#ifndef CVTE_EN_BT_A2DP
+#define CVTE_EN_BT_A2DP			CVTE_ENABLE
+#endif
+
+//导航功能开关
+#ifndef CVTE_EN_NAVI
+#define CVTE_EN_NAVI			CVTE_ENABLE
+#endif
+
+//USB功能开关
+#ifndef CVTE_EN_USB
+#define CVTE_EN_USB				CVTE_ENABLE
+#endif
+
+//SD卡功能开关
+#ifndef CVTE_EN_SD
+#define CVTE_EN_SD				CVTE_ENABLE
+#endif
+
+//DVD碟片功能开关
+#ifndef CVTE_EN_DVD
+#define CVTE_EN_DVD				CVTE_ENABLE
+#endif
+
+//DTV数字电视功能开关
+#ifndef CVTE_EN_DTV
+#define CVTE_EN_DTV				CVTE_ENABLE
+#endif
+
+//AUX音频输入功能开关
+#ifndef CVTE_EN_AUX
+#define CVTE_EN_AUX				CVTE_ENABLE
+#endif
+
+#ifndef CVTE_EN_ISDB
+#define CVTE_EN_ISDB				CVTE_ENABLE
+#endif
+
+//RDS无线电数据系统功能开关，主要在欧洲
+#ifndef CVTE_EN_RDS
+#define CVTE_EN_RDS				CVTE_ENABLE
+#endif
+
+//RBDS无线电广播数据系统功能开关，主要在美国
+#ifndef CVTE_EN_RBDS
+#define CVTE_EN_RBDS			CVTE_ENABLE
+#endif
+
+//RDS_TMC RDS应用之一交通信息频道功能开关
+#ifndef CVTE_EN_RDS_TMC
+#define CVTE_EN_RDS_TMC			CVTE_ENABLE
+#endif
+
+//DAB数字音频广播功能开关
+#ifndef CVTE_EN_DAB
+#define CVTE_EN_DAB				CVTE_ENABLE
+#endif
+
+//摄像头功能开关
+#ifndef CVTE_EN_CAMERA
+#define CVTE_EN_CAMERA          CVTE_ENABLE
+#endif
+
+//DSP数字信号处理功能开关
+#ifndef CVTE_EN_DSP
+#define CVTE_EN_DSP				CVTE_DISABLE
+#endif
+
+//android auto功能开关
+#ifndef CVTE_EN_ANDROID_AUTO
+#define CVTE_EN_ANDROID_AUTO	CVTE_DISABLE
+#endif
+
+//weblink功能开关
+#ifndef CVTE_EN_WEBLINK
+#define CVTE_EN_WEBLINK			CVTE_DISABLE
+#endif
+
+//phonelink功能开关
+#ifndef CVTE_EN_PHONELINK
+#define CVTE_EN_PHONELINK		CVTE_DISABLE
+#endif
+/////////////////////////////////////////////////////////////////////////////////
+// FUNCTION ENABLE
+/////////////////////////////////////////////////////////////////////////////////
+//待机/取消待机logo
+#ifndef CVTE_EN_IDLE_LOGO
+#define CVTE_EN_IDLE_LOGO						CVTE_ENABLE
+#endif
+
+//倒车音量自动调节开关
+#ifndef CVTE_EN_REAR_VOL_AUTO_ADJUSTMENT        //MINSHENG ENTERFRONT Need set Enable
+#define CVTE_EN_REAR_VOL_AUTO_ADJUSTMENT		CVTE_DISABLE
+#endif
+
+//旧版本方控UI风格
+#ifndef CVTE_EN_STEER_WHEEL_OLD_UI_STYLE        //MINSHENG ENTERFRONT Need set Enable
+#define CVTE_EN_STEER_WHEEL_OLD_UI_STYLE		CVTE_DISABLE
+#endif
+
+//导航页面Drop Bar
+#ifndef CVTE_EN_NAVI_DROP_BAR
+#define CVTE_EN_NAVI_DROP_BAR					CVTE_DISABLE
+#endif
+
+//UI启动动画（暂只支持视频播放）
+#ifndef CVTE_EN_DYNAMIC_LOGO
+#define CVTE_EN_DYNAMIC_LOGO					CVTE_DISABLE
+#endif
+
+//使用KEY总代理,统一管理面板按键，can信号等
+#ifndef CVTE_EN_KEY_PROXY
+#define CVTE_EN_KEY_PROXY						CVTE_ENABLE
+#endif
+
+//整包升级
+#ifndef CVTE_EN_PACKAGE_UPDATE
+#define CVTE_EN_PACKAGE_UPDATE					CVTE_ENABLE
+#endif
+
+//开ACC后自动返回主页面
+#ifndef CVTE_EN_AUTO_ENTER_HOME_PAGE_AFTER_ACCON
+#define CVTE_EN_AUTO_ENTER_HOME_PAGE_AFTER_ACCON	CVTE_DISABLE
+#endif
+
+//音频设置Subwoofer低音炮控制开关
+#ifndef CVTE_EN_AUDIO_SUBWOOFER
+#define CVTE_EN_AUDIO_SUBWOOFER					CVTE_ENABLE
+#endif
+
+//音频设置Subwoofer低音炮频率控制开关
+#ifndef CVTE_EN_AUDIO_SUBWOOFER_FREQ_ADJUST
+#define CVTE_EN_AUDIO_SUBWOOFER_FREQ_ADJUST		CVTE_DISABLE
+#endif
+
+//音频设置内部功放使能开关
+#ifndef CVTE_EN_AUDIO_INTERNAL_AMP_CONTROL
+#define CVTE_EN_AUDIO_INTERNAL_AMP_CONTROL		CVTE_DISABLE
+#endif
+
+//开ACC自动弹出警告页面
+#ifndef CVTE_EN_ACCON_WARNING
+#define CVTE_EN_ACCON_WARNING					CVTE_DISABLE
+#endif
+
+//边框触摸使能开关
+#ifndef CVTE_EN_BORDER_TOUCH				
+#define CVTE_EN_BORDER_TOUCH					CVTE_ENABLE
+#endif
+
+//主页图标动画开关
+#ifndef CVTE_EN_HOME_WIDGET_ANIM
+#define CVTE_EN_HOME_WIDGET_ANIM				CVTE_ENABLE
+#endif
+
+//Carplay/iPod共用图标的切换开关
+#ifndef CVTE_EN_CARPLAY_IPOD_OVERLAP_ICON	
+#define CVTE_EN_CARPLAY_IPOD_OVERLAP_ICON		CVTE_ENABLE
+#endif
+
+//UI高优先级使能开关
+#ifndef CVTE_EN_LIGHTNINGUI_HIGH_PRIORITY
+#define CVTE_EN_LIGHTNINGUI_HIGH_PRIORITY		CVTE_DISABLE
+#endif
+
+//方向盘校准控制台
+#ifndef CVTE_EN_STEER_WHEEL_CALIBRATE_CONSOLE
+#define CVTE_EN_STEER_WHEEL_CALIBRATE_CONSOLE	CVTE_ENABLE
+#endif
+
+//收音和DAB图标分开
+#ifndef CVTE_EN_RADIO_DEPART_DAB_UI_STYLE
+#define CVTE_EN_RADIO_DEPART_DAB_UI_STYLE		CVTE_DISABLE
+#endif
+
+//OS的开机动画
+#ifndef CVTE_EN_OS_DYNAMIC_LOGO
+#define CVTE_EN_OS_DYNAMIC_LOGO					CVTE_DISABLE
+#endif
+
+//Home主页左上角客户logo
+#ifndef CVTE_CUSTOMER_STATUS_BAR_LOGO
+#define CVTE_CUSTOMER_STATUS_BAR_LOGO			CVTE_DISABLE
+#endif
+
+//红外手势识别
+#ifndef CVTE_EN_GESTURE_AIR
+#define CVTE_EN_GESTURE_AIR						CVTE_DISABLE
+#endif
+
+//蓝牙通话记录下载弹出用户许可
+#ifndef CVTE_EN_BT_CALLLOG_DOWNLOAD_PERMIT
+#define CVTE_EN_BT_CALLLOG_DOWNLOAD_PERMIT		CVTE_DISABLE
+#endif
+
+//保存电话本到本地
+#ifndef SAVE_PHONEBOOK_TO_LOCAL
+#define SAVE_PHONEBOOK_TO_LOCAL					CVTE_DISABLE
+#endif
+
+//蓝牙配对码弹出提示
+#ifndef CVTE_EN_BT_PAIRED_CODE_PERMIT
+#define CVTE_EN_BT_PAIRED_CODE_PERMIT			CVTE_DISABLE
+#endif
+
+//CarPlay LimitUI限制 
+#ifndef CVTE_EN_CARPLAY_LIMIT_UI
+#define CVTE_EN_CARPLAY_LIMIT_UI				CVTE_ENABLE
+#endif
+
+//Enable CarPlay Night mode setting
+#ifndef CVTE_EN_CARPLAY_NIGHTMODE
+#define CVTE_EN_CARPLAY_NIGHTMODE				CVTE_ENABLE
+#endif
+
+//蓝牙来电铃声播放
+#ifndef CVTE_EN_BT_PHONECALL_MEDIA_RING
+#define CVTE_EN_BT_PHONECALL_MEDIA_RING			CVTE_DISABLE
+#endif
+
+//蓝牙电话本名称First name first/Last name first
+#ifndef CVTE_EN_BT_VCARD_NAME_ORDER
+#define CVTE_EN_BT_VCARD_NAME_ORDER				CVTE_DISABLE
+#endif
+
+//FULL keyboard search:全键盘搜索
+#ifndef CVTE_EN_SEARCH_USE_FULL_KEYBOARD
+#define CVTE_EN_SEARCH_USE_FULL_KEYBOARD		CVTE_DISABLE
+#endif
+
+//slide gesture play control: NORMAL = from LEFT to right will play previous one.
+//滑动手势播放控制
+#ifndef CVTE_EN_GESTURE_PLAY_CONTROL_NORMAL
+#define CVTE_EN_GESTURE_PLAY_CONTROL_NORMAL		CVTE_DISABLE
+#endif
+
+//AF stop level
+//RDS自动选台停止等级
+#ifndef CVTE_EN_RDS_AF_STOP_LEVEL
+#define CVTE_EN_RDS_AF_STOP_LEVEL				CVTE_DISABLE
+#endif
+
+//在媒体页面下拔出U盘自动返回主页
+#ifndef CVTE_EN_UNDER_MEDIA_PLAYER_PULLOUT_UDISK_AUTO_RETURN_HOME
+#define CVTE_EN_UNDER_MEDIA_PLAYER_PULLOUT_UDISK_AUTO_RETURN_HOME	CVTE_DISABLE
+#endif
+
+//用户升级开机/待机静态logo
+#ifndef CVTE_EN_USER_UPDATE_LOGO
+#define CVTE_EN_USER_UPDATE_LOGO				CVTE_ENABLE
+#endif
+
+//LED灯Siri动画特效
+#ifndef CVTE_EN_LED_SIRI_ANIM				
+#define CVTE_EN_LED_SIRI_ANIM					CVTE_DISABLE
+#endif
+
+//是否显示方控电压值、网络值
+#ifndef CVTE_EN_SHOW_STW_VOLTAGE_VALUE
+#define CVTE_EN_SHOW_STW_VOLTAGE_VALUE			CVTE_DISABLE
+#endif
+
+//DCP专用充电端口/CDP充电下行端口充电控制
+#ifndef CVTE_EN_CDP_DCP_CONTROL
+#define CVTE_EN_CDP_DCP_CONTROL					CVTE_DISABLE
+#endif
+
+//使用可扩展MCU命令协议
+#ifndef CVTE_EN_EXTENSIBLE_MCU_PROTOCOL
+#define CVTE_EN_EXTENSIBLE_MCU_PROTOCOL			CVTE_DISABLE
+#endif
+
+//使用Weblink/Android auto 二选一切换功能
+#ifndef CVTE_EN_COMBINE_ANDROID_LINK
+#define CVTE_EN_COMBINE_ANDROID_LINK			CVTE_DISABLE
+#endif
+
+////////////////////////////////////////////////////////////////////////////////
+// CONFIG OPTIONS
+///////////////////////////////////////////////////////////////////////////////
+//默认支持音频格式
+#ifndef CVTE_DEF_AUDIO_SUPPORT_FORMAT
+#define CVTE_DEF_AUDIO_SUPPORT_FORMAT	(CVTE_AUDIO_SUPPORT_FORMAT_TYPE_WAV \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_MP3 \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_M4A \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_WMA \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_APE \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_FLA \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_FLAC \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_OGG \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_AMR \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_MP2 \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_M4R \
+										|CVTE_AUDIO_SUPPORT_FORMAT_TYPE_RA )
+#endif
+
+//视频解码支持DIVX功能开关
+#ifndef CVTE_EN_VIDEO_DECODE_SUPPORT_DIVX
+#define CVTE_EN_VIDEO_DECODE_SUPPORT_DIVX	CVTE_ENABLE
+#endif
+
+//视频解码支持XVID功能开关
+#ifndef CVTE_EN_VIDEO_DECODE_SUPPORT_XVID
+#define CVTE_EN_VIDEO_DECODE_SUPPORT_XVID	CVTE_ENABLE
+#endif
+
+//视频解码支持H264功能开关
+#ifndef CVTE_EN_VIDEO_DECODE_SUPPORT_H264
+#define CVTE_EN_VIDEO_DECODE_SUPPORT_H264	CVTE_ENABLE
+#endif
+
+//默认支持视频格式
+#ifndef CVTE_DEF_VIDEO_SUPPORT_FORMAT
+#define CVTE_DEF_VIDEO_SUPPORT_FORMAT	(CVTE_VIDEO_SUPPORT_FORMAT_TYPE_AVI \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_MPG \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_MPEG \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_VOB \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_TS \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_TP \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_OGM \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_MKV \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_RM \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_RMVB \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_MP4 \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_M4V \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_MOV \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_3GP \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_ASF \
+										|CVTE_VIDEO_SUPPORT_FORMAT_TYPE_WMV )
+#endif
+
+//默认支持语言类型
+#ifndef CVTE_DEF_LANGUAGE_SUPPORT
+#define CVTE_DEF_LANGUAGE_SUPPORT		(CVTE_LANGUAGE_SUPPORT_ENGLISH \
+										|CVTE_LANGUAGE_SUPPORT_CHINESE_TRA \
+										|CVTE_LANGUAGE_SUPPORT_CHINESE_SIM \
+										|CVTE_LANGUAGE_SUPPORT_KOREAN \
+										|CVTE_LANGUAGE_SUPPORT_GERMAN \
+										|CVTE_LANGUAGE_SUPPORT_SPANISH \
+										|CVTE_LANGUAGE_SUPPORT_ITALIAN \
+										|CVTE_LANGUAGE_SUPPORT_FRENCH \
+										|CVTE_LANGUAGE_SUPPORT_RUSSIAN \
+										|CVTE_LANGUAGE_SUPPORT_PERSIAN \
+										|CVTE_LANGUAGE_SUPPORT_GREEK)
+#endif
+
+//默认支持收音区域
+#ifndef CVTE_DEF_RADIO_REGION_SUPPORT
+#define CVTE_DEF_RADIO_REGION_SUPPORT	(CVTE_RADIO_REGION_SUPPORT_EUROPE \
+									|CVTE_RADIO_REGION_SUPPORT_USA \
+									|CVTE_RADIO_REGION_SUPPORT_EAST_ERNEUROPE \
+									|CVTE_RADIO_REGION_SUPPORT_JAPAN \
+									|CVTE_RADIO_REGION_SUPPORT_EUROPE_EASTERNEUROPE \
+									|CVTE_RADIO_REGION_SUPPORT_KOREAN \
+									|CVTE_RADIO_REGION_SUPPORT_TAIWANG \
+									|CVTE_RADIO_REGION_SUPPORT_USA2	 \
+									|CVTE_RADIO_REGION_SUPPORT_SOUTHAMERICA \
+									|CVTE_RADIO_REGION_SUPPORT_ARABIA_AUSTRALIA \
+									|CVTE_RADIO_REGION_SUPPORT_LATIN_AMERICA \
+									|CVTE_RADIO_REGION_SUPPORT_MIDDLE_EAST \
+									|CVTE_RADIO_REGION_SUPPORT_AUST	 \
+									|CVTE_RADIO_REGION_SUPPORT_BRAZIL \
+									|CVTE_RADIO_REGION_SUPPORT_EASTERNEUROPE_EUROPE)
+#endif
+
+//默认carplay图标名称
+#ifndef CVTE_DEF_CARPLAY_ICON_LABEL
+#define CVTE_DEF_CARPLAY_ICON_LABEL	"Vehicle"
+#endif
+
+//默认车机显示名字
+#ifndef CVTE_DEF_VEHICLE_DISPLAY_NAME
+#define CVTE_DEF_VEHICLE_DISPLAY_NAME		TEXT("CarPlay HU")
+#endif
+
+//默认制造商显示名字
+#ifndef CVTE_DEF_MANUFACTURER_DISPLAY_NAME
+#define CVTE_DEF_MANUFACTURER_DISPLAY_NAME	"CarPlay"
+#endif
+
+//默认型号显示名字
+#ifndef CVTE_DEF_MODEL_DISPLAY_NAME
+#define CVTE_DEF_MODEL_DISPLAY_NAME			"U701P"
+#endif
+/******************************************************************************/
+/************************** CVTE 屏幕属性设置 *******************************/
+/******************************************************************************/
+//默认屏幕宽度
+#ifndef CVTE_DEF_SCREEN_VIDEOWIDTH
+#define CVTE_DEF_SCREEN_VIDEOWIDTH		800
+#endif
+
+//默认屏幕高度
+#ifndef CVTE_DEF_SCREEN_VIDEOHEIGHT
+#define CVTE_DEF_SCREEN_VIDEOHEIGHT		480
+#endif
+
+//默认carply屏幕显示宽度
+#ifndef CVTE_DEF_CARPLAY_SCREEN_VIDEOWIDTH
+#define CVTE_DEF_CARPLAY_SCREEN_VIDEOWIDTH		CVTE_DEF_SCREEN_VIDEOWIDTH
+#endif
+
+//默认carplay屏幕显示高度
+#ifndef CVTE_DEF_CARPLAY_SCREEN_VIDEOHEIGHT
+#define CVTE_DEF_CARPLAY_SCREEN_VIDEOHEIGHT		CVTE_DEF_SCREEN_VIDEOHEIGHT
+#endif
+
+//默认android auto显示宽度
+#ifndef CVTE_DEF_ANDROIDAUTO_SCREEN_VIDEOWIDTH
+#define CVTE_DEF_ANDROIDAUTO_SCREEN_VIDEOWIDTH		CVTE_DEF_SCREEN_VIDEOWIDTH
+#endif
+
+//默认andorid auto显示高度
+#ifndef CVTE_DEF_ANDROIDAUTO_SCREEN_VIDEOHEIGHT
+#define CVTE_DEF_ANDROIDAUTO_SCREEN_VIDEOHEIGHT		CVTE_DEF_SCREEN_VIDEOHEIGHT
+#endif
+
+//默认屏幕实际物理宽度
+#ifndef CVTE_DEF_SCREEN_PHYSICALWIDTH
+#define CVTE_DEF_SCREEN_PHYSICALWIDTH	CVTE_SCREEN_PHYSICALWIDTH_U701P
+#endif
+
+//默认屏幕实际物理高度
+#ifndef CVTE_DEF_SCREEN_PHYSICALHEIGHT
+#define CVTE_DEF_SCREEN_PHYSICALHEIGHT	CVTE_SCREEN_PHYSICALHEIGHT_U701P
+#endif
+
+/******************************************************************************/
+/************************** CVTE 主页widget设置 *******************************/
+/******************************************************************************/
+////////////////////////////////////////////////////////////////////////////////
+//             HOME WIDGET OPTIONS 主页Widget基本属性                        //
+///////////////////////////////////////////////////////////////////////////////
+//默认主页控件之间边缘宽度
+#ifndef CVTE_DEF_HOME_WIDGET_MARGIN_WIDTH
+#define CVTE_DEF_HOME_WIDGET_MARGIN_WIDTH		20
+#endif
+
+//默认主页控件之间边缘高度
+#ifndef CVTE_DEF_HOME_WIDGET_MARGIN_HEIGHT
+#define CVTE_DEF_HOME_WIDGET_MARGIN_HEIGHT		14
+#endif
+
+//默认主页控件状态栏高度
+#ifndef CVTE_DEF_HOME_WIDGET_STATUS_BAR_HEIGHT
+#define CVTE_DEF_HOME_WIDGET_STATUS_BAR_HEIGHT	46
+#endif
+
+//默认主页控件宽度单位，每个UI宽度是这个单位的倍数
+#ifndef CVTE_DEF_HOME_WIDGET_UNIT_CX		//130
+#define CVTE_DEF_HOME_WIDGET_UNIT_CX		((CVTE_DEF_SCREEN_VIDEOWIDTH-CVTE_DEF_HOME_WIDGET_MARGIN_WIDTH)/6)
+#endif
+
+//默认主页控件高度单位，每个UI高度是这个单位的倍数
+#ifndef CVTE_DEF_HOME_WIDGET_UNIT_CY		//140
+#define CVTE_DEF_HOME_WIDGET_UNIT_CY		(CVTE_DEF_SCREEN_VIDEOHEIGHT-CVTE_DEF_HOME_WIDGET_MARGIN_HEIGHT-CVTE_DEF_HOME_WIDGET_STATUS_BAR_HEIGHT)/3
+#endif
+
+//默认主页控件的X坐标，以屏幕为中心原点，每个UI以自己中心作为PX，PY
+#ifndef CVTE_DEF_HOME_WIDGET_UINT_PX		//-260
+#define CVTE_DEF_HOME_WIDGET_UINT_PX		(-(CVTE_DEF_SCREEN_VIDEOWIDTH/2)+CVTE_DEF_HOME_WIDGET_MARGIN_WIDTH/2+CVTE_DEF_HOME_WIDGET_UNIT_CX)
+#endif
+
+//默认主页控件的Y坐标，以屏幕为中心原点，每个UI以自己中心作为PX，PY
+#ifndef CVTE_DEF_HOME_WIDGET_UINT_PY		//47
+#define CVTE_DEF_HOME_WIDGET_UINT_PY		(CVTE_DEF_SCREEN_VIDEOHEIGHT/2-CVTE_DEF_HOME_WIDGET_STATUS_BAR_HEIGHT-CVTE_DEF_HOME_WIDGET_MARGIN_HEIGHT/2-CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//默认屏幕向右滑动可以达到的最大宽度
+#ifndef CVTE_DEF_HOME_WIDGET_WIDTH
+#define CVTE_DEF_HOME_WIDGET_WIDTH			(CVTE_DEF_SCREEN_VIDEOWIDTH+CVTE_DEF_HOME_WIDGET_UNIT_CX*4)
+#endif
+
+////////////////////////////////////////////////////////////////////////////////
+// HOME WIDGET MEMBERS OPTIONS
+///////////////////////////////////////////////////////////////////////////////
+/**
+* MEDIA WIDGET
+*/
+//多媒体控件宽度
+#ifndef CVTE_DEF_MEDIA_WIDGET_CX
+#define CVTE_DEF_MEDIA_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//多媒体控件高度
+#ifndef CVTE_DEF_MEDIA_WIDGET_CY
+#define CVTE_DEF_MEDIA_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*2)
+#endif
+
+//多媒体控件原点X坐标
+#ifndef CVTE_DEF_MEDIA_WIDGET_PX
+#define CVTE_DEF_MEDIA_WIDGET_PX			CVTE_DEF_HOME_WIDGET_UINT_PX
+#endif
+
+//多媒体控件原点Y坐标
+#ifndef CVTE_DEF_MEDIA_WIDGET_PY
+#define CVTE_DEF_MEDIA_WIDGET_PY			CVTE_DEF_HOME_WIDGET_UINT_PY
+#endif
+
+//多媒体控件是否可见
+#ifndef CVTE_DEF_MEDIA_WIDGET_VISIBLE
+#define CVTE_DEF_MEDIA_WIDGET_VISIBLE		1
+#endif
+
+/**
+* RADIO WIDGET
+*/
+//收音控件宽度
+#ifndef CVTE_DEF_RADIO_WIDGET_CX
+#define CVTE_DEF_RADIO_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//收音控件高度
+#ifndef CVTE_DEF_RADIO_WIDGET_CY
+#define CVTE_DEF_RADIO_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//收音控件原点X坐标
+#ifndef CVTE_DEF_RADIO_WIDGET_PX
+#define CVTE_DEF_RADIO_WIDGET_PX			CVTE_DEF_HOME_WIDGET_UINT_PX
+#endif
+
+//收音控件原点Y坐标
+#ifndef CVTE_DEF_RADIO_WIDGET_PY
+#define CVTE_DEF_RADIO_WIDGET_PY			(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//收音控件是否可见
+#ifndef CVTE_DEF_RADIO_WIDGET_VISIBLE
+#define CVTE_DEF_RADIO_WIDGET_VISIBLE		1
+#endif
+
+/**
+* CARPLAY WIDGET
+*/
+//carplay控件宽度
+#ifndef CVTE_DEF_CARPLAY_WIDGET_CX
+#define CVTE_DEF_CARPLAY_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//carplay控件高度
+#ifndef CVTE_DEF_CARPLAY_WIDGET_CY
+#define CVTE_DEF_CARPLAY_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*2)
+#endif
+
+//carplay控件原点X坐标
+#ifndef CVTE_DEF_CARPLAY_WIDGET_PX
+#define CVTE_DEF_CARPLAY_WIDGET_PX			(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//carplay控件原点Y坐标
+#ifndef CVTE_DEF_CARPLAY_WIDGET_PY
+#define CVTE_DEF_CARPLAY_WIDGET_PY			CVTE_DEF_HOME_WIDGET_UINT_PY
+#endif
+
+//carplay控件是否可见
+#ifndef CVTE_DEF_CARPLAY_WIDGET_VISIBLE
+#define CVTE_DEF_CARPLAY_WIDGET_VISIBLE		1
+#endif
+
+/**
+* IPOD WIDGET
+*/
+//ipod控件宽度
+#ifndef CVTE_DEF_IPOD_WIDGET_CX
+#define CVTE_DEF_IPOD_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//ipod控件高度
+#ifndef CVTE_DEF_IPOD_WIDGET_CY
+#define CVTE_DEF_IPOD_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*2)
+#endif
+
+//ipod控件原点X坐标
+#ifndef CVTE_DEF_IPOD_WIDGET_PX
+#define CVTE_DEF_IPOD_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*6)
+#endif
+
+//ipod控件原点Y坐标
+#ifndef CVTE_DEF_IPOD_WIDGET_PY
+#define CVTE_DEF_IPOD_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//ipod控件是否可见
+#ifndef CVTE_DEF_IPOD_WIDGET_VISIBLE
+#define CVTE_DEF_IPOD_WIDGET_VISIBLE		1
+#endif
+
+
+/**
+* EASYCONNECT WIDGET
+*/
+//易联控件宽度
+#ifndef CVTE_DEF_ANDROID_LINK_WIDGET_CX
+#define CVTE_DEF_ANDROID_LINK_WIDGET_CX		(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//易联控件高度
+#ifndef CVTE_DEF_ANDROID_LINK_WIDGET_CY
+#define CVTE_DEF_ANDROID_LINK_WIDGET_CY		(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//易联控件原点X坐标
+#ifndef CVTE_DEF_ANDROID_LINK_WIDGET_PX
+#define CVTE_DEF_ANDROID_LINK_WIDGET_PX		(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//易联控件原点Y坐标
+#ifndef CVTE_DEF_ANDROID_LINK_WIDGET_PY
+#define CVTE_DEF_ANDROID_LINK_WIDGET_PY		(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//易联控件是否可见
+#ifndef CVTE_DEF_ANDROID_LINK_WIDGET_VISIBLE
+#define CVTE_DEF_ANDROID_LINK_WIDGET_VISIBLE	1
+#endif
+
+/**
+* BT PHONE WIDGET
+*/
+//蓝牙电话控件宽度
+#ifndef CVTE_DEF_BT_PHONE_WIDGET_CX
+#define CVTE_DEF_BT_PHONE_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//蓝牙电话控件高度
+#ifndef CVTE_DEF_BT_PHONE_WIDGET_CY
+#define CVTE_DEF_BT_PHONE_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//蓝牙电话控件原点X坐标
+#ifndef CVTE_DEF_BT_PHONE_WIDGET_PX
+#define CVTE_DEF_BT_PHONE_WIDGET_PX			(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*4)
+#endif
+
+//蓝牙电话控件原点Y坐标
+#ifndef CVTE_DEF_BT_PHONE_WIDGET_PY
+#define CVTE_DEF_BT_PHONE_WIDGET_PY			(CVTE_DEF_HOME_WIDGET_UINT_PY+CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//蓝牙电话控件是否可见
+#ifndef CVTE_DEF_BT_PHONE_WIDGET_VISIBLE
+#define CVTE_DEF_BT_PHONE_WIDGET_VISIBLE    1
+#endif
+
+/**
+* NAVI WIDGET
+*/
+//导航控件宽度
+#ifndef CVTE_DEF_NAVI_WIDGET_CX
+#define CVTE_DEF_NAVI_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*2)
+#endif
+
+//导航控件高度
+#ifndef CVTE_DEF_NAVI_WIDGET_CY
+#define CVTE_DEF_NAVI_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//导航控件原点X坐标
+#ifndef CVTE_DEF_NAVI_WIDGET_PX
+#define CVTE_DEF_NAVI_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*4)
+#endif
+
+//导航控件原点Y坐标
+#ifndef CVTE_DEF_NAVI_WIDGET_PY
+#define CVTE_DEF_NAVI_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//导航控件是否可见
+#ifndef CVTE_DEF_NAVI_WIDGET_VISIBLE
+#define CVTE_DEF_NAVI_WIDGET_VISIBLE		1
+#endif
+
+/**
+* BT A2DP WIDGET
+*/
+//蓝牙音乐控件宽度
+#ifndef CVTE_DEF_BT_A2DP_WIDGET_CX
+#define CVTE_DEF_BT_A2DP_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//蓝牙音乐控件高度
+#ifndef CVTE_DEF_BT_A2DP_WIDGET_CY
+#define CVTE_DEF_BT_A2DP_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//蓝牙音乐控件原点X坐标
+#ifndef CVTE_DEF_BT_A2DP_WIDGET_PX
+#define CVTE_DEF_BT_A2DP_WIDGET_PX			(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*4-CVTE_DEF_HOME_WIDGET_UNIT_CX/2)
+#endif
+
+//蓝牙音乐控件原点Y坐标
+#ifndef CVTE_DEF_BT_A2DP_WIDGET_PY
+#define CVTE_DEF_BT_A2DP_WIDGET_PY			(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2-CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//蓝牙音乐控件是否可见
+#ifndef CVTE_DEF_BT_A2DP_WIDGET_VISIBLE
+#define CVTE_DEF_BT_A2DP_WIDGET_VISIBLE		1
+#endif
+
+/**
+* USB WIDGET
+*/
+//usb控件宽度
+#ifndef CVTE_DEF_USB_WIDGET_CX
+#define CVTE_DEF_USB_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//usb控件高度
+#ifndef CVTE_DEF_USB_WIDGET_CY
+#define CVTE_DEF_USB_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//usb控件原点X坐标
+#ifndef CVTE_DEF_USB_WIDGET_PX
+#define CVTE_DEF_USB_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*4+CVTE_DEF_HOME_WIDGET_UNIT_CX/2)
+#endif
+
+//usb控件原点Y坐标
+#ifndef CVTE_DEF_USB_WIDGET_PY
+#define CVTE_DEF_USB_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2-CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//usb控件是否可见
+#ifndef CVTE_DEF_USB_WIDGET_VISIBLE
+#define CVTE_DEF_USB_WIDGET_VISIBLE			1
+#endif
+
+/**
+* DVD WIDGET
+*/
+//DVD控件宽度
+#ifndef CVTE_DEF_DVD_WIDGET_CX
+#define CVTE_DEF_DVD_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//DVD控件高度
+#ifndef CVTE_DEF_DVD_WIDGET_CY
+#define CVTE_DEF_DVD_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//DVD控件原点X坐标
+#ifndef CVTE_DEF_DVD_WIDGET_PX
+#define CVTE_DEF_DVD_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*4+CVTE_DEF_HOME_WIDGET_UNIT_CX*2+CVTE_DEF_HOME_WIDGET_UNIT_CX/2)
+#endif
+
+//DVD控件原点Y坐标
+#ifndef CVTE_DEF_DVD_WIDGET_PY
+#define CVTE_DEF_DVD_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2+CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//DVD控件是否可见
+#ifndef CVTE_DEF_DVD_WIDGET_VISIBLE
+#define CVTE_DEF_DVD_WIDGET_VISIBLE			1
+#endif
+
+/**
+* DTV WIDGET
+*/
+//DTV控件宽度
+#ifndef CVTE_DEF_DTV_WIDGET_CX
+#define CVTE_DEF_DTV_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//DTV控件高度
+#ifndef CVTE_DEF_DTV_WIDGET_CY
+#define CVTE_DEF_DTV_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//DTV控件原点X坐标
+#ifndef CVTE_DEF_DTV_WIDGET_PX
+#define CVTE_DEF_DTV_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*4+CVTE_DEF_HOME_WIDGET_UNIT_CX+CVTE_DEF_HOME_WIDGET_UNIT_CX/2)
+#endif
+
+//DTV控件原点Y坐标
+#ifndef CVTE_DEF_DTV_WIDGET_PY
+#define CVTE_DEF_DTV_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2+CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//DTV控件是否可见
+#ifndef CVTE_DEF_DTV_WIDGET_VISIBLE
+#define CVTE_DEF_DTV_WIDGET_VISIBLE			1
+#endif
+
+/**
+* AUX WIDGET
+*/
+//AUX控件宽度
+#ifndef CVTE_DEF_AUX_WIDGET_CX
+#define CVTE_DEF_AUX_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//AUX控件高度
+#ifndef CVTE_DEF_AUX_WIDGET_CY
+#define CVTE_DEF_AUX_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//AUX控件原点X坐标
+#ifndef CVTE_DEF_AUX_WIDGET_PX
+#define CVTE_DEF_AUX_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*6+CVTE_DEF_HOME_WIDGET_UNIT_CX+CVTE_DEF_HOME_WIDGET_UNIT_CX/2)
+#endif
+
+//AUX控件原点Y坐标
+#ifndef CVTE_DEF_AUX_WIDGET_PY
+#define CVTE_DEF_AUX_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//AUX控件是否可见
+#ifndef CVTE_DEF_AUX_WIDGET_VISIBLE
+#define CVTE_DEF_AUX_WIDGET_VISIBLE			1
+#endif
+
+/**
+* DAB WIDGET
+*/
+//DAB控件宽度
+#ifndef CVTE_DEF_DAB_WIDGET_CX
+#define CVTE_DEF_DAB_WIDGET_CX				(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//DAB控件高度
+#ifndef CVTE_DEF_DAB_WIDGET_CY
+#define CVTE_DEF_DAB_WIDGET_CY				(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//DAB控件原点X坐标
+#ifndef CVTE_DEF_DAB_WIDGET_PX
+#define CVTE_DEF_DAB_WIDGET_PX				(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*6+CVTE_DEF_HOME_WIDGET_UNIT_CX*2+CVTE_DEF_HOME_WIDGET_UNIT_CX/2+2)
+#endif
+
+//DAB控件原点Y坐标
+#ifndef CVTE_DEF_DAB_WIDGET_PY
+#define CVTE_DEF_DAB_WIDGET_PY				(CVTE_DEF_HOME_WIDGET_UINT_PY+CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//DAB控件是否可见
+#ifndef CVTE_DEF_DAB_WIDGET_VISIBLE
+#define CVTE_DEF_DAB_WIDGET_VISIBLE			1
+#endif
+
+/**
+* CAMERA WIDGET
+*/
+//摄像头控件宽度
+#ifndef CVTE_DEF_CAMERA_WIDGET_CX
+#define CVTE_DEF_CAMERA_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif
+
+//摄像头控件高度
+#ifndef CVTE_DEF_CAMERA_WIDGET_CY
+#define CVTE_DEF_CAMERA_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//摄像头控件原点X坐标
+#ifndef CVTE_DEF_CAMERA_WIDGET_PX
+#define CVTE_DEF_CAMERA_WIDGET_PX			(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*6+CVTE_DEF_HOME_WIDGET_UNIT_CX+CVTE_DEF_HOME_WIDGET_UNIT_CX/2+2)
+#endif
+
+//摄像头控件原点Y坐标
+#ifndef CVTE_DEF_CAMERA_WIDGET_PY
+#define CVTE_DEF_CAMERA_WIDGET_PY			(CVTE_DEF_HOME_WIDGET_UINT_PY+CVTE_DEF_HOME_WIDGET_UNIT_CY/2)
+#endif
+
+//摄像头控件是否可见
+#ifndef CVTE_DEF_CAMERA_WIDGET_VISIBLE
+#define CVTE_DEF_CAMERA_WIDGET_VISIBLE		1
+#endif
+
+/**
+* SETTING WIDGET
+*/
+//设置控件宽度
+#ifndef CVTE_DEF_SETTING_WIDGET_CX
+#define CVTE_DEF_SETTING_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif	
+
+//设置控件高度
+#ifndef CVTE_DEF_SETTING_WIDGET_CY
+#define CVTE_DEF_SETTING_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//设置控件原点X坐标
+#ifndef CVTE_DEF_SETTING_WIDGET_PX
+#define CVTE_DEF_SETTING_WIDGET_PX			(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*6+CVTE_DEF_HOME_WIDGET_UNIT_CX+CVTE_DEF_HOME_WIDGET_UNIT_CX/2+2)
+#endif
+
+//设置控件原点Y坐标
+#ifndef CVTE_DEF_SETTING_WIDGET_PY
+#define CVTE_DEF_SETTING_WIDGET_PY			(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2-CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//设置控件是否可见
+#ifndef CVTE_DEF_SETTING_WIDGET_VISIBLE
+#define CVTE_DEF_SETTING_WIDGET_VISIBLE		1
+#endif
+
+/**
+* DSP WIDGET
+*/
+//DSP控件宽度
+#ifndef CVTE_DEF_DSP_WIDGET_CX
+#define CVTE_DEF_DSP_WIDGET_CX			(CVTE_DEF_HOME_WIDGET_UNIT_CX*1)
+#endif	
+
+//DSP控件高度
+#ifndef CVTE_DEF_DSP_WIDGET_CY
+#define CVTE_DEF_DSP_WIDGET_CY			(CVTE_DEF_HOME_WIDGET_UNIT_CY*1)
+#endif
+
+//DSP控件原点X坐标
+#ifndef CVTE_DEF_DSP_WIDGET_PX
+#define CVTE_DEF_DSP_WIDGET_PX			(CVTE_DEF_HOME_WIDGET_UINT_PX+CVTE_DEF_HOME_WIDGET_UNIT_CX*6+CVTE_DEF_HOME_WIDGET_UNIT_CX+CVTE_DEF_HOME_WIDGET_UNIT_CX/2+2)
+#endif
+
+//DSP控件原点Y坐标
+#ifndef CVTE_DEF_DSP_WIDGET_PY
+#define CVTE_DEF_DSP_WIDGET_PY			(CVTE_DEF_HOME_WIDGET_UINT_PY-CVTE_DEF_HOME_WIDGET_UNIT_CY/2-CVTE_DEF_HOME_WIDGET_UNIT_CY)
+#endif
+
+//DSP控件是否可见
+#ifndef CVTE_DEF_DSP_WIDGET_VISIBLE
+#define CVTE_DEF_DSP_WIDGET_VISIBLE		1
+#endif
+
+
+
+/******************************************************************************/
+/******************************* CVTE 音频ID设置 ******************************/
+/******************************************************************************/
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAIN_DEFAULT
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAIN_DEFAULT			1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAIN_ALERT
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAIN_ALERT				1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAIN_MEDIA
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAIN_MEDIA				1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAIN_TELEPHONY
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAIN_TELEPHONY			1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAIN_SPEECHRECOGNITION
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAIN_SPEECHRECOGNITION 1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAIN_COMPATIBILITY
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAIN_COMPATIBILITY		1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_ALT_DEFAULT
+#define CVTE_DEF_AUDIO_DEVICE_ID_ALT_DEFAULT			0
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_ALT_COMPATIBILITY
+#define CVTE_DEF_AUDIO_DEVICE_ID_ALT_COMPATIBILITY		0
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_MAINHIGH_MEDIA
+#define CVTE_DEF_AUDIO_DEVICE_ID_MAINHIGH_MEDIA			1
+#endif
+
+#ifndef CVTE_DEF_AUDIO_DEVICE_ID_INPUT
+#define CVTE_DEF_AUDIO_DEVICE_ID_INPUT					0
+#endif
+
+/******************************************************************************/
+/****************************** CVTE LCD 亮度设置  ****************************/
+/******************************************************************************/
+//LCD背光最小值
+#ifndef CVTE_DEF_LCD_BRIGHTNESS_MIN
+#define CVTE_DEF_LCD_BRIGHTNESS_MIN				0
+#endif
+
+//LCD背光最大值
+#ifndef CVTE_DEF_LCD_BRIGHTNESS_MAX
+#define CVTE_DEF_LCD_BRIGHTNESS_MAX				100
+#endif
+
+//LCD背光起始范围
+#ifndef CVGE_DEF_LCD_BRIGHTNESS_RANGE_START
+#define CVGE_DEF_LCD_BRIGHTNESS_RANGE_START		22
+#endif
+
+//LCD背光结束范围
+#ifndef CVTE_DEF_LCD_BRIGHTNESS_RANGE_END
+#define CVTE_DEF_LCD_BRIGHTNESS_RANGE_END		52
+#endif
+
+//LCD背光进度条调节最小值
+#ifndef CVTE_DEF_LCD_BRIGHTNESS_SILDER_MIN
+#define CVTE_DEF_LCD_BRIGHTNESS_SILDER_MIN		0
+#endif
+
+//LCD背光进度条调节最大值
+#ifndef CVTE_DEF_LCD_BRIGHTNESS_SILDER_MAX
+#define CVTE_DEF_LCD_BRIGHTNESS_SILDER_MAX		15
+#endif
+
+//LCD背光gamma值最小值
+#ifndef CVTE_DEF_LCD_GAMMA_MIN
+#define CVTE_DEF_LCD_GAMMA_MIN					0
+#endif
+
+//LCD背光gamma值最大值
+#ifndef CVTE_DEF_LCD_GAMMA_MAX
+#define CVTE_DEF_LCD_GAMMA_MAX					200
+#endif
+
+/******************************************************************************/
+/**************************** CVTE LCD 日间亮度设置  **************************/
+/******************************************************************************/
+//LCD日间背光起始范围
+#ifndef CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_RANGE_START
+#define CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_RANGE_START		37
+#endif
+
+//LCD日间背光结束范围
+#ifndef CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_RANGE_END
+#define CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_RANGE_END		CVTE_DEF_LCD_BRIGHTNESS_RANGE_END	//52
+#endif
+
+//LCD日间背光默认值
+#ifndef CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_DEFAULT
+#define CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_DEFAULT			47
+#endif
+
+/******************************************************************************/
+/**************************** CVTE LCD 夜间亮度设置  **************************/
+/******************************************************************************/
+//LCD夜间背光起始范围
+#ifndef CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_RANGE_START
+#define CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_RANGE_START	 CVGE_DEF_LCD_BRIGHTNESS_RANGE_START	//22
+#endif
+
+//LCD夜间背光结束范围
+#ifndef CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_RANGE_END
+#define CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_RANGE_END		37
+#endif
+
+//LCD夜间背光默认值
+#ifndef CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_DEFAULT
+#define CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_DEFAULT		32
+#endif
+
+/******************************************************************************/
+/***************************** CVTE LED灯 亮度设置  ***************************/
+/******************************************************************************/
+//LED亮度最小值
+#ifndef CVTE_DEF_LED_BRIGHTNESS_MIN
+#define CVTE_DEF_LED_BRIGHTNESS_MIN				0
+#endif
+
+//LED亮度最大值
+#ifndef CVTE_DEF_LED_BRIGHTNESS_MAX
+#define CVTE_DEF_LED_BRIGHTNESS_MAX				100
+#endif
+
+/******************************************************************************/
+/*************************** CVTE LED灯 日间亮度设置  *************************/
+/******************************************************************************/
+//LED日间背光起始范围
+#ifndef CVTE_DEF_DAYMODE_LED_BRIGHTNESS_RANGE_START
+#define CVTE_DEF_DAYMODE_LED_BRIGHTNESS_RANGE_START		40
+#endif
+
+//LED日间背光结束范围
+#ifndef CVTE_DEF_DAYMODE_LED_BRIGHTNESS_RANGE_END
+#define CVTE_DEF_DAYMODE_LED_BRIGHTNESS_RANGE_END		CVTE_DEF_LED_BRIGHTNESS_MAX	//100
+#endif
+
+//LED日间背光默认值
+#ifndef CVTE_DEF_DAYMODE_LED_BRIGHTNESS_DEFAULT
+#define CVTE_DEF_DAYMODE_LED_BRIGHTNESS_DEFAULT			90
+#endif
+
+//LED日间背光进度条调节最小值
+#ifndef CVTE_DEF_DAYMODE_LED_BRIGHTNESS_SILDER_MIN
+#define CVTE_DEF_DAYMODE_LED_BRIGHTNESS_SILDER_MIN		0
+#endif
+
+//LED日间背光进度条调节最大值
+#ifndef CVTE_DEF_DAYMODE_LED_BRIGHTNESS_SILDER_MAX
+#define CVTE_DEF_DAYMODE_LED_BRIGHTNESS_SILDER_MAX		(CVTE_DEF_DAYMODE_LED_BRIGHTNESS_RANGE_END-CVTE_DEF_DAYMODE_LED_BRIGHTNESS_RANGE_START)	//60
+#endif 
+
+/******************************************************************************/
+/*************************** CVTE LED灯 夜间亮度设置  *************************/
+/******************************************************************************/
+//LED夜间背光起始范围
+#ifndef CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_RANGE_START
+#define CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_RANGE_START	10
+#endif
+
+//LED夜间背光结束范围
+#ifndef CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_RANGE_END
+#define CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_RANGE_END		40
+#endif
+
+//LED夜间背光默认值
+#ifndef CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_DEFAULT
+#define CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_DEFAULT		35
+#endif
+
+//LED夜间背光进度条调节最小值
+#ifndef CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_SILDER_MIN
+#define CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_SILDER_MIN	0
+#endif
+
+//LED夜间背光进度条调节最大值
+#ifndef CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_SILDER_MAX
+#define CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_SILDER_MAX	(CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_RANGE_END-CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_RANGE_START)	//30
+#endif
+
+/******************************************************************************/
+/***************************    CVTE CarPlay 设置     *************************/
+/******************************************************************************/
+//carplay复位时间
+#ifndef CVTE_DEF_CARPLAY_RESTART_TIME_MS
+#define CVTE_DEF_CARPLAY_RESTART_TIME_MS	0
+#endif
+
+//carplay CPCA功能开关
+#ifndef CVTE_EN_CPCA
+#define CVTE_EN_CPCA						CVTE_DISABLE
+#endif
+
+//carplay CPMAC功能开关
+#ifndef CVTE_EN_CPMAC
+#define CVTE_EN_CPMAC						CVTE_DISABLE
+#endif
+
+/******************************************************************************/
+/***************************   CVTE TV Widget 设置    *************************/
+/******************************************************************************/
+//TV控件类型
+#ifndef CVTE_DEF_TV_WIDGET_TYPE
+#define CVTE_DEF_TV_WIDGET_TYPE				CVTE_DEF_TV_WIDGET_TYPE_DTV		
+#endif
+
+//TV控件名字
+#ifndef CVTE_TV_WIDGET_NAME_STRING
+#define CVTE_TV_WIDGET_NAME_STRING			TEXT("DTV")
+#endif
+
+/******************************************************************************/
+/***************************   CVTE Camera Widget 设置    *************************/
+/******************************************************************************/
+//摄像头控件类型
+#ifndef CVTE_DEF_CAMERA_WIDGET_TYPE
+#define CVTE_DEF_CAMERA_WIDGET_TYPE			CVTE_DEF_CAMERA_WIDGET_TYPE_DEFAULT		
+#endif
+
+//摄像头控件名字
+#ifndef CVTE_CAMERA_WIDGET_NAME_STRING
+#define CVTE_CAMERA_WIDGET_NAME_STRING		TEXT("Camera")
+#endif
+
+/******************************************************************************/
+/************************** CVTE 注册表默认设置 *******************************/
+/******************************************************************************/
+
+//Font 字体
+#ifndef CVTE_REG_FONT_DEFAULT
+#define CVTE_REG_FONT_DEFAULT				CVTE_DEF_FONT_TYPE_HELVETICA		
+#endif 
+
+//TimeZone 默认时区
+#ifndef CVTE_REG_TIMEZONE_DEFAULT
+#define CVTE_REG_TIMEZONE_DEFAULT			CVTE_DEF_TIME_ZONE_000GMT_GMT_STANDARD_TIME
+#endif
+
+//Background Path背景图片路径
+#ifndef CVTE_REG_BACKGROUND_PATH_DEFAULT
+#define CVTE_REG_BACKGROUND_PATH_DEFAULT	_T("\\ResidentFlash\\LightningUI\\background\\IMAGES\\LIGHTNING.jpg")
+#endif
+
+//Navi Path导航地图路径
+#ifndef CVTE_REG_NAVI_PATH_DEFAULT
+#define CVTE_REG_NAVI_PATH_DEFAULT			_T("\\GPS CARD\\NaviOne\\NaviOne.exe")
+#endif
+
+//Bluetooth Device Name蓝牙设备名字
+#ifndef CVTE_REG_BT_DEVICE_NAME_DEFAULT
+#define CVTE_REG_BT_DEVICE_NAME_DEFAULT	    _T("Automotive BT Device")
+#endif
+
+//Radio Region收音频率
+//CVTE_DEF_RADIO_REGION_MIN~CVTE_DEF_RADIO_REGION_MAX
+#ifndef CVTE_REG_RADIO_REGION_DEFAULT
+#define CVTE_REG_RADIO_REGION_DEFAULT	    CVTE_DEF_RADIO_REGION_EUROPE
+#endif
+
+//RDS AF停台灵敏度 (约真实值db的2倍)
+//CVTE_DEF_RDS_AF_LEVEL_MIN~CVTE_DEF_RDS_AF_LEVEL_MAX
+#ifndef CVTE_REG_RDS_AF_LEVEL_DEFAULT
+#define CVTE_REG_RDS_AF_LEVEL_DEFAULT		70
+#endif
+
+//RDS 总开关
+#ifndef CVTE_REG_RDS_ENABLE_DEFAULT
+#define CVTE_REG_RDS_ENABLE_DEFAULT			CVTE_ENABLE
+#endif
+
+//RDS AF 自动选台功能开关
+#ifndef CVTE_REG_RDS_AF_ENABLE_DEFAULT
+#define CVTE_REG_RDS_AF_ENABLE_DEFAULT		CVTE_ENABLE
+#endif
+
+//RDS TA 自动搜索同类型电台功能开关
+#ifndef CVTE_REG_RDS_TA_ENABLE_DEFAULT
+#define CVTE_REG_RDS_TA_ENABLE_DEFAULT		CVTE_ENABLE
+#endif
+
+//Language
+//CVTE_DEF_LANGUAGE_MIN~CVTE_DEF_LANGUAGE_MAX
+//默认系统语言
+#ifndef CVTE_REG_LANGUAGE_DEFAULT
+#define CVTE_REG_LANGUAGE_DEFAULT			CVTE_DEF_LANGUAGE_ENGLISH
+#endif
+
+//Time Mode
+//CVTE_DEF_TIME_MODE_12H/CVTE_DEF_TIME_MODE_24H
+//时间模式
+#ifndef CVTE_REG_TIME_MODE_DEFAULT
+#define CVTE_REG_TIME_MODE_DEFAULT			CVTE_DEF_TIME_MODE_24H
+#endif
+
+//Drive Type
+//CVTE_DEF_DRIVE_TYPE_LEFT~CVTE_DEF_DRIVE_TYPE_RIGHT
+//驾驶模式
+#ifndef CVTE_REG_DRIVE_TYPE_DEFAULT
+#define CVTE_REG_DRIVE_TYPE_DEFAULT			CVTE_DEF_DRIVE_TYPE_LEFT
+#endif
+
+//Backlight
+//CVTE_DEF_BACKLIGHT_MIN~CVTE_DEF_BACKLIGHT_MAX
+//默认背光
+#ifndef CVTE_REG_BACKLIGHT_DEFAULT
+#define CVTE_REG_BACKLIGHT_DEFAULT			CVTE_DEF_BACKLIGHT_MAX
+#endif
+
+//DTV Video Color
+//CVTE_DEF_VIDEO_COLOR_TYPE_MIN~CVTE_DEF_VIDEO_COLOR_TYPE_MAX
+//DTV默认视频制式
+#ifndef CVTE_REG_DTV_COLOR_DEFAULT
+#define CVTE_REG_DTV_COLOR_DEFAULT			CVTE_DEF_VIDEO_COLOR_TYPE_NTSM_MJ
+#endif
+
+//DVD Video Color
+//CVTE_DEF_VIDEO_COLOR_TYPE_MIN~CVTE_DEF_VIDEO_COLOR_TYPE_MAX
+//DVD默认视频制式
+#ifndef CVTE_REG_DVD_COLOR_DEFAULT
+#define CVTE_REG_DVD_COLOR_DEFAULT			CVTE_DEF_VIDEO_COLOR_TYPE_NTSM_MJ
+#endif
+
+//Reverse Video Color
+//CVTE_DEF_VIDEO_COLOR_TYPE_MIN~CVTE_DEF_VIDEO_COLOR_TYPE_MAX
+//倒车默认视频制式
+#ifndef CVTE_REG_REARVIEW_COLOR_DEFAULT
+#define CVTE_REG_REARVIEW_COLOR_DEFAULT		CVTE_DEF_VIDEO_COLOR_TYPE_NTSM_MJ
+#endif
+
+//LCD GAMMA
+//默认GAMMA值
+#ifndef CVTE_REG_GAMMA_DEFAULT
+#define CVTE_REG_GAMMA_DEFAULT				130
+#endif
+
+//LED
+//0~255
+//Red
+//LED红色默认值
+#ifndef CVTE_REG_LED_R_DEFAULT
+#define CVTE_REG_LED_R_DEFAULT				255
+#endif
+//Green
+//LED绿色默认值
+#ifndef CVTE_REG_LED_G_DEFAULT
+#define CVTE_REG_LED_G_DEFAULT				255
+#endif
+//Blue
+//LED蓝色默认值
+#ifndef CVTE_REG_LED_B_DEFAULT
+#define CVTE_REG_LED_B_DEFAULT				255
+#endif
+
+//Auto Start Navi
+//CVTE_DISABLE/CVTE_ENABLE
+//自动打开导航功能开关
+#ifndef CVTE_REG_AUTO_START_NAVI_DEFAULT
+#define CVTE_REG_AUTO_START_NAVI_DEFAULT	CVTE_DISABLE
+#endif
+
+//Key Beep
+//CVTE_DISABLE/CVTE_ENABLE
+//默认打开beep音功能开关
+#ifndef CVTE_REG_KEEP_BEEP_DEFAULT
+#define CVTE_REG_KEEP_BEEP_DEFAULT			CVTE_ENABLE
+#endif
+
+//Reverse Volume Auto Adjustment
+//CVTE_DISABLE/CVTE_ENABLE
+//环绕立体声控制功能开关
+#ifndef CVTE_REG_REAR_VOL_CONTROL_DEFAULT
+#define CVTE_REG_REAR_VOL_CONTROL_DEFAULT	CVTE_ENABLE
+#endif
+
+//Display Blur Effect
+//CVTE_DISABLE/CVTE_ENABLE
+//模糊效果功能开关
+#ifndef CVTE_REG_BLUR_EFFECT_DEFAULT
+#define CVTE_REG_BLUR_EFFECT_DEFAULT		CVTE_DISABLE
+#endif
+
+//Led Anim Effect
+//CVTE_DISABLE/CVTE_ENABLE
+//LED动画效果功能开关
+#ifndef CVTE_REG_LED_ANIM_EFFECT_DEFAULT
+#define CVTE_REG_LED_ANIM_EFFECT_DEFAULT	CVTE_DISABLE
+#endif
+
+//Activate Factory Mode
+//CVTE_DISABLE/CVTE_ENABLE
+//工厂模式
+#ifndef CVTE_REG_FACTORY_MODE_DEFAULT
+#define CVTE_REG_FACTORY_MODE_DEFAULT		CVTE_DISABLE
+#endif
+
+//Snapshot Enable
+//CVTE_DISABLE/CVTE_ENABLE
+//快速启动
+#ifndef CVTE_REG_SNAPSHOT_ENABLE_DEFAULT
+#define CVTE_REG_SNAPSHOT_ENABLE_DEFAULT	CVTE_DISABLE
+#endif
+
+//DAB Enable
+//CVTE_DISABLE/CVTE_ENABLE
+//DAB功能开关
+#ifndef CVTE_REG_DAB_ENABLE_DEFAULT
+#define CVTE_REG_DAB_ENABLE_DEFAULT			CVTE_ENABLE
+#endif
+
+#ifndef CVTE_REG_DAB_ANT_POWER_ON_DEFAULT
+#define CVTE_REG_DAB_ANT_POWER_ON_DEFAULT	CVTE_ENABLE
+#endif
+
+#ifndef CVTE_REG_DAB_SERVICE_LINK_DEFAULT
+#define CVTE_REG_DAB_SERVICE_LINK_DEFAULT	CVTE_ENABLE
+#endif 
+
+#ifndef CVTE_REG_DAB_LBAND_DEFAULT
+#define CVTE_REG_DAB_LBAND_DEFAULT			CVTE_ENABLE
+#endif
+
+//DAB自动搜台
+#ifndef CVTE_REG_DAB_TA_DEFAULT
+#define CVTE_REG_DAB_TA_DEFAULT				CVTE_ENABLE
+#endif
+
+//DayMode & NightMode
+//LCD
+//LCD日间模式默认背光
+#ifndef CVTE_REG_LCD_DAYMODE_BRIGHTNESS_DEFAULT
+#define CVTE_REG_LCD_DAYMODE_BRIGHTNESS_DEFAULT		CVTE_DEF_DAYMODE_LCD_BRIGHTNESS_DEFAULT
+#endif
+
+//LCD夜间模式默认背光
+#ifndef CVTE_REG_LCD_NIGHTMODE_BRIGHTNESS_DEFAULT
+#define CVTE_REG_LCD_NIGHTMODE_BRIGHTNESS_DEFAULT	CVTE_DEF_NIGHTMODE_LCD_BRIGHTNESS_DEFAULT
+#endif
+
+//LED
+//LED日间模式默认背光
+#ifndef CVTE_REG_LED_DAYMODE_BRIGHTNESS_DEFAULT
+#define CVTE_REG_LED_DAYMODE_BRIGHTNESS_DEFAULT		CVTE_DEF_DAYMODE_LED_BRIGHTNESS_DEFAULT
+#endif
+
+//LED夜间模式默认背光
+#ifndef CVTE_REG_LED_NIGHTMODE_BRIGHTNESS_DEFAULT
+#define CVTE_REG_LED_NIGHTMODE_BRIGHTNESS_DEFAULT	CVTE_DEF_NIGHTMODE_LED_BRIGHTNESS_DEFAULT
+#endif 
+
+//Audio Media
+#ifndef CVTE_REG_AUDIO_VOLUME_MEDIA_DEFAULT
+#define CVTE_REG_AUDIO_VOLUME_MEDIA_DEFAULT			15
+#endif
+
+//Audio Phone
+//音频电话默认音量
+#ifndef CVTE_REG_AUDIO_VOLUME_PHONE_DEFAULT
+#define CVTE_REG_AUDIO_VOLUME_PHONE_DEFAULT			15
+#endif 
+
+//Audio Speech
+//音频语言默认音量
+#ifndef CVTE_REG_AUDIO_VOLUME_SPEECH_DEFAULT
+#define CVTE_REG_AUDIO_VOLUME_SPEECH_DEFAULT		15
+#endif 
+/***************************CVTE_DEF_XXX_VERSION*******************************/
+//release版本版本号
+#ifndef CVTE_DEF_RELEASE_VERSION_NUM
+#define CVTE_DEF_RELEASE_VERSION_NUM		1
+#endif
+
+//APP版本号
+#ifndef CVTE_DEF_APP_VERSION
+#define CVTE_DEF_APP_VERSION				"V1.7.10"
+#endif
+
+//APP版本号
+#define CVTE_DEF_APP_VERSION_STRING			"C"##StringifyExpansion(CUSTOMER_ID)##"_"##CVTE_DEF_APP_VERSION##"."##StringifyExpansion(CVTE_DEF_RELEASE_VERSION_NUM)
+#define CVTE_DEF_APP_VERSION_WIDE_STRING	_T("C")##_T(StringifyExpansion(CUSTOMER_ID))##_T("_")##_T(CVTE_DEF_APP_VERSION)##_T(".")##_T(StringifyExpansion(CVTE_DEF_RELEASE_VERSION_NUM))
+
+//硬件版本号
+#ifndef CVTE_DEF_HARDWARE_VERSION
+#define CVTE_DEF_HARDWARE_VERSION			"V1.3.0"
+#endif
+
+//硬件版本号
+#define CVTE_DEF_HARDWARE_VERSION_STRING		"H"##StringifyExpansion(CUSTOMER_ID)##"_"##CVTE_DEF_HARDWARE_VERSION
+#define CVTE_DEF_HARDWARE_VERSION_WIDE_STRING	_T("H")##_T(StringifyExpansion(CVTE_MODEL_TYPE))##_T("_")##_T(CVTE_DEF_HARDWARE_VERSION)
+
+/******************************************************************************/
+
+//carplay GPS串口号
+#ifndef CVTE_DEF_CARPLAY_GPS_UART_PORT
+#define CVTE_DEF_CARPLAY_GPS_UART_PORT		6
+#endif
+
+//android auto GPS串口号
+#ifndef CVTE_DEF_ANDROIDAUTO_GPS_UART_PORT
+#define CVTE_DEF_ANDROIDAUTO_GPS_UART_PORT	6
+#endif
+
+//音频解码采样率
+#ifndef CVTE_DEF_AUDIO_CODEC_SAMPLERATE_44100
+#define CVTE_DEF_AUDIO_CODEC_SAMPLERATE_44100	0
+#endif
+
+#endif
+
+

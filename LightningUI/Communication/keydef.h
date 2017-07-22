@@ -1,0 +1,175 @@
+#ifndef __KEYDEF_H__
+#define __KEYDEF_H__
+
+
+//*************************************************//
+//*************  THE  KEY  FROM  ARM  ****************//
+//*************************************************//
+
+//NUMBER  KEY
+#define	_ARM_NUMBER_KEY					0X00
+//POWER  KEY
+#define	_ARM_POWER_KEY					0X01
+//DIRECT  SOURCE  KEY
+#define	_ARM_AUDIO_SW_KEY				0X02
+//MENU/SOURCE  CHANGE  KEY
+#define	_ARM_VIDEO_SW_KEY			0X03
+//PIP  SOURCE  KEY
+#define	_ARM_PIP_SOURCE_KEY				0X04
+//0X05~0X07		RESERVE
+
+//SOURCE  ON/OFF  KEY
+#define	_ARM_RADIO_ON_OFF_KEY			0X08
+#define	_ARM_USB_ON_OFF_KEY				0X09
+#define	_ARM_SD_ON_OFF_KEY				0X0A
+#define	_ARM_DVD_ON_OFF_KEY				0X0B
+#define	_ARM_IPOD_ON_OFF_KEY				0X0C
+#define	_ARM_TV_ON_OFF_KEY				0X0D
+#define	_ARM_NAVI_ON_OFF_KEY				0X0E
+#define	_ARM_AUX1_ON_OFF_KEY				0X0F
+#define	_ARM_AUX2_ON_OFF_KEY				0X10
+#define	_ARM_BLUETOOTH_ON_OFF_KEY		0X11
+#define	_ARM_RADIO_FM_STA_KEY			0X12
+#define	_ARM_RADIO_AM_STA_KEY			0X13
+#define	_ARM_RADIO_STA_SAVE_KEY			0X14
+
+//SYSTEM  TIME  KEY
+#define	_ARM_TIME_YEAR						0X15
+#define	_ARM_TIME_MONTH					0X16
+#define	_ARM_TIME_DAY						0X17
+#define	_ARM_TIME_ON_OFF_KEY				0X18
+#define	_ARM_TIME_HOUR					0X19
+#define	_ARM_TIME_MINUS					0X1A
+#define	_ARM_TIME_SECOND					0X1B
+//SYSTEM  VERSION KEY
+#define	_ARM_VERSION_ON_OFF_KEY			0X1C
+//SYSTEM  SET  KEY
+#define	_ARM_BEEP_SEL_KEY					0X1D
+#define	_ARM_REVERSE_SEL_KEY				0X1E
+#define	_ARM_REGION_SEL_KEY				0X1F
+#define	_ARM_GOTO_SEL_KEY					0X20
+#define	_ARM_AMS_SEL_KEY					0X21
+#define	_ARM_ST_SEL_KEY					0X22
+#define	_ARM_LOC_SEL_KEY					0X23
+#define	_ARM_AUDIO_SUBWOOFER_FREQ			0X24
+#define	_ARM_BREAKE_TEST_KEY				0X25
+#define	_ARM_LAMP_CONTROL_KEY			0X26
+//0X27~0X29		RESERVE
+
+//TFT  KEY
+#define	_ARM_TFT_VOL_GAIN_OFFSET		0X28
+#define	_ARM_MUTE_AMP					0X29
+#define	_ARM_DISABLE_INTERNAL_AMP 0X2A
+//AUDIO  KEY
+#define	_ARM_MUTE_ALL						0X2B
+#define	_ARM_LOUDNESS_KEY					0X2C
+#define	_ARM_EQ_KEY						0X2D
+#define	_ARM_MID_KEY					0X2E
+#define	_ARM_VOLUME_KEY					0X2F
+#define	_ARM_BALANCE_KEY					0X30
+#define	_ARM_FAD_KEY						0X31
+#define	_ARM_BASS_KEY						0X32
+#define	_ARM_TREBLE_KEY					0X33
+#define	_ARM_SUBWOOFER_KEY				0X34
+
+//RADIO  KEY
+#define	_ARM_RADIO_FM_STOP_LEVEL			0X35
+#define	_ARM_RADIO_AM_STOP_LEVEL			0X36
+#define	_ARM_RADIO_RESET_STOP_LEVEL		0X37
+#define	_ARM_RADIO_SAVE_STATION			0X38
+#define	_ARM_RADIO_CHANNEL_SEL_KEY		0X39
+#define	_ARM_RADIO_BAND_SEL_KEY			0X3A
+#define	_ARM_RADIO_AMS_KEY				0X3B
+#define	_ARM_RADIO_SEARCH_KEY			0X3C
+#define	_ARM_RADIO_SEEK_KEY				0X3D
+#define	_ARM_RADIO_FREQ_H_KEY			0X3E
+#define	_ARM_RADIO_FREQ_L_KEY			0X3F
+#define	_ARM_RADIO_PLAY_STATE			0X40
+
+//0X40~0X40		RESERVE
+
+#define	_ARM_RADIO_TUNE_MODE						0X41
+#define	_ARM_RADIO_QUERY_SIGNAL_STATUS		0X42
+#define	_ARM_RADIO_QUERY_SIGNAL_DATA			0X43
+
+#define	_ARM_REG_ON_OFF_KEY				0X45
+#define	_ARM_PTY_SEL_KEY								0X46
+#define	_ARM_RADIO_QUERY_STORAGE_CNT					0X47
+#define	_ARM_RADIO_QUERY_FREQ						0X48
+#define	_ARM_RADIO_QUERY_RDS_BLOCK_DATA						0X49
+#define	_ARM_RADIO_QUERY_QUALITY										0X4A
+#define	_ARM_RADIO_QUERY_RDS_STATUS								0X4B
+
+//DVD  KEY
+#define	_ARM_DVD_OPERATION_KEY			0X4C
+
+//ECON
+#define	_ARM_ECON_SET							0X4D
+//0X4D~0X4F		RESERVE
+
+//TV  KEY
+#define	_ARM_TV_X_KEY						0X4E
+#define	_ARM_TV_Y_KEY						0X4F
+#define	_ARM_TV_SEARCH_KEY				0X50
+#define	_ARM_TV_SEEK_KEY					0X51
+#define	_ARM_TV_ANT_SEL_KEY				0X52
+#define	_ARM_TV_CHANNEL_SEL_KEY			0X53
+#define	_ARM_TV_SOUND_SEL_KEY			0X54
+#define	_ARM_TV_MODE_SEL_KEY				0X55
+#define	_ARM_TV_BAND_SEL_KEY				0X56
+#define	_ARM_TV_SAVE_KEY					0X57
+#define _ARM_MIX_WAV_KEY                0X58
+#define _ARM_MIX_VOLUME_KEY             0X59
+#define _ARM_TV_PREVNEXT_KEY            0X5A
+
+#define _ARM_CAMERA_POWER_KEY           0x5B
+
+#define _ARM_DAB_ANT_POWER_KEY           0x5D
+#define _ARM_SET_REARVIEW_DELAY           0x5E
+#define _ARM_TV_X_KEY_UP				0x5F
+#define _ARM_TV_Y_KEY_UP				0x60
+
+#define _ARM_SET_POWEROFF_DELAY           0x61
+
+//IPOD  KEY
+#define	_ARM_IPOD_NUMBER_KEY				0X62
+#define	_ARM_IPOD_MEDIA_KEY				0X63
+#define	_ARM_IPOD_STATE_KEY				0X64
+//0X65~0X67		RESERVE
+
+//VIDEO  KEY
+#define	_ARM_VIDEO_BRIGHT_KEY				0X68
+#define	_ARM_VIDEO_SHARP_KEY				0X69
+#define	_ARM_VIDEO_CONTRAST_KEY				0X6A
+#define	_ARM_VIDEO_SAT_U_KEY			0X6B
+#define	_ARM_VIDEO_SAT_V_KEY			0X6C
+#define	_ARM_VIDEO_HUE_KEY				0X6D
+#define	_ARM_VIDEO_SAVE_KEY				0X6E
+
+//
+#define	_ARM_KEY_BEEP_KEY							0X75
+
+
+//
+#define _ARM_CHANGE_STW_KEY				0XB7
+#define _ARM_STW_VALUE_KEY				0XB8
+#define _ARM_BACKLIGHT_CONTROL_KEY      0XB9
+#define _ARM_STW_CMD_KEY            	0XBA
+//update
+#define _ARM_UPDATE_STATUS					0XFF
+
+
+
+//param:
+#define  ARM_SUB_OPERATION			0XE0
+#define  ARM_ADD_OPERATION			0XE1
+
+//Entensible cmd
+#define _ARM_EXTEN_TAPE_SIDE		0x10
+#define _ARM_EXTEN_RDS_PS_INFOR		0x11
+#define _ARM_EXTEN_RDS_INFOR_VALID	0x12
+
+
+#endif
+
+

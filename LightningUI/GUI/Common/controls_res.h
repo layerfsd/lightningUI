@@ -1,0 +1,1251 @@
+
+#pragma once
+
+#define MAKE_PANEL_ID(a,b)				DWORD(((a)<<16)+(WORD(b)))
+#define GET_PANEL_CLASS_ID(a)				HIWORD(a)
+#define GET_PANEL_PAGE_ID(a)				LOWORD(a)
+
+//UI Class:
+enum UI_CLASS
+{
+	UI_CLASS_NULL=0,
+	UI_CLASS_HOME,
+	UI_CLASS_MEDIA,
+	UI_CLASS_RADIO,
+	UI_CLASS_BT,
+	UI_CLASS_TV,						//5
+	UI_CLASS_DISK,
+	UI_CLASS_NAVI,
+	UI_CLASS_MHL,
+	UI_CLASS_VEHICLEINFO,
+	UI_CLASS_SETTING,				//10
+	UI_CLASS_PHONELINK,
+	UI_CLASS_AUX,
+	UI_CLASS_IPOD,
+	UI_CLASS_CARPLAY,
+	UI_CLASS_SR,						//15
+	UI_CLASS_IDLE,
+	UI_CLASS_IMAGE,
+	UI_CLASS_EASYCONNECTED,
+	UI_CLASS_UPDATE_ARM,
+	UI_CLASS_REARVIEW,					// 20
+	UI_CLASS_DAB,
+	UI_CLASS_WEBLINK,
+	UI_CLASS_ANDROID_AUTO,
+	UI_CLASS_NAVI_SIMULATE,
+	UI_CLASS_MAX_VALID,
+
+	UI_CLASS_NOTIFICATION,				// 25
+	UI_CLASS_EXPLORER,
+	UI_CLASS_KEYBOARD,	
+	UI_CLASS_APPMENU,
+	UI_CLASS_DEVMGR,
+	UI_CLASS_POWERSTATE,				// 30
+	UI_CLASS_UPDATE,
+	UI_CLASS_DEBUG,           // 30
+	UI_CLASS_TOUCH,
+	UI_CLASS_WARNING,
+	UI_CLASS_SETMAC,
+	UI_CLASS_ISDB,
+};
+
+enum PAGE_HOME
+{
+	PAGE_HOME_WRAPPER=-1,
+	PAGE_HOME_WIDGET=0,
+};
+
+enum PAGE_MEDIA
+{
+	PAGE_MEDIA_WRAPPER=-1,
+	PAGE_MEDIA_MAIN=0,
+	PAGE_MEDIA_LIBRARY,
+	PAGE_MEDIA_DEVICE,
+	PAGE_MEDIA_ALBUMART,
+	PAGE_MEDIA_ALBUM_DETAIL
+};
+enum PAGE_RADIO
+{
+	PAGE_RADIO_WRAPPER=-1,
+	PAGE_RADIO_MAIN=0,
+	PAGE_RADIO_LIBRARY,
+	PAGE_RADIO_SETTING,
+	PAGE_RADIO_REGION,
+	PAGE_RADIO_RDS,
+	PAGE_RADIO_PTY
+};
+
+enum PAGE_DISK
+{
+	PAGE_DISK_WRAPPER=-1,
+	PAGE_DISK_MAIN=0,
+	PAGE_DISK_LIBRARY,
+	PAGE_DISK_SETTINGS,
+	PAGE_DISK_CD_KEYBOARD,
+	PAGE_DISK_DVD_KEYBOARD,
+	PAGE_DISK_FUNCTION_SETTINGS,
+	PAGE_DISK_LANGUAGE,
+	PAGE_DISK_VIDEO_SHAPE_CONFIG,
+	PAGE_DISK_TV_SYSTEM_CONFIG,
+	PAGE_DISK_DVD_CHAPTER_LIBRARY,
+};
+
+enum PAGE_MHL
+{
+	PAGE_MHL_WRAPPER=-1,
+	PAGE_MHL_MAIN=0,
+	PAGE_MHL_SETTING
+};
+enum PAGE_IMAGE
+{
+	PAGE_IMAGE_WRAPPER=-1,
+	PAGE_IMAGE_MAIN=0,
+	PAGE_IMAGE_LIBRARY
+};
+enum PAGE_NAVI
+{
+	PAGE_NAVI_WRAPPER=-1,
+	PAGE_NAVI_MAIN=0,
+	PAGE_NAVI_SETTING
+};
+
+enum PAGE_PHONELINK
+{
+	PAGE_PHONELINK_WRAPPER=-1,
+// 	PAGE_PHONELINK_MAIN=0,
+// 	PAGE_PHONELINK_SETTING
+};
+
+enum PAGE_EASYCONNECTED
+{
+	PAGE_EASYCONNECTED_WRAPPER=-1,
+// 	PAGE_EASYCONNECTED_MAIN=0
+};
+
+enum PAGE_WEBLINK
+{
+	PAGE_WEBLINK_WRAPPER=-1,
+	// 	PAGE_WEBLINK_MAIN=0
+};
+
+enum PAGE_ANDROID_AUTO
+{
+	PAGE_ANDROID_AUTO_WRAPPER=-1,
+	// 	PAGE_ANDROID_AUTO_MAIN=0
+};
+
+enum PAGE_CARPLAY
+{
+	PAGE_CARPLAY_WRAPPER=-1,
+// 	PAGE_CARPLAY_MAIN=0
+};
+enum PAGE_TV
+{
+	PAGE_TV_WRAPPER=-1,
+// 	PAGE_TV_MAIN=0,
+// 	PAGE_TV_LIBRARY,
+// 	PAGE_TV_SETTING
+};
+enum PAGE_AUX
+{
+	PAGE_AUX_WRAPPER=-1,
+// 	PAGE_AUX_MAIN=0
+};
+
+enum PAGE_ISDB
+{
+	PAGE_ISDB_WRAPPER=-1,
+// 	PAGE_AUX_MAIN=0
+};
+
+enum PAGE_BT
+{
+	PAGE_BT_WRAPPER=-1,
+	PAGE_BT_MAIN=0,
+	PAGE_BT_TALKING,
+	PAGE_BT_A2DP,
+	PAGE_BT_WARNING
+};
+enum PAGE_IPOD
+{
+	PAGE_IPOD_WRAPPER=-1,
+	PAGE_IPOD_MAIN=0,
+	PAGE_IPOD_LIBRARY
+};
+
+enum PAGE_SETTINGS
+{
+	PAGE_SETTINGS_WRAPPER=-1,
+	PAGE_SETTINGS_MAIN=0,
+	PAGE_SETTINGS_GENERAL,
+	PAGE_SETTINGS_AUDIO,
+	PAGE_SETTINGS_DISPLAY,
+	PAGE_SETTINGS_RADIO,
+	PAGE_SETTINGS_BLUETOOTH,
+	PAGE_SETTINGS_LANGUAGE,
+	PAGE_SETTINGS_WIRELESS,
+	PAGE_SETTINGS_TIME,
+	PAGE_SETTINGS_DATE,
+	PAGE_SETTINGS_NAVIGATION,
+	PAGE_SETTINGS_ABOUT,
+	PAGE_SETTINGS_BACKGROUND,
+	PAGE_SETTINGS_ADVANCED,
+	PAGE_SETTINGS_TIMEZONE,
+	PAGE_SETTINGS_RDS_PTY,
+	PAGE_SETTINGS_FACTORY,
+	PAGE_SETTINGS_PASSWORD,
+	PAGE_SETTINGS_GESTURE,
+	PAGE_SETTINGS_IPERF_SERVER,
+	PAGE_SETTINGS_IPERF_CLIENT,
+	PAGE_SETTINGS_IPERF_TCP_CLIENT,
+	PAGE_SETTINGS_IPERF_UDP_CLIENT,
+	PAGE_SETTINGS_CONNECT_TEST,
+	PAGE_SETTINGS_DAB,
+	PAGE_SETTINGS_RADIO_REGION,
+	PAGE_SETTINGS_ANDROIDTYPE,
+};
+
+enum PAGE_VEHICLE
+{
+	PAGE_VEHICLE_WRAPPER=-1,
+	PAGE_VEHICLE_DRIVE=0,
+	PAGE_VEHICLE_AC,
+	PAGE_VEHICLE_BODY,
+	PAGE_VEHICLE_RADAR
+};
+
+enum PAGE_SR
+{
+	PAGE_SR_WRAPPER=-1,
+	PAGE_SR_MAIN=0
+};
+
+enum PAGE_REAVIEW
+{
+	PAGE_REAVIEW_WRAPPER=-1,
+	PAGE_REAVIEW_MAIN=0,
+	PAGE_REAVIEW_SETTING
+};
+
+enum PAGE_TOUCH
+{
+    PAGE_TOUCH_WRAPPER=-1,
+    PAGE_TOUCH_MAIN=0
+};
+
+enum PAGE_UPDATE
+{
+    PAGE_UPDATE_WRAPPER=-1,
+    PAGE_UPDATE_MAIN=0
+};
+
+enum PAGE_DAB
+{
+    PAGE_DAB_WRAPPER=-1,
+    PAGE_DAB_MAIN=0,
+    PAGE_DAB_LIBRARY
+};
+
+enum PAGE_ACCON_WARNING
+{
+	PAGE_ACCON_WARNING_WRAPPER=-1,
+	PAGE_ACCON_WARNING_MAIN=0
+};
+//controls:
+
+#define IDC_OK															20
+#define IDC_CANCEL													21
+
+#define IDC_TAG_BACKGROUND								    50
+
+//Home panel:
+#define IDC_WIDGET_MEDIA									60
+#define IDC_WIDGET_RADIO									    61
+#define IDC_WIDGET_PHONE									62
+#define IDC_WIDGET_NAVI										63
+#define IDC_WIDGET_PHONELINK							64
+#define IDC_WIDGET_VEHICLEINFO							65
+#define IDC_WIDGET_DISK										66
+#define IDC_WIDGET_MHL										67
+#define IDC_WIDGET_SETTING									68
+#define IDC_WIDGET_TV											69
+#define IDC_WIDGET_IPOD										70
+#define IDC_WIDGET_CARPLAY									71
+#define IDC_WIDGET_SD											72
+#define IDC_WIDGET_USB											73
+#define IDC_WIDGET_A2DP										74
+#define IDC_WIDGET_EASYCONNECTED					75
+#define IDC_WIDGET_AUX										76
+#define IDC_WIDGET_CAMERA                                 77
+#define IDC_WIDGET_DAB                                  78
+#define IDC_WIDGET_DSP                                  79
+#define IDC_WIDGET_ANDROID_AUTO							80
+#define IDC_WIDGET_WEBLINK								81
+#define IDC_WIDGET_ISDB								82
+
+//Media core
+#define IDC_MEDIA_TYPE										111
+#define IDC_MEDIA_BTN_NOWPLAYING						    112
+#define IDC_MEDIA_BTN_USB1								    113
+#define IDC_MEDIA_BTN_USB2								    114
+#define IDC_MEDIA_BTN_SD1								    115
+#define IDC_MEDIA_BTN_SD2								    116
+#define IDC_MEDIA_BTN_IPOD								    117
+#define IDC_MEDIA_BTN_A2DP								    118
+#define IDC_MEDIA_BTN_DISK								    119
+
+#define IDC_MEDIA_BTN_HOME								    120
+#define IDC_MEDIA_BTN_PLAY								    121
+#define IDC_MEDIA_BTN_PREV								    122
+#define IDC_MEDIA_BTN_NEXT								    123
+#define IDC_MEDIA_BTN_LIBRARY							    124
+#define IDC_MEDIA_BOX_LIBRARY							    125
+#define IDC_MEDIA_BOX_DEVICE							    126
+#define IDC_MEDIA_BTN_DEVICE							    127
+#define IDC_MEDIA_SLI_PROGRESS								128
+#define IDC_MEDIA_TAG_ARTIST							    129
+#define IDC_MEDIA_TAG_TITLE								    130
+#define IDC_MEDIA_BTN_LIBRARY_BACK						    131
+#define IDC_MEDIA_BTN_LIBRARY_NEXT						    132
+#define IDC_MEDIA_ICON_SD								    133
+#define IDC_MEDIA_ICON_USB								    134
+#define IDC_MEDIA_ICON_IPOD								    135
+#define IDC_MEDIA_ICON_LINEIN							    136
+#define IDC_MEDIA_ICON_BT								    137
+#define IDC_MEDIA_TAG_ALBUMART							    138
+#define IDC_MEDIA_BTN_REPEATALL							    139
+#define IDC_MEDIA_BTN_REPEATONE							    140
+#define IDC_MEDIA_BTN_SHUFFLE								141
+#define IDC_MEDIA_TAG_NOWPLAYINGTITLE				        142
+#define IDC_MEDIA_TAG_PLAYEDTIME							143
+#define IDC_MEDIA_TAG_REMAINTIME						    144
+#define IDC_MEDIA_BAR_LIBRARY_TITLE						    145
+#define IDC_MEDIA_ICON_TRACK							    146
+#define IDC_MEDIA_BTN_LIBRARY_PLAYALL						147
+#define IDC_MEDIA_TAG_ALBUM									148
+#define IDC_MEDIA_TAG_GENRE								    149
+#define IDC_MEDIA_TAG_YEAR									150
+#define IDC_MEDIA_TAG_CURRENTDEVICE					        151
+#define IDC_MEDIA_BAR_DEVICE_TITLE						    152
+#define IDC_MEDIA_BTN_SPEECH								153
+#define IDC_MEDIA_BTN_LIBRARY_PREVPAGE						154
+#define IDC_MEDIA_BTN_LIBRARY_NEXTPAGE						155
+#define IDC_MEDIA_ICON_ARTIST							    156
+#define IDC_MEDIA_ICON_ALBUM							    157
+#define IDC_MEDIA_ICON_GENRE							    158
+#define IDC_MEDIA_ICON_EXPLORER								159
+#define IDC_MEDIA_ICON_COMPOSER							    160
+#define IDC_MEDIA_ICON_PODCAST								161
+#define IDC_MEDIA_ICON_NOWPLAYING						    162
+#define IDC_MEDIA_ICON_FOLDER							    163
+#define IDC_MEDIA_ICON_PLAYLIST								164
+#define IDC_MEDIA_BTN_PAUSE								    165
+#define IDC_MEDIA_TAG_ALBUMART0								166
+#define IDC_MEDIA_TAG_ALBUMART1								167
+#define IDC_MEDIA_TAG_ALBUMART2								168
+#define IDC_MEDIA_TAG_ALBUMART3								169
+#define IDC_MEDIA_TAG_ALBUMART4								170
+#define IDC_MEDIA_TAG_ALBUMART5								171
+#define IDC_MEDIA_TAG_ALBUMART6								172
+#define IDC_MEDIA_TAG_ALBUMART7								173
+#define IDC_MEDIA_BTN_ALBUMART_PREVPAGE						174
+#define IDC_MEDIA_BTN_ALBUMART_NEXTPAGE						175
+#define IDC_MEDIA_BTN_ALBUMART_PLAYALL						176
+#define IDC_MEDIA_BTN_ALBUMART_BACK						    177
+#define IDC_MEDIA_BOX_ALBUMART_DETAIL					    178
+#define IDC_MEDIA_TAG_ALBUMART_TITLE					    179
+#define IDC_MEDIA_TAG_ALBUMART_TITLE0					    180
+#define IDC_MEDIA_TAG_ALBUMART_TITLE1					    181
+#define IDC_MEDIA_TAG_ALBUMART_TITLE2					    182
+#define IDC_MEDIA_TAG_ALBUMART_TITLE3				        183
+#define IDC_MEDIA_TAG_ALBUMART_TITLE4					    184
+#define IDC_MEDIA_TAG_ALBUMART_TITLE5					    185
+#define IDC_MEDIA_TAG_ALBUMART_TITLE6					    186
+#define IDC_MEDIA_TAG_ALBUMART_TITLE7					    187
+#define IDC_MEDIA_BTN_STOP								    188
+#define IDC_MEDIA_BTN_FF								    189
+#define IDC_MEDIA_BTN_RW								    190
+#define IDC_MEDIA_BTN_REFRESH							    191
+#define IDC_MEDIA_BTN_SETTINS							    192
+#define IDC_MEDIA_BTN_RETURN							    193
+#define IDC_MEDIA_BTN_PLAYMODE							    194
+
+#define IDM_MEDIA_RELEASEBUS								195
+#define IDM_MEDIA_ENTER									    196
+#define IDM_MEDIA_QUIT									    197
+#define IDM_MEDIA_PAUSE									    198
+#define IDM_MEDIA_RESUME								    199
+
+#define IDC_MEDIA_BOX_SEARCH_RESULT				    200
+#define IDC_MEDIA_BOX_EXPLORER							    201
+
+#define IDC_MEDIA_BTN_CATALOG_AUDIO				            202
+#define IDC_MEDIA_BTN_CATALOG_VIDEO				            203
+#define IDC_MEDIA_BTN_CATALOG_ARTIST				        204
+#define IDC_MEDIA_BTN_SEARCH								205
+#define IDC_MEDIA_BTN_BROWSE_MODE				            206
+#define IDC_MEDIA_TAG_MEDIATYPE						        207
+#define IDC_MEDIA_BTN_CATALOG_IMAGE				            208
+#define IDC_MEDIA_BAR_PLAYING_FLAG								209
+
+//
+#define IDC_HOME_BUTTON_STATUS								220
+#define IDC_HOME_PAGE_SELECT1								221
+#define IDC_HOME_PAGE_SELECT2								222
+#define IDC_HOME_PAGE_SELECT3								223
+#define IDC_HOME_PAGE_STATUS_TIME							224
+
+//Radio core
+#define IDC_RADIO_BTN_HOME									300
+#define IDC_RADIO_TAG_CURFREQUENCY					        301
+#define IDC_RADIO_BTN_FREQUENCY1						    302
+#define IDC_RADIO_BTN_FREQUENCY2						    303
+#define IDC_RADIO_BTN_FREQUENCY3						    304
+#define IDC_RADIO_BTN_FREQUENCY4						    305
+#define IDC_RADIO_BTN_FREQUENCY5						    306
+#define IDC_RADIO_BTN_FREQUENCY6						    307
+#define IDC_RADIO_BTN_SEARCH								308
+#define IDC_RADIO_BTN_SEEKFORWARD						    309
+#define IDC_RADIO_BTN_SEEKBACKWARD					        310
+#define IDC_RADIO_BTN_TUNEFORWARD					        311
+#define IDC_RADIO_BTN_TUNEBACKWARD					        312
+#define IDC_RADIO_BTN_BAND_FM							    313
+#define IDC_RADIO_BTN_AMS							        314
+#define IDC_RADIO_BTN_BAND_AM						        316
+#define IDC_RADIO_TAG_RADIO									317
+#define IDC_RADIO_BTN_NEXTLIST								318
+#define IDC_RADIO_TAG_BAND_TITLE							319
+#define IDC_RADIO_TAG_SIGNAL							    320
+#define IDC_RADIO_TAG_FREQ_UNIT							    321
+#define IDC_RADIO_SLI_SIGNAL							    322
+#define IDC_RADIO_BOX_SETTING_RDS						    323
+#define IDC_RADIO_BOX_SETTING_PTY						    324
+#define IDC_RADIO_BOX_SETTING_REGION					    325
+#define IDC_RADIO_BTN_RETURN								326
+#define IDC_RADIO_TAG_STORE_INDEX5						    327
+#define IDC_RADIO_TAG_STORE_INDEX6						    328
+#define IDC_RADIO_BTN_SETTING								329
+#define IDC_RADIO_BOX_SETTING_ROOT						    330
+#define IDC_RADIO_SLI_SEEK_QUALITY						    331
+#define IDC_RADIO_BTN_REGION_SEL							332
+#define IDC_RADIO_BOX_REGION								333
+#define IDC_RADIO_TAG_RADIO_TEXT							334
+#define IDC_RADIO_TAG_RADIO_PROGRAMTYPE			            335
+#define IDC_RADIO_BTN_RDS_SEL								336
+#define IDC_RADIO_SLI_AF								    337
+#define IDC_RADIO_SLI_TA								    338
+#define IDC_RADIO_BTN_PTY_SEL								339
+#define IDC_RADIO_SLI_ENABLE_RDS							340
+#define IDC_RADIO_SLI_ENABLE_PTY							341
+#define IDC_RADIO_TAG_ST_MONO								342
+#define IDC_RADIO_SLI_LOCAL								    343
+#define IDC_RADIO_BTN_AUDIO_SEL							    344
+#define IDC_RADIO_TAG_STATION_NAME					        345
+#define IDC_RADIO_BTN_POWERON								346
+#define IDC_RADIO_BTN_FAVORITE								347
+#define IDC_RADIO_BTN_LIBRARY							    348
+#define IDC_RADIO_BOX_MENU									349
+#define IDC_RADIO_BOX_FM								    350
+#define IDC_RADIO_BOX_AM								    351
+#define IDC_RADIO_BOX_FAVORITE								352
+#define IDC_RADIO_BTN_NOWPLAYING						    353
+#define IDC_RADIO_BTN_POWEROFF								354
+#define IDC_RADIO_BTN_REGION_EUROPE						    355
+#define IDC_RADIO_BTN_REGION_USA						    356
+#define IDC_RADIO_BTN_REGION_EASTERN_EUROPE		            357
+#define IDC_RADIO_BTN_REGION_JAPAN							358
+#define IDC_RADIO_SLI_FM_STOP_LEVEL							359
+#define IDC_RADIO_SLI_AM_STOP_LEVEL							360
+#define IDC_RADIO_BTN_RESET_STOP_LEVEL					    361
+#define IDC_RADIO_BTN_QUICK_FAV0								    362
+#define IDC_RADIO_BTN_QUICK_FAV1								    363
+#define IDC_RADIO_BTN_QUICK_FAV2								    364
+#define IDC_RADIO_BTN_QUICK_FAV3								    365
+#define IDC_RADIO_BTN_QUICK_FAV4								    366
+#define IDC_RADIO_BTN_QUICK_FAV5								    367
+#define IDC_RADIO_BTN_QUICK_FAV6								    368
+#define IDC_RADIO_BTN_QUICK_FAV7								    369
+#define IDC_RADIO_BTN_QUICK_FAV8								    370
+#define IDC_RADIO_BTN_QUICK_FAV9								    371
+#define IDC_RADIO_BTN_QUICK_FAV10								372
+#define IDC_RADIO_BTN_REGION_EURO_EASTEURO		        373
+#define IDC_RADIO_BTN_DAB										        374
+#define IDC_RADIO_BTN_REGION								375
+//#define IDC_RADIO_BTN_REGION_KOREA                      375
+//#define IDC_RADIO_BTN_REGION_SPREAD                     376
+//#define IDC_RADIO_BTN_REGION_SOUTHAMERICA               377
+#define IDC_RADIO_BTN_AF_STOP_LEVEL						378
+#define IDC_RADIO_TAG_PS_INFO						379
+
+
+#define IDM_RADIO_RELEASEBUS								380
+#define IDM_RADIO_REQUESTBUS								381
+#define IDM_RADIO_ENTER									    382
+#define IDM_RADIO_QUIT									    383
+#define IDM_RADIO_SET_FREQUENCY							    384
+#define IDM_RADIO_SELECT_PRESET							    385
+#define IDM_RADIO_NEXT_CHANNEL							    386
+#define IDM_RADIO_PREV_CHANNEL							    387
+#define IDM_RADIO_RDS_PARA_CHANGE						    388
+#define IDM_RADIO_RADIO_TEXT_CHANGE					        389
+#define IDM_RADIO_WIDGET_TYPE								390
+#define IDM_RADIO_BAND_TYPE									391
+
+//DAB
+#define IDC_DAB_BTN_HOME                                  400
+#define IDC_DAB_BTN_SEARCH                                401
+
+#define IDC_DAB_BTN_SETTING                              402
+#define IDC_DAB_BTN_LIBRARY                               403
+#define IDC_DAB_BOX_LIST                                404
+#define IDC_DAB_BTN_SEEK_PREVIOUS                        405
+#define IDC_DAB_BTN_SEEK_NEXT                            406
+#define IDC_DAB_BTN_TUNE_PREVIOUS                        407
+#define IDC_DAB_BTN_TUNE_NEXT                         408
+#define IDC_DAB_BTN_LBAND_ONOFF                         409
+#define IDC_DAB_BTN_TA_ONOFF                            410
+#define IDC_DAB_BTN_SEARCH_TYPE_CHANGE                 411
+#define IDC_DAB_BTN_SCAN_PLAY                           412
+#define IDC_DAB_BTN_BAND_CHANGE                         413
+#define IDC_DAB_BTN_SRVLINK                             414
+#define IDC_DAB_BTN_PTY_TYPE_CHANGE                     415
+#define IDC_DAB_BTN_PTY_SEARCH                          416
+#define IDC_DAB_BTN_FAVORITE                            417
+#define IDC_DAB_BTN_SWITCH_FMAM                         418
+
+#define IDC_DAB_LIB_BTN_HOME                            420
+#define IDC_DAB_LIB_BTN_NOWPLAYING                     421
+#define IDC_DAB_LIB_BTN_RETURN                          422
+#define IDC_DAB_LIB_BTN_CHANGE_QUERYMODE               423
+#define IDC_DAB_LIB_BOX_LIST                            424
+#define IDC_DAB_LIB_SERVICE_ITEM                       425
+#define IDC_DAB_LIB_PTY_LIST_ITEM                      426
+#define IDC_DAB_LIB_PTY_SERVICE_LIST_ITEM        	   427
+#define IDC_DAB_LIB_ENSEMBLE_ITEM                       428
+#define IDC_DAB_LIB_ENSEMBLE_SERVICE_LIST_ITEM          429
+
+#if(CVTE_DEF_UI_STYLE == CVTE_UI_STYLE_ALDINET)
+#define IDC_DAB_BTN_BAND_FM								430
+#define IDC_DAB_BTN_BAND_AM								431
+#define	IDC_DAB_BTN_DAB									432
+#else
+#define IDC_DAB_BTN_PRESET1			                       430
+#define IDC_DAB_BTN_PRESET2			                       431
+#define IDC_DAB_BTN_PRESET3			                       432
+#define IDC_DAB_BTN_PRESET4			                       433
+#define IDC_DAB_BTN_PRESET5			                       434
+#define IDC_DAB_BTN_PRESET6			                       435
+#endif
+
+#define IDC_DAB_SLI_ENABLE_TA									436
+#define IDC_DAB_SLI_ENABLE_LBAND							437
+#define IDC_DAB_SLI_ENABLE_SERVICELINK					438
+#define IDC_DAB_SLI_ENABLE_ANTENNAPOWER			439
+
+//BT Core
+#define IDC_BT_BTN_HOME									    500
+#define IDC_BT_BTN_DEVICEADD_QUIT						    501
+#define IDC_BT_BTN_FINDME								    503
+#define IDC_BT_BTN_FINDDEVICE								504
+#define IDC_BT_BOX_FOUNDDEVICE							    505
+#define IDC_BT_BTN_CANCELSEARCHING					        506
+#define IDC_BT_BOX_DEVICE_PAIRED						    507
+#define IDC_BT_BTN_CONNECTDEVICE						    508
+#define IDC_BT_BOX_DEVICE_SEACHED					        509
+#define IDC_BT_BTN_DELETEDEVICE								510
+#define IDC_BT_BTN_PRIMARYDEVICE							511
+#define IDC_BT_BTN_NUMERIC_QUIT							    512
+#define IDC_BT_BTN_NUMERIC_OK								513
+#define IDC_BT_BTN_NUMERIC_CANCEL						    514
+#define IDC_BT_TAG_NUMERIC_PASSKEY						    515
+#define IDC_BT_TAG_NUMERIC_INFO							    516
+#define IDC_BT_BTN_NUMERIC_NO								517
+#define IDC_BT_BTN_REFRESHDEVICE							518
+#define IDC_BT_BTN_KEY_1								    519
+#define IDC_BT_BTN_KEY_2								    520
+#define IDC_BT_BTN_KEY_3								    521
+#define IDC_BT_BTN_KEY_4								    522
+#define IDC_BT_BTN_KEY_5								    523
+#define IDC_BT_BTN_KEY_6								    524
+#define IDC_BT_BTN_KEY_7								    525
+#define IDC_BT_BTN_KEY_8								    526
+#define IDC_BT_BTN_KEY_9								    527
+#define IDC_BT_BTN_KEY_0								    528
+#define IDC_BT_BTN_KEY_STAR									529
+#define IDC_BT_BTN_KEY_WELL									530
+#define IDC_BT_BTN_KEY_DIAL								    531
+#define IDC_BT_BTN_KEY_DEL								    534
+#define IDC_BT_BTN_SETTING								    535
+#define IDC_BT_BTN_KEYBOARD									536
+#define IDC_BT_BTN_CONTACT									537
+#define IDC_BT_BTN_HISTORY								    538
+#define IDC_BT_BTN_DEVICE								    539
+#define IDC_BT_BTN_A2DP									    540
+#define IDC_BT_BTN_ANSWER1									541
+#define IDC_BT_BTN_HANG1								    542
+#define IDC_BT_BTN_ACH									    543
+#define IDC_BT_BTN_DTMF									    544
+#define IDC_BT_BTN_REJECT								    545
+#define IDC_BT_BTN_ANSWER2									546
+#define IDC_BT_BTN_HANG2								    547
+#define IDC_BT_BTN_SWITCH_CALL1							    548
+#define IDC_BT_BTN_SWITCH_CALL2							    549
+#define IDC_BT_BOX_CONTACT									550
+#define IDC_BT_BTN_CONTACT_SEARCH						    551
+#define IDC_BT_BTN_CONTACT_DIAL							    552
+#define IDC_BT_BTN_CONTACT_DOWNLOAD							553
+#define IDC_BT_BTN_CONTACT_CANCEL_DOWNLOAD				    554
+#define IDC_BT_BTN_A2DP_PLAY							    555
+#define IDC_BT_BTN_A2DP_PAUSE							    556
+#define IDC_BT_BTN_A2DP_PREV							    557
+#define IDC_BT_BTN_A2DP_NEXT							    558
+#define IDC_BT_BTN_QUIT_DTMF							    559
+#define IDC_BT_BOX_SETTINGS								    560
+#define IDC_BT_SLI_AUTO_DOWNLOAD							561
+#define IDC_BT_BTN_SET_PIN								    562
+#define IDC_BT_BTN_SET_NAME								    563
+#define IDC_BT_SLI_AUTO_ANSWER							    564
+#define IDC_BT_BOX_HISTORY_DIAL_CONFIRM					    565
+#define IDC_BT_BOX_HISTORY								    566
+#define IDC_BT_BTN_HISTORY_INOUT						    567
+#define IDC_BT_BTN_HISTORY_MISSED							568
+#define IDC_BT_BTN_HISTORY_DELETE						    569
+#define IDC_BT_BOX_DELETE_HISTORY_CONFIRM			        570
+#define IDC_BT_BTN_PIN_REQUEST_OK							571
+#define IDC_BT_BTN_PIN_REQUEST_CANCEL					    572
+#define IDC_BT_BOX_CONTACT_DETAIL							573
+#define IDC_BT_BTN_RETURN								    574
+#define IDC_BT_TAG_A2DP_NOWPLAYINGTITLE				        575
+#define IDC_BT_TAG_A2DP_TITLE							    576
+#define IDC_BT_TAG_A2DP_ARTIST							    577
+#define IDC_BT_TAG_A2DP_ALBUM							    578
+#define IDC_BT_SLI_A2DP_PROGRESS						    579
+#define IDC_BT_DISCONNECT_CONFIRM							580
+#define IDC_BT_BTN_SEARCHDEVICE								581
+#define IDC_BT_BOX_DEVICE_SEARCHED							582
+#define IDC_BT_BOX_RECENT_CALL							    583
+#define IDC_BT_BTN_DEVICE_MANAGER							584
+#define IDC_BT_BOX_MENU									    585
+#define IDC_BT_SLI_POWER								    586
+#define IDC_BT_BTN_SET_DEVICE_NAME							587
+#define IDC_BT_BTN_SET_PAIR_PIN							    588
+#define IDC_BT_BTN_PAIRED_DEVICE						    589
+#define IDC_BT_BTN_CONNECT_SETTING							590
+#define IDC_BT_BOX_DEVICE_LIST								591
+#define IDC_BT_BTN_SEARCH_CONTACT							592
+#define IDC_BT_SLI_RINGTONE									593
+#define IDC_BT_SLI_AUTO_CONNECT							    594
+#define IDC_BT_BTN_MIC_MUTE									595
+#define IDC_BT_BOX_CONTANCT_SEARCH							596
+#define IDC_BT_DOWNLOAD_CALLLOG_CONFIRM						597
+#define IDC_BT_DOWNLOAD_CANCEL_CALLHISTORY					598
+#define IDC_BT_DOWNLOAD_PB_CONFIRM                          599
+#define IDC_BT_SLI_VCARD_NAME_ORDER							600
+#define IDC_BT_NOTIFYBOX_PIN_REQUEST							601
+#define IDC_BT_BTN_SYNC_CONTACT							602
+
+
+//TV core
+#define IDC_TV_BTN_QUIT										700
+#define IDC_TV_BOX_LIBRARY									701
+#define IDC_TV_BTN_LIBRARY									703
+#define IDC_TV_BTN_REFRESH									704
+#define IDC_TV_TAG_VIDEOWINDOW						        705
+#define IDC_TV_BTN_PREV										706
+#define IDC_TV_BTN_NEXT										707
+#define IDC_TV_BTN_PIP									    708
+#define IDC_TV_BAR_LIBRARY_TITLE							709
+#define IDC_TV_TAG_TV									    710
+
+//Navi core
+#define IDC_NAVICORE_TAG_NAVI							    800
+
+
+//Disk core
+#define IDC_DISK_BTN_HOME								    820
+#define IDC_DISK_BTN_DEVICE									821
+#define IDC_DISK_BTN_SETTING							    822
+#define IDC_DISK_BTN_PREV								    823
+#define IDC_DISK_BTN_NEXT								    824
+#define IDC_DISK_SLI_PROGRESS							    825
+#define IDC_DISK_BTN_PLAY								    826
+#define IDC_DISK_BOX_LIBRARY							    827
+#define IDC_DISK_BTN_LIBRARY							    828
+#define IDC_DISK_BTN_PAUSE								    829
+#define IDC_DISK_BTN_STOP								    830
+#define IDC_DISK_BTN_EJECT								    831
+#define IDC_DISK_BOX_SETTING_ROOT							832
+#define IDC_DISK_BTN_SETTING_LANG							833
+#define IDC_DISK_BTN_SETTING_VIDEO							834
+#define IDC_DISK_BTN_SETTING_AUDIO							835
+#define IDC_DISK_BTN_SETTING_RATING							836
+#define IDC_DISK_BTN_SETTING_MISC							837
+#define IDC_DISK_BTN_SETTING_LANG_SYS						838
+#define IDC_DISK_BTN_SETTING_LANG_SUBTITLE					839
+#define IDC_DISK_BTN_SETTING_LANG_AUDIO						840
+#define IDC_DISK_BTN_SETTING_LANG_DVDMENU					841
+#define IDC_DISK_BTN_SETTING_VIDEO_ASPECT_RATIO				842
+#define IDC_DISK_BTN_SETTING_VIDEO_VIEW_MODE				843
+#define IDC_DISK_BTN_SETTING_VIDEO_TV_SYSTEM				844
+#define IDC_DISK_BTN_SETTING_VIDEO_VIDEO_OUT				845
+#define IDC_DISK_BTN_SETTING_AUDIO_DIGITAL_OUTPUT			846
+#define IDC_DISK_SLI_SETTING_AUDIO_NIGHT_MODE				847
+#define IDC_DISK_SLI_SETTING_AUDIO_DOWN_SAMPLING			848
+#define IDC_DISK_BTN_SETTING_RATING_PARENT					849
+#define IDC_DISK_BTN_SETTING_MISC_DEFAULT_SETTING			850
+#define IDC_DISK_BOX_SETTING_LANGUAGE_ROOT					851
+#define IDC_DISK_BOX_SETTING_LANGUAGE_SEL					852
+#define IDC_DISK_BOX_SETTING_VIDEO_ROOT						853
+#define IDC_DISK_BOX_SETTING_VIDEO_ASPECT_RATIO				854
+#define IDC_DISK_BOX_SETTING_VIDEO_VIEW_MODE				855
+#define IDC_DISK_BOX_SETTING_VIDEO_TV_SYSTEM				856
+#define IDC_DISK_BOX_SETTING_VIDEO_VIDEO_OUT				857
+
+#define IDC_DISK_BTN_SETTING_VIDEO_SMART_PIC				862
+#define IDC_DISK_BOX_SETTING_VIDEO_SMART_PIC				863
+#define IDC_DISK_BTN_SETTING_AUDIO_SPDIF_INFORMATION        864
+#define IDC_DISK_BTN_SETTING_AUDIO_CENTER_DELAY             865
+#define IDC_DISK_BTN_SETTING_AUDIO_REAR_DELAY               866
+#define IDC_DISK_SLI_SETTING_AUDIO_AUDIO_CONTROL            867
+#define IDC_DISK_BTN_SETTING_AUDIO_CHANNELSETUP_INFORMATION    	868
+#define IDC_DISK_BOX_SETTING_AUDIO_SPDIF_INFORMATION           	869
+#define IDC_DISK_BOX_SETTING_AUDIO_CHANNEL_SETUP_INFORMATIN    	870
+#define IDC_DISK_BOX_SETTING_AUDIO_CENTER_CHANNEL_DELAY      	871
+#define IDC_DISK_BOX_SETTING_AUDIO_REAR_CHANNEL_DELAY   		872
+
+#define IDC_DISK_BTN_SETTING_AUDIO_FONRT_BIT            		873
+#define IDC_DISK_BTN_SETTING_AUDIO_CENTER_BIT					874
+#define IDC_DISK_BTN_SETTING_AUDIO_REAR_BIT						875
+#define IDC_DISK_BTN_SETTING_AUDIO_BASS_BIT						876
+#define IDC_DISK_BOX_SETTING_AUDIO_PRESENT_SEL					877
+#define IDC_DISK_BOX_SETTING_AUDIO_BASS_BIT                           878
+#define IDC_DISK_TAG_ARTIST									879
+#define IDC_DISK_TAG_TITLE										880
+#define IDC_DISK_TAG_ALBUM									881
+#define IDC_DISK_TAG_GENRE										882
+#define IDC_DISK_TAG_ALBUMART							883
+#define IDC_DISK_TAG_PLAYEDTIME							884
+#define IDC_DISK_TAG_REMAINTIME						885
+#define IDC_DISK_BTN_SEARCH                         886
+#define IDC_DISK_BTN_SEARCH1                        887
+#define IDC_DISK_BTN_REPEAT									888
+#define IDC_DISK_BTN_SHUFFLE								889
+#define IDC_DISK_BTN_NORMAL                                 890
+#define IDC_DISK_BTN_REPEAT_SINGLE									891
+#define IDC_DISK_BTN_REPEAT_FOLDER								892
+#define IDC_DISK_BTN_REPEAT_ALL									893
+#define IDC_DISK_BTN_REPEAT_OFF									894
+#define IDC_DISK_TAG_DISKTITLE                                   895
+#define IDC_DISK_BTN_LIBRARY_PREVPAGE						896
+#define IDC_DISK_BTN_LIBRARY_NEXTPAGE						897
+#define IDC_DISK_BTN_RW										898
+#define IDC_DISK_BTN_FF										899
+#define IDC_DISK_BTN_SETTING_VIDEO_SETTING					900
+#define IDC_DISK_BTN_SETTING_VERSION						901
+#define IDC_DISK_BOX_SETTING_VERSION_INFO					902
+#define IDC_DISK_TAG_NOWPLAYINGTITLE						903
+#define IDC_DISK_TAG_DISK									904
+#define IDC_DISK_BOX_LIBRARY_PREV_PAGE						905
+#define IDC_DISK_BOX_LIBRARY_NEXT_PAGE						906
+#define IDC_DISK_BTN_KEYBOARD								907
+#define IDC_DISK_BTN_RETURN									908
+#define IDC_DISK_SETTING_LANGUAGE							909
+#define IDC_DISK_SETTING_VIDEO_SHAPE_CONFIG					910
+#define IDC_DISK_SETTING_TV_SYSTEM_CONFIG					911
+#define IDC_DISK_VIDEO_SHAPE								912
+#define IDC_DISK_LANGUAGE_SETUP								913
+#define IDC_DISK_USE_DEFAULT_SETTING						914
+#define IDC_DISK_OSD_SETTING								915
+#define IDC_DISK_TV_SYSTEM_CONFIG							916
+#define IDC_DISK_BOX_FACTORY_CONFIRM						917
+#define IDC_DISK_BTN_AUDIO_SEL								918
+#define IDC_DISK_BTN_VIDEO_SEL								919
+#define IDC_DISK_BTN_SETTING_SEL							920
+#define IDC_DISK_BOX_SETTING_PAGE							921
+#define IDC_DISK_BOX_FUNCTION_SETTING_PAGE					922
+#define IDC_DISK_BOX_DVD_CHAPTER_LIBRARY_PREV_PAGE			923
+#define IDC_DISK_BOX_DVD_CHAPTER_LIBRARY_NEXT_PAGE			924
+#define IDC_DISK_BOX_DVD_CHAPTER_LIBRARY					925
+#define IDC_DISK_BTN_SUBTITLE								926
+#define IDC_SETTING_SLI_TIME_AUTOADJUST_DLST				927
+
+
+#define IDC_SETTING_BTN_AVCC_PATH							930
+#define IDC_SETTING_BTN_H264_PATH							931
+#define IDC_SETTING_BTN_H264_TEST							932
+
+//status bar
+#define IDC_STATUSBAR_SLI_PHONEPOWER							950
+#define IDC_STATUSBAR_SLI_PHONESIGNAL							951
+#define IDC_STATUSBAR_TAG_BTSTATUS								952
+#define IDC_STATUSBAR_SET_TYPE								    953
+#define IDC_STATUSBAR_GET_TYPE							        954
+#define IDC_STATUSBAR_ICON_INFO									955
+#define IDC_STATUSBAR_ICON_ERROR							    956
+#define IDC_STATUSBAR_ICON_SPEECH								957
+#define IDC_STATUSBAR_ICON_QUEST							    958
+
+//Setting core
+#define IDC_SETTING_BTN_HOME									        1000
+#define IDC_SETTING_BOX_MAIN										    1001
+#define IDC_SETTING_BAR_AUDIO_BALANCE					                1002
+#define IDC_SETTING_BTN_LANGUAGE_SEL						            1003
+#define IDC_SETTING_SLI_BEEP											1004
+#define IDC_SETTING_BTN_LANGUAGE_QUIT					                1005
+#define IDC_SETTING_BOX_LANGUAGE								        1006
+#define IDC_SETTING_BTN_EQ_SET									        1007
+#define IDC_SETTING_BTN_EQUALIZER_QUIT					                1008
+#define IDC_SETTING_BTN_EQ_NAME								            1009
+#define IDC_SETTING_SLI_VOLUME_ADAPTION				                    1010
+#define IDC_SETTING_SLI_MID											    1011
+#define IDC_SETTING_SLI_VOLUME									        1012
+#define IDC_SETTING_SLI_BASS											1013
+#define IDC_SETTING_SLI_SUBWOOFER							            1014
+#define IDC_SETTING_SLI_TREBLE										    1015
+#define IDC_SETTING_SLI_MUTE										    1016
+#define IDC_SETTING_SLI_LOUDNESS								        1017
+#define IDC_SETTING_BTN_BAL_FAD_SET							            1018
+#define IDC_SETTING_SLI_BALANCE									        1019
+
+#define IDC_SETTING_SLI_EQ_1											1020
+#define IDC_SETTING_SLI_EQ_2											1021
+#define IDC_SETTING_SLI_EQ_3											1022
+#define IDC_SETTING_SLI_EQ_4											1023
+#define IDC_SETTING_SLI_EQ_5											1024
+#define IDC_SETTING_SLI_EQ_6											1025
+#define IDC_SETTING_SLI_EQ_7											1026
+#define IDC_SETTING_SLI_EQ_8											1027
+#define IDC_SETTING_SLI_EQ_9											1028
+#define IDC_SETTING_SLI_EQ_10										    1029
+
+#define IDC_SETTING_SLI_FADE										    1030
+#define IDC_SETTING_BTN_SRC_VOL_SET							            1031
+#define IDC_SETTING_SLI_MIC_IN_VOLUME						            1032
+#define IDC_SETTING_SLI_PRE_GAIN_ENABLE								    1033
+#define IDC_SETTING_SLI_PRE_GAIN_TABLE									1034
+#define IDC_SETTING_SLI_PRE_BASS_ENABLE								    1035
+#define IDC_SETTING_SLI_PRE_MID_ENABLE									1036
+#define IDC_SETTING_SLI_PRE_TREBLE_ENABLE								1037
+#define IDC_SETTING_BTN_EQ_RESET									    1038
+#define IDC_SETTING_BTN_REAR_COLOR_SIGNAL_SPREAD						1039
+
+#define IDC_SETTING_BTN_AUDIO_SEL								        1040
+#define IDC_SETTING_BTN_DISPLAY_SEL							            1041
+#define IDC_SETTING_BTN_SYSTEM_SEL							            1042
+#define IDC_SETTING_BTN_WALLPAPER_SEL						            1043
+#define IDC_SETTING_BTN_THEME_SEL								        1044
+#define IDC_SETTING_BTN_UITRANS_SEL							            1045
+#define IDC_SETTING_BTN_SCREENBRIGHTNESS_SEL		                    1046
+
+#define IDC_SETTING_BOX_DISPLAY										    1047
+#define IDC_SETTING_SLI_UITRANS										    1048
+#define IDC_SETTING_SLI_SCREENBRIGHTNESS						        1049
+#define IDC_SETTING_BOX_WALLPAPER								        1050
+#define IDC_SETTING_BTN_THEME_INSTALL							        1051
+#define IDC_SETTING_BTN_THEME_DELETE							        1052
+#define IDC_SETTING_BOX_THEME										    1053
+
+#define IDC_SETTING_BTN_TIME_SEL									    1054
+#define IDC_SETTING_BTN_DATE_SEL									    1055
+#define IDC_SETTING_BTN_VERSION_SEL								        1056
+#define IDC_SETTING_BTN_NAVI_SEL									    1057
+#define IDC_SETTING_BTN_OWNER_SEL								        1058
+#define IDC_SETTING_SLI_WALLPAPERBRIGHTNESS				                1059
+#define IDC_SETTING_SLI_WALLPAPER_ONOFF						            1060
+#define IDC_SETTING_BTN_WIRELESS_SEL								    1061
+#define IDC_SETTING_SLI_WIRELESS										1062
+#define IDC_SETTING_BOX_WIRELESS_SET							        1063
+#define IDC_SETTING_BOX_WIRELESS_LIST							        1064
+#define IDC_SETTING_BTN_CALIBRATE_SEL							        1065
+#define IDC_SETTING_SLI_AUTO_DIALUP								        1066
+#define IDC_SETTING_BOX_DIALUP_SET								        1067
+#define IDC_SETTING_BTN_DIALUP_SEL								        1068
+#define IDC_SETTING_BOX_AUDIO										    1069
+#define IDC_SETTING_BOX_SYSTEM										    1070
+#define IDC_SETTING_BOX_EQ_PRESET									    1071
+#define IDC_SETTING_BOX_SRC_VOLUME								        1072
+#define IDC_SETTING_BOX_VERSION									        1073
+#define IDC_SETTING_BTN_VIDEO_SEL									    1074
+#define IDC_SETTING_SLI_TIME_AUTOADJUST						            1075
+#define IDC_SETTING_SLI_TIME_24HMODE							        1076
+#define IDC_SETTING_BTN_FACTORY_SEL								        1077
+#define IDC_SETTING_SLI_BREAK_TEST									    1078
+#define IDC_SETTING_SLI_LAMP_CONTROL							        1079
+#define IDC_SETTING_SLI_KEY_BEEP										1080
+#define IDC_SETTING_SLI_REVERSE_LEVEL								    1081
+#define IDC_SETTING_BOX_RESET_CONFIRM						            1082
+#define IDC_SETTING_BOX_FACTORY_CONFIRM					                1083
+#define IDC_SETTING_BTN_RETURN										    1084
+#define IDC_SETTING_BTN_EQ_POP										    1085
+#define IDC_SETTING_BTN_EQ_ROCK									        1086
+#define IDC_SETTING_BTN_EQ_CLASSIC								        1087
+#define IDC_SETTING_BTN_EQ_JAZZ										    1088
+#define IDC_SETTING_BTN_EQ_USER										    1089
+#define IDC_SETTING_BTN_NAVI_PATH									    1090
+#define IDC_SETTING_BTN_NAVI_SPEECH                                     1091
+#define IDC_SETTING_BTN_UPDATE                                          1092
+#define IDC_SETTING_BTN_UPDATE_UI                                       1093
+#define IDC_SETTING_BTN_UPDATE_LOGO                                     1094
+#define IDC_SETTING_BTN_UPDATE_MCU                                      1095
+#define IDC_SETTING_BTN_UPDATE_ALL                                      1096
+#define IDC_SETTING_BOX_UPDATE_MCU_CONFIRM                              1097
+#define IDC_SETTING_BTN_LANG_ENGLISH                                    1098
+#define IDC_SETTING_BTN_LANG_CHINESE_SIN                                1099
+#define IDC_SETTING_BTN_LANG_CHINESE_TRA                                1100
+#define IDC_SETTING_BTN_SET_DATE                                        1101
+#define IDC_SETTING_BTN_SET_TIME                                        1102
+#define IDC_SETTING_BTN_SET_IDLE_SCREEN                                 1103
+#define IDC_SETTING_BTN_SET_CAMERA_TYPE                                 1104
+#define IDC_SETTING_BTN_CANCEL_DATE                                     1105
+#define IDC_SETTING_BTN_CANCEL_TIME                                     1106
+#define IDC_SETTING_BTN_SET_BACKGROUND                                  1107
+#define IDC_SETTING_BTN_CANCEL_BACKGROUND                               1108
+#define IDC_SETTING_BTN_SET_DRIVE_TYPE                                  1109
+#define IDC_SETTING_BTN_SET_TIMEZONE                                    1110
+#define IDC_SETTING_BTN_FACTORY_ACTIVATE                                1111
+#define IDC_SETTING_BTN_FACTORY_MODE                                    1112
+#define IDC_SETTING_BTN_COLORSIGNAL                                     1113
+#define IDC_SETTING_BOX_UPDATE_UI_CONFIRM                              1114
+#define IDC_SETTING_BOX_UPDATE_LOGO_CONFIRM                            1115
+#define IDC_SETTING_BOX_UPDATE_ALL_CONFIRM                             1116
+#define IDC_SETTING_PASSWORD_NUMBER_0							      1117
+#define IDC_SETTING_PASSWORD_NUMBER_1							      1118
+#define IDC_SETTING_PASSWORD_NUMBER_2							      1119
+#define IDC_SETTING_PASSWORD_NUMBER_3							      1120
+#define IDC_SETTING_PASSWORD_NUMBER_4							      1121
+#define IDC_SETTING_PASSWORD_NUMBER_5							      1122
+#define IDC_SETTING_PASSWORD_NUMBER_6							      1123
+#define IDC_SETTING_PASSWORD_NUMBER_7							      1124
+#define IDC_SETTING_PASSWORD_NUMBER_8							      1125
+#define IDC_SETTING_PASSWORD_NUMBER_9							      1126
+#define IDC_SETTING_PASSWORD_RETURN									1127
+#define IDC_SETTING_BTN_UPDATE_DAB                                  1128
+#define IDC_SETTING_BTN_UPDATE_DAB_CONFIRM                         1129
+#define IDC_SETTING_SET_LANG_RESET_CONFIRM						  1130
+#define IDC_SETTING_BTN_SKIN_PATH										1131
+#define IDC_SETTING_BTN_BACKGROUND_PATH									1132
+#define IDC_SETTING_BTN_FACTORY                                         1133
+#define IDC_SETTING_RESTORE_FACTORY_SETTINGS                            1134
+#define IDC_SETTING_BOX_BACKGROUND                                      1135
+
+#define IDC_SETTING_SLI_VOLUME_MULTIMEDIA				                    1136
+#define IDC_SETTING_SLI_VOLUME_NAVI							                    1137
+#define IDC_SETTING_SLI_VOLUME_PHONE						                    1138
+
+#define IDC_SETTING_SLI_BACK_LUMIN							                    1139
+
+#define IDC_SETTING_BTN_LANG_KOREAN                 1140
+#define IDC_SETTING_BTN_LANG_GERMAN                 1141
+#define IDC_SETTING_BTN_LANG_JAPAN                  1142
+#define IDC_SETTING_BTN_LANG_SPAIN                  1143
+#define IDC_SETTING_BTN_ADVANCED_SETTINGS           1144
+
+//Display
+#define IDC_SETTING_SLI_LCD_GAMMA					    1145
+#define IDC_SETTING_SLI_DISPLAY_RESET					1146
+#define IDC_SETTING_SLI_BLUR_EFFECT	                1147
+#define IDC_SETTING_BTN_LED_COLOR1					1148
+#define IDC_SETTING_BTN_LED_COLOR2					1149
+#define IDC_SETTING_BTN_LED_COLOR3					1150
+#define IDC_SETTING_BTN_LED_COLOR4                  1151
+#define IDC_SETTING_BTN_LED_COLOR5                  1152
+#define IDC_SETTING_BTN_LED_COLOR_USER              1153
+#define IDC_SETTING_BTN_LED_COLOR_CUSTOM            1154
+#define IDC_SETTING_SLI_LED_COLOR                   1155
+#define IDC_SETTING_SLI_LED_BRIGHTNESS              1156
+#define IDC_SETTING_SLI_LED_BRIGHTNESS_NIGHT        1157
+#define IDC_SETTING_SLI_LED_ANIMATION_EFFECT        1158
+#define IDC_SETTING_SLI_LCD_BRIGHTNESS              1159
+#define IDC_SETTING_SLI_LCD_BRIGHTNESS_NIGHT        1160
+
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_SPREAD     1161
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_VOL_MINUS 1162
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_VOL_PLUS 1163
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_VOL_MUTE 1164
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_PREV     1165
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_NEXT     1166
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_SEEK     1167
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_CALL     1168
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_HANGUP   1169
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_SPEECH   1170
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_NAVI     1171
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_MODE     1172
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_POWER    1173
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_HOME		1174
+
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_CONFIRM  1175
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_CANCEL   1176
+#define IDC_SETTING_BTN_ADVANCE_STEERWHEEL_RESET    1177
+#define IDC_SETTING_BTN_ADVANCE_RETURN              1178
+#define IDC_SETTING_BTN_LOCK						1179
+
+#define IDC_SETTING_BTN_MEDIA_TEST                  1180
+#define IDC_SETTING_BTN_BLUETOOTH_TEST              1181
+#define IDC_SETTING_BTN_TOUCH_TEST                  1182
+#define IDC_SETTING_BTN_EXPLORER                    1183
+#define IDC_SETTING_BTN_CPU_MONITOR                 1184
+#define IDC_SETTING_BTN_LED                         1185
+#define IDC_SETTING_USB_TEST_MODE_SPREAD			1186
+#define IDC_SETTING_BTN_ADVANCE                     1187
+#define IDC_SETTING_BTN_GESTURE_SETTINGS			1188
+
+#define IDC_SETTING_SLI_REAR_VOL_CONTROL        1189
+
+//Tp Test
+#define IDC_TOUCH_TEST_POINT1                       1190
+#define IDC_TOUCH_TEST_POINT2                       1191
+#define IDC_TOUCH_TEST_POINT3                       1192
+#define IDC_TOUCH_TEST_POINT4                       1193
+#define IDC_TOUCH_TEST_POINT5                       1194
+
+#define IDC_SETTING_BTN_TP_AUTO_RECALIBRATE       1195
+#define IDC_SETTING_BTN_SNAPSHOT_ENABLE           1196
+#define IDC_SETTING_BOX_UPDATE_MCU_CANCEL           1197
+#define IDC_SETTING_SLI_DISABLE_INTERNAL_AMP						1198
+
+#define IDC_SETTING_BTN_CONNECT_TEST                1199
+#if 0
+//RearView Settings
+#define IDC_REARVIEW_COLORSIGNAL_NTSC_MJ          1181
+#define IDC_REARVIEW_COLORSIGNAL_NTSC_443         1182
+#define IDC_REARVIEW_COLORSIGNAL_PAL_M            1183
+#define IDC_REARVIEW_COLORSIGNAL_PAL_60           1184
+#define IDC_REARVIEW_COLORSIGNAL_PAL_BGHID        1185
+#define IDC_REARVIEW_COLORSIGNAL_PAL_COMBIN_N     1186
+#define IDC_REARVIEW_COLORSIGNAL_SECAM             1187
+#define IDC_REARVIEW_COLORSIGNAL_SECAM_525         1188
+#define IDC_REARVIEW_COLORSIGNAL_RESET             1189
+#endif
+
+//AUX
+#define IDC_AUX_TAG_TITLE                                               1200
+#define IDC_AUX_TAG_AUX													1201
+#define IDC_AUX_BTN_AUDIO_SETTING                                       1202
+#define IDC_AUX_BTN_AUX1                                                1203
+#define IDC_AUX_BTN_AUX2										        1204
+#define IDC_AUX_BTN_VIDEO_SETTING								        1205
+#define IDC_AUX_BTN_HOME												1206
+#define IDC_AUX_BTN_SETTING											    1207                                                                           
+#define IDC_SETTING_BTN_DELETE_MAC                						1208
+#define IDC_SETTING_BTN_DELETE_MAC_CONFIRM                				1209
+#define IDC_AUX_BTN_RIGHT                                            6000
+#define IDC_AUX_BTN_LEFT                                            6001
+#define IDC_AUX_BTN_AUX                                           6002
+#define IDC_AUX_BTN_BT                                           6003
+#define IDC_AUX_BTN_DVD                                           6004
+#define IDC_AUX_BTN_USB                                          6005
+
+//ISDB
+#define IDC_ISDB_BTN_HOME                                   6006
+#define IDC_ISDB_BOX_MAIN                             6007
+#define IDC_STATUSBAR_SLI_ISDBSIGNAL    6008
+//Setting key
+#define IDC_SETTING_BTN_KEY_0											1210
+#define IDC_SETTING_BTN_KEY_1											1211
+#define IDC_SETTING_BTN_KEY_2											1212
+#define IDC_SETTING_BTN_KEY_3											1213
+#define IDC_SETTING_BTN_KEY_4											1214
+#define IDC_SETTING_BTN_KEY_5											1215
+#define IDC_SETTING_BTN_KEY_6											1216
+#define IDC_SETTING_BTN_KEY_7											1217
+#define IDC_SETTING_BTN_KEY_8											1218
+#define IDC_SETTING_BTN_KEY_9											1219
+#define IDC_SETTING_BTN_KEY_A											1220
+#define IDC_SETTING_BTN_KEY_B											1221
+#define IDC_SETTING_BTN_KEY_C											1222
+#define IDC_SETTING_BTN_KEY_D											1223
+#define IDC_SETTING_BTN_KEY_E											1224
+#define IDC_SETTING_BTN_KEY_F											1225
+#define IDC_SETTING_BTN_KEY_DOT											1226
+#define IDC_SETTING_BTN_KEY_COLON										1227
+#define IDC_SETTING_BTN_KEY_SIGN										1228
+#define IDC_SETTING_BTN_KEY_DEL											1229
+#define IDC_SETTING_BTN_TCP_SWITCH										1230
+#define IDC_SETTING_BTN_UDP_SWITCH										1231
+#define IDC_SETTING_BTN_RUN_TESTS										1232
+
+#define IDC_SETTING_BTN_SUBWOOFERFREQ									1233
+#define IDC_SETTING_BTN_UPDATE_RES										1234
+#define IDC_SETTING_BTN_UPDATE_RES_CONFIRM								1235
+
+#define IDC_SETTING_BTN_START_CONNECT_TEST								1236
+
+#define IDC_SETTING_BTN_DELETE_CPCA                						1237
+#define IDC_SETTING_BTN_DELETE_CPCA_CONFIRM                				1238
+
+#define IDC_SETTING_BTN_CARPLAY_RESTART                					1239
+#define IDC_SETTING_SLI_AAP_AUTOLAUNCH						            1240
+#define IDC_SETTING_SLI_DCP_CONTROL										1241
+
+#define IDC_SETTING_BOX_ANDORID_TYPE								    1242
+#define IDC_SETTING_SET_ANDORID_TYPE_RESET_CONFIRM						1243
+#define IDC_SETTING_BTN_ANDROIDTYPE_SEL									1244
+#define IDC_SETTING_BTN_SET_REARVIEW_DELAY                                        1245
+#define IDC_SETTING_BTN_SET_POWEROFF_DELAY                                        1246
+
+//Image
+#define IDC_IMAGE_BTN_HOME											    1250
+#define IDC_IMAGE_BTN_NOWPLAYING								        1251
+#define IDC_IMAGE_BTN_PLAY												1252
+#define IDC_IMAGE_BTN_PAUSE											1253
+#define IDC_IMAGE_BTN_PREV												1254
+#define IDC_IMAGE_BTN_NEXT												1255
+#define IDC_IMAGE_BTN_LIBRARY										    1256
+#define IDC_IMAGE_BTN_REFRESH										    1257
+#define IDC_IMAGE_BOX_LIBRARY										    1258
+#define IDC_IMAGE_SLI_SCALE												1259
+#define IDC_IMAGE_BTN_SETWALLPAPER								        1260
+#define IDC_IMAGE_BTN_TONORMAL									        1261
+#define IDC_IMAGE_BTN_BACK												1262
+#define IDC_IMAGE_BTN_PAGES											    1263
+#define IDC_IMAGE_TAG_IMAGE											    1264
+#define IDC_IMAGE_BTN_THUMB1										    1265
+#define IDC_IMAGE_BTN_THUMB2										    1266
+#define IDC_IMAGE_BTN_THUMB3										    1267
+#define IDC_IMAGE_BTN_THUMB4										    1268
+#define IDC_IMAGE_BTN_THUMB5										    1269
+#define IDC_IMAGE_BTN_THUMB6										    1270
+#define IDC_IMAGE_BTN_GRID												1271
+#define IDC_IMAGE_BOX_DEVICE											1272
+#define IDC_IMAGE_BTN_CATALOG_AUDIO											1273
+#define IDC_IMAGE_BTN_CATALOG_VIDEO											1274
+#define IDC_IMAGE_BTN_CATALOG_IMAGE											1275
+#define IDC_IMAGE_BTN_BROWSE_MODE											1276
+#define IDC_IMAGE_BTN_SEARCH											1277
+#define IDC_IMAGE_BOX_EXPLORER										    1278
+#define IDC_IMAGE_BTN_ZOOMIN                                        1279
+#define IDC_IMAGE_BTN_ZOOMOUT                                         1280
+#define IDC_IMAGE_BTN_ZOOM                                              1281
+#define IDC_IMAGE_SLI_ZOOM                                          1282
+#define IDC_IAMGE_BTN_BROWSE                                         1283
+#define IDC_IAMGE_BTN_ROTATE                                        1284
+#define IDC_IMAGE_BOX_SEARCH										    1285
+
+//MHL
+#define IDC_MHL_TAG_TITLE												1350
+#define IDC_MHL_TAG_MHL													1351
+#define IDC_MHL_BTN_HOME												1352
+#define IDC_MHL_BTN_CANCEL											    1353
+
+
+//Phone Link
+#define IDC_PHONELINK_TAG_TITLE										    1370
+#define IDC_PHONELINK_TAG_ICON										    1371
+#define IDC_PHONELINK_BTN_HOME											1372
+#define IDC_PHONELINK_BTN_CANCEL										1373
+
+//EasyConnect
+#define IDC_EASYCONNECTED_BTN_CANCEL                                 1374
+
+//RearView:
+#define IDC_REARVIEW_BTN_HOME										    1450
+#define IDC_REARVIEW_BTN_SETTING									    1451
+
+//
+#define IDC_VEHICLEINFO_BTN_HOME									    1460
+#define IDC_VEHICLEINFO_BTN_RETURN								        1461
+#define IDC_VEHICLEINFO_BTN_VCHICLEBODY					                1462
+#define IDC_VEHICLEINFO_BTN_AIR										    1463
+#define IDC_VEHICLEINFO_BTN_RADAR								        1464
+#define IDC_VEHICLEINFO_TAG_TEMP_DRIVER						            1465
+#define IDC_VEHICLEINFO_TAG_TEMP_CODRIVER				                1466
+#define IDC_VEHICLEINFO_BTN_PARKING_RADAR						        1467
+#define IDC_VEHICLEINFO_BTN_PARKING_REARVIEW					        1468
+#define IDC_VEHICLEINFO_BTN_PARKING_RADAR_AND_REARVIEW				    1469
+#define IDC_VEHICLEINFO_BOX_MENU								        1470
+#define IDC_VEHICLEINFO_SLI_ECON							1471
+#define IDC_VEHICLEINFO_BTN_ECON							1472
+#define IDM_TPMS_CHANGE_TIRE								1473
+
+
+//ipod:
+#define IDC_IPODCORE_BTN_HOME										1500
+#define IDC_IPODCORE_BTN_LIBRARY									1501
+#define IDC_IPODCORE_BTN_PREV										1502
+#define IDC_IPODCORE_BTN_NEXT										1503
+#define IDC_IPODCORE_BTN_PLAY										1504
+#define IDC_IPODCORE_BTN_PAUSE										1505
+#define IDC_IPODCORE_BTN_STOP										1506
+#define IDC_IPODCORE_BTN_RW											1507
+#define IDC_IPODCORE_BTN_FF											1508
+#define IDC_IPODCORE_SLI_PROGRESS									1509
+#define IDC_IPODCORE_BTN_REPEAT									1510
+#define IDC_IPODCORE_BTN_SHUFFLE									1511
+#define IDC_IPODCORE_TAG_NOWPLAYINGTITLE					1512
+#define IDC_IPODCORE_TAG_ARTIST									1513
+#define IDC_IPODCORE_TAG_TITLE										1514
+#define IDC_IPODCORE_TAG_ALBUM									1515
+#define IDC_IPODCORE_TAG_GENRE									1516
+#define IDC_IPODCORE_TAG_ALBUMART								1517
+#define IDC_IPODCORE_BOX_LIBRARY									1518
+#define IDC_IPODCORE_BTN_BACK										1520
+#define IDC_IPODCORE_BOX_MENU										1521
+#define IDC_IPODCORE_BTN_NOWPLAYING							1522
+#define IDC_IPODCORE_BTN_RETURN									1523
+
+//Carplay iPhoe Switch
+#define IDC_IPOD_CARPLAY_BTN_SWITCH								1524
+
+//Setting Radio Region
+#define IDC_SETTING_BOX_RADIO_REGION							1525
+
+//============Factory setting USB test element define begin===========
+#define IDC_SETTING_BTN_IPERF_SERVER_TEST                   			1600
+#define IDC_SETTING_BTN_IPERF_CLIENT_TEST                   			1601
+#define IDC_SETTING_BTN_USB_TEST_MODE_DISABLE                           1602
+#define IDC_SETTING_BTN_USB_TEST_MODE_J_STATE                           1603
+#define IDC_SETTING_BTN_USB_TEST_MODE_K_STATE                           1604
+#define IDC_SETTING_BTN_USB_TEST_MODE_SE0_NAK                           1605
+#define IDC_SETTING_BTN_USB_TEST_MODE_PACKET                            1606
+#define IDC_SETTING_BTN_USB_TEST_MODE_FORCE_HS                          1607
+#define IDC_SETTING_BTN_USB_TEST_MODE_FORCE_FS                          1608
+#define IDC_SETTING_BTN_USB_TEST_MODE_FORCE_LS                          1609
+//==========Factory setting define end========================
+#define IDC_SETTING_SLI_EQBALFAD_SWITCH									1610
+#define IDC_SETTING_SLI_EQ_LOCK											1611
+
+//Status bar
+#define IDC_STATUSBAR_BTN_HOME									        2000
+#define IDC_STATUSBAR_BTN_BACK										    2001
+#define IDC_STATUSBAR_TAG_TITLE										    2002
+#define IDC_STATUSBAR_TAG_SETTING_NAME								    2003
+#define IDC_STATUSBAR_TAG_PHONE_NAME									2004
+#define IDC_STATUSBAR_TAG_PHONE_NUMBER									2005
+
+//EXPLORER
+#define IDC_EXPLORER_BTN_HOME									        3000
+#define IDC_EXPLORER_BTN_RETURN								            3001
+
+//GESTURE
+#define IDC_GESTURE_DISTANCE                                          3100
+#define IDC_GESTURE_SENSITIVITY_X                                     3101
+#define IDC_GESTURE_SENSITIVITY_Y                                     3102
+#define IDC_GESTURE_SENSITIVITY_Z                                     3103
+#define IDC_GESTURE_WAVE_COUNT                                        3104
+#define IDC_GESTURE_WAVE_ANGLE                                        3105
+#define IDC_GESTURE_ROTATE                                            3106
+#define IDC_GESTURE_NOMOTION                                          3107
+#define IDC_GESTURE_NOOBJECT                                          3108
+#define IDC_GESTURE_CURSOR_TRACK                                      3109
+
+//ALL APP list
+//#define IDC_ALLAPP_RETURN											    3100
+
+
+//Notification:
+#define  IDC_NB_BTN_OK												    3100
+#define  IDC_NB_BTN_CANCEL												3101
+#define  IDC_NB_BTN_ABORT												3102
+#define  IDC_NB_BTN_HOME												3103
+#define  IDC_NB_BTN_RETURN												3104
+
+//SR
+#define IDC_SR_BTN_MIC													3200
+#define IDC_SR_BTN_START												3201
+#define IDC_SR_BTN_STOP													3202
+#define IDC_SR_BTN_ENDAUDIODATA										    3203
+#define IDC_SR_BTN_QUIT													3204
+
+//
+#define IDC_PANEL_KEYBOARD										        5000
+#define IDC_PANEL_EXPLORER											    5001

@@ -1,0 +1,16 @@
+
+#pragma once
+
+#define LANGUAGE_ENGLISH				0
+#define LANGUAGE_CHN_TRA				2
+#define LANGUAGE_CHN_SIM				3
+#define LANGUAGE_KOREAN					4
+#define LANGUAGE_GERMAN					5
+#define LANGUAGE_SPANISH				6
+#define LANGUAGE_PORTUGUESE				7
+#define LANGUAGE_ITALIAN				8
+#define LANGUAGE_FRANCH					9
+#define LANGUAGE_JAPANESE				10
+#define LANGUAGE_RUSSIAN				11
+#define LANGUAGE_PERSIAN				12
+#define LANGUAGE_GREEK					13

@@ -1,0 +1,1402 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resdefce.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE_CN_SIN    "LightningUI"
+    IDC_LIGHTNINGUI_CN_SIN  "LIGHTNINGUI"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE_RADIO_CN_SIN  "收音机"
+    IDS_TITLE_BLUETOOTH_CN_SIN "蓝牙"
+    IDS_TITLE_MEDIA_CN_SIN  "多媒体"
+    IDS_TITLE_PHONELINK_CN_SIN "安卓互联"
+    IDS_TITLE_NAVI_CN_SIN   "导航"
+    IDS_TITLE_TV_CN_SIN     "电视"
+    IDS_TITLE_MHL_CN_SIN    "MHL/HDMI"
+    IDS_TITLE_DISK_CN_SIN   "碟片"
+    IDS_TITLE_AUX_CN_SIN    "外接输入"
+    IDS_TITLE_IPOD_CN_SIN   "iPod"
+    IDS_TITLE_SETTINGS_CN_SIN "设置"
+    IDS_TITLE_VEHICLEINFO_CN_SIN "车辆信息"
+    IDS_TITLE_MUSIC_CN_SIN  "音乐"
+    IDS_TITLE_VIDEO_CN_SIN  "视频"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE_IMAGE_CN_SIN  "图片"
+    IDS_TITLE_TIME_CN_SIN   "时间"
+    IDS_TITLE_DATE_CN_SIN   "日期"
+    IDS_TITLE_USB_CN_SIN    "USB"
+    IDS_TITLE_SD_CN_SIN     "SD"
+    IDS_TITLE_CD_CN_SIN     "CD"
+    IDS_TITLE_DVD_CN_SIN    "DVD"
+    IDS_TITLE_APPS_CN_SIN   "应用程序"
+    IDS_UNKNOWN_CN_SIN      "未知"
+    IDS_SUNDAY_CN_SIN       "星期天"
+    IDS_MONDAY_CN_SIN       "星期一"
+    IDS_TUESDAY_CN_SIN      "星期二"
+    IDS_WEDNESDAY_CN_SIN    "星期三"
+    IDS_THURSDAY_CN_SIN     "星期四"
+    IDS_FRIDAY_CN_SIN       "星期五"
+    IDS_SATURDAY_CN_SIN     "星期六"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_JANUARY_CN_SIN      "一月"
+    IDS_FEBRUARY_CN_SIN     "二月"
+    IDS_MARCH_CN_SIN        "三月"
+    IDS_APRIL_CN_SIN        "四月"
+    IDS_MAY_CN_SIN          "五月"
+    IDS_JUNE_CN_SIN         "六月"
+    IDS_JULY_CN_SIN         "七月"
+    IDS_AUGUST_CN_SIN       "八月"
+    IDS_SEPTEMBER_CN_SIN    "九月"
+    IDS_OCTOBER_CN_SIN      "十月"
+    IDS_NOVEMBER_CN_SIN     "十一月"
+    IDS_DECEMBER_CN_SIN     "十二月"
+    IDS_ON_CN_SIN           "打开"
+    IDS_OFF_CN_SIN          "关闭"
+    IDS_YES_CN_SIN          "是"
+    IDS_NO_CN_SIN           "否"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OK_CN_SIN_CN_SIN    "确定"
+    IDS_CANCEL_CN_SIN       "取消"
+    IDS_RESET_CN_SIN        "复位"
+    IDS_CONFIRM_CN_SIN      "确定"
+    IDS_CONNECTING_CN_SIN   "正在连接..."
+    IDS_CONNECTED_CN_SIN    "已连接"
+    IDS_LOADING_CN_SIN      "正在加载..."
+    IDS_TITLE_REARVIEW_CN_SIN "后视摄像头"
+    IDS_PARKING_NOTICE_CN_SIN "注意周围环境安全!"
+    IDS_NO_SIGNAL_CN_SIN    "无信号"
+    IDS_CAN_BELT_CN_SIN     "安全带"
+    IDS_CAN_OUTSIDE_TEMP_CN_SIN "车外温度"
+    IDS_CAN_BATTERY_CN_SIN  "蓄电池"
+    IDS_CAN_OIL_CN_SIN      "油量"
+    IDS_CAN_HANDBRAKE_CN_SIN "手刹"
+    IDS_CAN_TRIP_CN_SIN     "里程"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAN_ENGIN_SPEED_CN_SIN "发动机转速"
+    IDS_CAN_CLEANINGWATER_CN_SIN "清洗液"
+    IDS_CAN_VELOCITY_CN_SIN "瞬时速度"
+    IDS_CAN_AIR_CN_SIN      "空调"
+    IDS_CAN_BODY_CN_SIN     "车身信息"
+    IDS_CAN_RADAR_CN_SIN    "雷达"
+    IDS_CAN_HANDBRAKE_UNRELEASED_CN_SIN "未释放"
+    IDS_SETTINGS_HIGH_CN_SIN "高"
+    IDS_SETTINGS_LOW_CN_SIN "低"
+    IDS_SETTINGS_NORMAL_CN_SIN "正常"
+    IDS_PHONELINK_MAIN_PROMPT_CN_SIN "使用USB线缆连接手机,并连接蓝牙."
+    IDS_PHONELINK_INSTALLING_CN_SIN "正在安装..."
+    IDS_PHONELINK_INSTALL_OK_CN_SIN "安装成功."
+    IDS_PHONELINK_NO_USB_DEBUG_CN_SIN "请在手机上打开调试模式."
+    IDS_PHONELINK_CONNECTING_CN_SIN "正在连接..."
+    IDS_MHL_MAIN_PROMPT_CN_SIN "用MHL或者HDMI线缆连接手机."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MHL_CONNECTING_CN_SIN "正在连接..."
+    IDS_MHL_CONNECTED_CN_SIN "已连接"
+    IDS_MHL_WAITING_CN_SIN  "等待设备..."
+    IDS_TITLE_PHONE_CN_SIN  "电话"
+    IDS_DEVICE_REMOVE_CN_SIN "设备移除"
+    IDS_DEVICE_INSERT_CN_SIN "设备插入"
+    IDS_DEVICE_RESIDENTFLASH_CN_SIN "车机存储"
+    IDS_DEVICE_IPOD_CN_SIN  "iPod"
+    IDS_DEVICE_USB_CN_SIN   "USB"
+    IDS_DEVICE_BT_CN_SIN    "蓝牙音乐"
+    IDS_DEVICE_SD_CN_SIN    "SD"
+    IDS_DEVICE_CD_CN_SIN    "CD"
+    IDS_DEVICE_LINEIN_FRONT_CN_SIN "前置 A/V输入"
+    IDS_DEVICE_LINEIN_REAR_CN_SIN "后置A/V输入"
+    IDS_NO_MEDIA_FILES_CN_SIN "无可播放的媒体文件"
+    IDS_WARNING_CN_SIN      "警告!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOT_WATCH_VIDEO_CN_SIN "禁止在行驶中观看视频!"
+    IDS_BROWSING_ACTIVE_CN_SIN "正在加载..."
+    IDS_LIBRARY_MENU_ALBUMS_CN_SIN "专辑"
+    IDS_LIBRARY_MENU_ARTISTS_CN_SIN "艺术家"
+    IDS_LIBRARY_MENU_COMPOSERS_CN_SIN "作曲家"
+    IDS_LIBRARY_MENU_GENRES_CN_SIN "流派"
+    IDS_LIBRARY_MENU_EXPLORE_CN_SIN "浏览"
+    IDS_LIBRARY_MENU_TRACKS_CN_SIN "曲目"
+    IDS_LIBRARY_MENU_PLAYLISTS_CN_SIN "播放列表"
+    IDS_LIBRARY_MENU_PODCASTS_CN_SIN "播客"
+    IDS_LIBRARY_MENU_EPISODES_CN_SIN "插曲"
+    IDS_LIBRARY_MENU_AUDIOBOOKS_CN_SIN "有声读物"
+    IDS_NOWPLAYING_PLAYING_CN_SIN "%i/%i"
+    IDS_NOWPLAYING_INVALIDMEDIA_CN_SIN "无效的媒体文件"
+    IDS_TITLE_HOME_CN_SIN   "主页"
+    IDS_TITLE_NOWPLAYING_CN_SIN "正在播放"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEARCH_CN_SIN       "查找"
+    IDS_LOCATION_MOBILE_CN_SIN "手机"
+    IDS_LOCATION_WORK_CN_SIN "工作"
+    IDS_LOCATION_HOME_CN_SIN "家庭"
+    IDS_DISCONNECTING_CN_SIN "正在断开连接..."
+    IDS_DISCONNECTED_CN_SIN "已断开"
+    IDS_CALL_CN_SIN         "呼叫"
+    IDS_DISCONNECT_DEVICE_CN_SIN "断开设备连接"
+    IDS_CS_HOLD_CN_SIN      "呼叫保持"
+    IDS_CS_DIALING_CN_SIN   "正在拨号..."
+    IDS_CS_INCOMING_CALL_CN_SIN "新来电"
+    IDS_CS_WAITING_CALL_CN_SIN "呼叫等待"
+    IDS_DOWNLOADING_CN_SIN  "正在下载..."
+    IDS_CAN_BELT_UNBUCKLED_CN_SIN "未系好"
+    IDS_STEREO_CN_SIN       "立体声"
+    IDS_MONO_CN_SIN         "单声道"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOC_CN_SIN          "本地"
+    IDS_FAVORITE_CN_SIN     "收藏"
+    IDS_PAIRED_CN_SIN       "已配对"
+    IDS_DOWNLOAD_CN_SIN     "下载"
+    IDS_DEVICE_MGR_CN_SIN   "设备管理"
+    IDS_NO_DEVICE_PAIRED_CN_SIN "没有已配对的设备"
+    IDS_PHONECORE_FINDME_NOTE_CN_SIN "使用手机, 媒体播放器, 或其他 \n蓝牙设备, 尝试连接到此车机."
+    IDS_NO_DEVICE_FOUND_CN_SIN "没有找到蓝牙设备"
+    IDS_SETTING_GENERAL_CN_SIN "一般设置"
+    IDS_SETTING_AUDIO_CN_SIN "音频设置"
+    IDS_SETTING_BLUETOOTH_CN_SIN "蓝牙设置"
+    IDS_SETTING_RADIO_CN_SIN "收音设置"
+    IDS_SETTING_ABOUT_CN_SIN "关于本机"
+    IDS_SETTING_HANDBRAKE_TEST_CN_SIN "手刹检测"
+    IDS_SETTING_REVERSE_POLAR_CN_SIN "倒车电平"
+    IDS_SETTING_LAMP_CONTROL_CN_SIN "灯光控制"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_DATE_AND_TIME_CN_SIN "日期和时间"
+    IDS_SETTING_DATE_CN_SIN "日期"
+    IDS_SETTING_TIME_CN_SIN "时间"
+    IDS_SETTING_24H_MODE_CN_SIN "24小时模式"
+    IDS_SETTING_TIME_AUTO_ADJUST_CN_SIN "自动调整"
+    IDS_SETTING_NAVIGATION_CN_SIN "导航设置"
+    IDS_SETTING_NAVI_LAUNCH_LOCATION_CN_SIN "导航路径"
+    IDS_SETTING_NAVI_SPEECH_CN_SIN "导航语音"
+    IDS_SETTING_LANGUAGE_CN_SIN "语言设置"
+    IDS_SETTING_LANG_CHN_SIM_CN_SIN "简体中文"
+    IDS_SETTING_LANG_CHN_TRA_CN_SIN "繁体中文"
+    IDS_SETTING_LANG_ENGLISH_CN_SIN "英文"
+    IDS_SETTING_NAVI_SPEECH_ALWAYS_CN_SIN "总是提示"
+    IDS_SETTING_NAVI_SPEECH_CLOSED_CN_SIN "关闭"
+    IDS_SETTING_NAVI_SPEECH_MAP_CN_SIN "当显示地图时提示"
+    IDS_SETTING_MUTE_CN_SIN "静音"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LOUDNESS_CN_SIN "等响度"
+    IDS_SETTING_VOLUME_VELOCITY_ADJUST_CN_SIN "音量车速调整"
+    IDS_SETTING_AUDIO_EFFECT_CN_SIN "音效"
+    IDS_SETTING_CLASSIC_CN_SIN "经典"
+    IDS_SETTING_POP_CN_SIN  "流行"
+    IDS_SETTING_ROCK_CN_SIN "摇滚"
+    IDS_SETTING_JAZZ_CN_SIN "爵士"
+    IDS_SETTING_USER_CN_SIN "用户"
+    IDS_SETTING_EQ_CN_SIN   "均衡器"
+    IDS_SETTING_BAL_FAD_CN_SIN "平衡"
+    IDS_SETTING_LOW_CN_SIN  "低"
+    IDS_SETTING_MID_CN_SIN  "中"
+    IDS_SETTING_HIGH_CN_SIN "高"
+    IDS_SETTING_BT_POWER_CN_SIN "蓝牙开关"
+    IDS_SETTING_BT_DEVICE_NAME_CN_SIN "本机名称"
+    IDS_SETTING_BT_PAIR_PIN_CN_SIN "配对码"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_BT_AUTO_ANSWER_CN_SIN "自动接听"
+    IDS_SETTING_BT_AUTO_DOWNLOAD_PB_CN_SIN "自动下载电话本"
+    IDS_SETTING_RADIO_SEEK_QUALITY_CN_SIN "扫描质量"
+    IDS_SETTING_RADIO_FM_CN_SIN "FM"
+    IDS_SETTING_RADIO_AM_CN_SIN "AM"
+    IDS_SETTING_RADIO_RESET_SEEK_QUALITY_CN_SIN "重置扫描质量"
+    IDS_SETTING_RADIO_REGION_CN_SIN "区域"
+    IDS_SETTING_EUROPE_CN_SIN "欧洲"
+    IDS_SETTING_USA_CN_SIN  "美洲"
+    IDS_SETTING_EASTERN_EUROPE_CN_SIN "东欧"
+    IDS_SETTING_JAPAN_CN_SIN "日本"
+    IDS_SETTING_RADIO_RDS_SWITCH_CN_SIN "RDS开关"
+    IDS_SETTING_OS_VERSION_CN_SIN "操作系统版本"
+    IDS_SETTING_SOFTWARE_VERSION_CN_SIN "软件版本"
+    IDS_SETTING_MCU_VERSION_CN_SIN "MCU版本"
+    IDS_SETTING_HARDWARE_VERSION_CN_SIN "硬件版本"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VEHICLE_DRIVE_CN_SIN "驾驶信息"
+    IDS_VEHICLE_AC_CN_SIN   "空调"
+    IDS_VEHICLE_BODY_CN_SIN "车身"
+    IDS_VEHICLE_RADAR_CN_SIN "雷达"
+    IDS_NO_MEDIA_DEVICE_CN_SIN "没有可播放的媒体源"
+    IDS_INPUT_NEW_DEVICE_NAME_CN_SIN "输入新的名称"
+    IDS_INPUT_NEW_PAIR_PIN_CN_SIN "输入新的配对码"
+    IDS_CALL_HISTORY_CN_SIN "通话记录"
+    IDS_CONTACT_CN_SIN      "电话本"
+    IDS_SEARCHING_CN_SIN    "正在查找..."
+    IDS_CS_CONNECTED_CN_SIN "正在通话"
+    IDS_NOT_CONNECTED_CN_SIN "未连接"
+    IDS_BT_CONNECT_SETTING_CN_SIN "连接设置"
+    IDS_BT_PAIRING_CN_SIN   "正在配对和连接..."
+    IDS_BT_DEVICE_PAIRED_CN_SIN "已配对, 点击连接该设备"
+    IDS_RESET_TO_TAKE_EFFECT_CN_SIN "重新启动设备使设置生效."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_IDLE_SCREEN_CN_SIN "待机画面"
+    IDS_CLOCK_ANALOG_CN_SIN "模拟时钟"
+    IDS_CLOCK_DIGITAL_CN_SIN "数字时钟"
+    IDS_NONE_CN_SIN         "无"
+    IDS_MEDIA_BROWSE_FOLDER_CN_SIN "文件夹"
+    IDS_MEDIA_BROWSE_TRACK_CN_SIN "全部曲目"
+    IDS_MEDIA_BROWSE_PARENT_FOLDER_CN_SIN "上一层"
+    IDS_SETTING_CAMERA_TYPE_CN_SIN "后视摄像头"
+    IDS_UPDATE_CN_SIN       "升级"
+    IDS_MCU_UPDATE_CONFIRM_CN_SIN "确认升级MCU程序?"
+    IDS_MCU_UPDATE_PROMPT_CN_SIN "请按下RES按钮重启\n设备来完成升级"
+    IDS_MCU_UPDATING_CN_SIN "正在升级MCU程序..."
+    IDS_MCU_UPDATING_ALERT_CN_SIN "请勿切断设备电源!"
+    IDS_MCU_UPDATING_INVALID_FILE_CN_SIN "没有找到有效的升级文件!"
+    IDS_MCU_UPDATE_SUCCEED_CN_SIN "升级成功!"
+    IDS_MCU_UPDATE_FAILED_CN_SIN "升级失败!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_UI_CN_SIN   "界面设置"
+    IDS_SETTING_UI_SKIN_CN_SIN "主题设置"
+    IDS_SETTING_SUBWOOFER_CN_SIN "重低音"
+    IDS_SETTING_UI_BACKGROUND_CN_SIN "背景图片"
+    IDS_RETURN_CN_SIN       "返回"
+    IDS_BT_STREAMING_AUDIO_CN_SIN "正在从手机传送语音..."
+    IDS_BT_STREAMING_AUDIO_TERMINATE_CN_SIN "按挂断键结束"
+    IDS_STRANGER_CN_SIN     "未知联系人"
+    IDS_SETTING_UI_FACTORY_CN_SIN "出厂设置"
+    IDS_SETTING_UI_RESTORE_FACTORY_SETTINGS_CN_SIN "恢复出厂设置"
+    IDS_SETTING_UI_DEFAULT_CN_SIN "默认值"
+    IDS_SETTING_VOLUME_CN_SIN "音量"
+    IDS_UPDATE_PROMPT_0_CN_SIN "移除升级U盘,然后重启设备."
+    IDS_UPDATE_PROMPT_1_CN_SIN "请再次插入升级U盘\n完成剩余的升级."
+    IDS_UPDATE_PROMPT_2_CN_SIN "正在安装..."
+    IDS_UPDATE_PROMPT_3_CN_SIN "安装失败."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_LISTITEM_CN_SIN  "无条目"
+    IDS_SETTING_UI_BACK_LUMIN_CN_SIN "背景图片亮度"
+    IDS_SETTING_KEY_BEEP_CN_SIN "按键音"
+    IDS_CARPLAY_MAIN_PROMPT_CN_SIN "使用USB lightning线缆连接iPhone."
+    IDS_SETTING_DISPLAY_CN_SIN "显示设置"
+    IDS_SETTING_LCD_GAMMA_CN_SIN "Gamma校正"
+    IDS_SETTING_BLUR_EFFECT_CN_SIN "毛玻璃效果"
+    IDS_RESET_DEFAULT_CN_SIN "恢复默认值"
+    IDS_ACTIVATE_PROMPT_0_CN_SIN "插入激活U盘"
+    IDS_SETTING_VOL_NAVI_SPEECH_CN_SIN "语音和导航提示"
+    IDS_SETTING_DRIVE_TYPE_CN_SIN "驾驶位置"
+    IDS_SETTING_DRIVE_LEFT_CN_SIN "左"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_DRIVE_RIGHT_CN_SIN "右"
+    IDS_SETTING_BT_RINGTONE_CN_SIN "来电铃声"
+    IDS_SETTING_ADVANCED_CN_SIN "高级设置"
+    IDS_PHONELINK_CONNECT_FAILED_CN_SIN "连接失败! 请重试."
+    IDS_SETTING_TIMEZONE_CN_SIN "时区"
+    IDS_SETTING_BT_AUTO_CONNECT_CN_SIN "自动连接"
+    IDS_SETTING_PANEL_LIGHT_CN_SIN "面板灯"
+    IDS_SETTING_PANEL_LIGHT_DISC_CN_SIN "从当前选择"
+    IDS_SETTING_PANEL_LIGHT_COLOR_CN_SIN "色彩"
+    IDS_SETTING_PANEL_LIGHT_BRIGHTNESS_CN_SIN "亮度"
+    IDS_DIAL_CHN_SIN        "拨号"
+    IDS_SETTING_KOREA_CN_SIN "韩国"
+    IDS_SETTING_ADVANCE_CN_SIN "高级"
+    IDS_SETTING_STEER_WHEEL_CN_SIN "方向盘"
+    IDS_SETTING_STEER_WHEEL_DESC_CN_SIN "先选择功能键，再按下方控键"
+    IDS_SETTING_STEER_WHEEL_PROMPT_CN_SIN "按下方向盘\n对应的按键"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_STEER_WHEEL_RECALIBRATE_CN_SIN "重新校正方向盘键值"
+    IDS_IMAGE_UPDATING_CN_SIN "正在升级系统..."
+    IDS_IMAGE_UPDATE_CONFIRM_CN_SIN "确认升级"
+    IDS_RESTART_SYSTEM_CN_SIN "即将重启"
+    IDS_SETTING_SOUTHAMERICA_CN_SIN "南美"
+    IDS_SETTING_HARDWARE_ID_CN_SIN "硬件ID"
+    IDS_SETTING_REARVIEW_SETTING_CN_SIN "倒车设置"
+    IDS_SETTING_REARVIEW_TITLE_CN_SIN "选择摄像头制式"
+    IDS_SETTING_LED_ANIM_EFFECT_CN_SIN "动态变化效果"
+    IDS_SETTING_ENTER_PASSWORD_CN_SIN "输入密码"
+    IDS_SETTING_SCREEN_BRIGHTNESS_CN_SIN "屏幕亮度"
+    IDS_CONFIRM_DOWNLOAD_PB_CN_SIN "是否下载电话本"
+    IDS_SETTING_TIME_AUTO_ADJUST_DLST_CN_SIN "自动调整夏令时"
+    IDS_SETTING_ENABLE_REAR_VOL_CONTROL_CN_SIN "自动调整倒车音量"
+    IDS_SETTING_STW_CALIBRATE_CN_SIN "校准"
+    IDS_AUX_PLAYING_CN_SIN  "现在正在播放\nAUX IN"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUX_TIP2_CN_SIN     "请确认你的接入\n设备音量是否打开"
+    IDS_CONFIRM_DOWNLOAD_CALLHISTORY_CN_SIN "是否下载通话记录"
+    IDS_SETTING_WHEEL_CN_SIN "方向盘"
+    IDS_SETTING_RADIO_RBDS_SWITCH_CN_SIN "RBDS开关"
+    IDS_SETTING_AUDIO_SUBWOOFER_FREQ_CN_SIN "重低音频率"
+    IDS_SETTING_DISPLAY_TITLE_LCD_CN_SIN "显示屏"
+    IDS_BT_PHONEBOOK_SYNC_CN_SIN "同步"
+    IDS_BT_PHONEBOOK_BACK_CN_SIN "后退"
+    IDS_BT_PHONEBOOK_FIRST_NAME_FIRST_CN_SIN "名在前"
+    IDS_SETTING_CHARGING_ONLY_CN_SIN "仅充电"
+    IDS_TAIWAN_CN_SIN       "台湾"
+    IDS_SOUTH_AMERICA_CN_SIN "南美"
+    IDS_ARABIA_AUSTRALIA_CN_SIN "阿拉伯，澳大利亚"
+    IDS_LATIN_AMERICA_CN_SIN "拉丁美洲"
+    IDS_MIDDLE_EAST_CN_SIN  "中东"
+    IDS_AUST_CN_SIN         "奥匈帝国"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BRAZIL_CN_SIN       "巴西"
+    IDS_RUSSIA_CN_SIN       "俄罗斯"
+    IDS_SETTING_ANDROID_TYPE_CN_SIN "安卓类型"
+    IDS_USB_HUB_UNSUPPORTED_CN_SIN "不支持USB HUB"
+    IDS_AUTO_LAUNCH_CN_SIN  "自动启动"
+    IDS_DAY_CN_SIN          "白天"
+    IDS_NIGHT_CN_SIN        "夜晚"
+    IDS_STW_VOL_ADD_CN_SIN  "音量+"
+    IDS_STW_VOL_SUB_CN_SIN  "音量-"
+    IDS_STW_MUTE_CN_SIN     "静音"
+    IDS_STW_PREVIOUS_CN_SIN "上一曲"
+    IDS_STW_NEXT_CN_SIN     "下一曲"
+    IDS_STW_SEEK_CN_SIN     "搜索"
+    IDS_STW_CALL_CN_SIN     "接听"
+    IDS_STW_HANGUP_CN_SIN   "挂断"
+    IDS_STW_SPEECH_CN_SIN   "语音"
+    IDS_KEYPAD_CN_SIN "键盘"
+    IDS_HANGUP_CN_SIN "挂断"
+    IDS_ANSWER_CN_SIN "接听"
+    IDS_PRIVACY_CN_SIN "私密"
+    IDS_HANDS_FREE_CN_SIN "免提"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STW_POWER_CN_SIN    "电源"
+    IDS_STW_MODE_CN_SIN     "模式"
+    IDS_STW_NAVI_CN_SIN     "导航"
+    IDS_STW_UNDEFINE_CN_SIN "未定义"
+    IDS_STW_ACTIVATED_CN_SIN "已激活"
+    IDS_AA_NOTE1_CN_SIN     "如果要使用Android Auto,"
+    IDS_AA_NOTE2_CN_SIN     "请安全停车，"
+    IDS_AA_NOTE3_CN_SIN     "并依照您手机上提示进行操作."
+    IDS_MHZ_CN_SIN          "MHz"
+    IDS_KHZ_CN_SIN          "KHz"
+END
+
+#endif    // Chinese (Neutral) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LIGHTNINGUI         ICON                    "LightningUI.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resdefce.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""LightningUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Singapore) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ZHI)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SINGAPORE
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE_CN_TRA    "LightningUI"
+    IDC_LIGHTNINGUI_CN_TRA  "LIGHTNINGUI"
+    IDS_STRING2003          "正在升級系統"
+    IDS_TITLE_RADIO_CN_TRA  "收音機"
+    IDS_TITLE_BLUETOOTH_CN_TRA "藍牙"
+    IDS_TITLE_MEDIA_CN_TRA  "多媒體"
+    IDS_TITLE_PHONELINK_CN_TRA "安卓互聯"
+    IDS_TITLE_NAVI_CN_TRA   "導航"
+    IDS_TITLE_TV_CN_TRA     "電視"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE_MHL_CN_TRA    "MHL/HDMI"
+    IDS_TITLE_DISK_CN_TRA   "碟片"
+    IDS_TITLE_AUX_CN_TRA    "外接輸入"
+    IDS_TITLE_IPOD_CN_TRA   "iPod"
+    IDS_TITLE_SETTINGS_CN_TRA "設置"
+    IDS_TITLE_VEHICLEINFO_CN_TRA "車輛信息"
+    IDS_TITLE_MUSIC_CN_TRA  "音樂"
+    IDS_TITLE_VIDEO_CN_TRA  "視頻"
+    IDS_TITLE_IMAGE_CN_TRA  "圖片"
+    IDS_TITLE_TIME_CN_TRA   "時間"
+    IDS_TITLE_DATE_CN_TRA   "日期"
+    IDS_TITLE_USB_CN_TRA    "USB"
+    IDS_TITLE_SD_CN_TRA     "SD"
+    IDS_TITLE_CD_CN_TRA     "CD"
+    IDS_TITLE_DVD_CN_TRA    "DVD"
+    IDS_TITLE_APPS_CN_TRA   "應用程序"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UNKNOWN_CN_TRA      "未知"
+    IDS_SUNDAY_CN_TRA       "星期天"
+    IDS_MONDAY_CN_TRA       "星期一"
+    IDS_TUESDAY_CN_TRA      "星期二"
+    IDS_WEDNESDAY_CN_TRA    "星期三"
+    IDS_THURSDAY_CN_TRA     "星期四"
+    IDS_FRIDAY_CN_TRA       "星期五"
+    IDS_SATURDAY_CN_TRA     "星期六"
+    IDS_JANUARY_CN_TRA      "一月"
+    IDS_FEBRUARY_CN_TRA     "二月"
+    IDS_MARCH_CN_TRA        "三月"
+    IDS_APRIL_CN_TRA        "四月"
+    IDS_MAY_CN_TRA          "五月"
+    IDS_JUNE_CN_TRA         "六月"
+    IDS_JULY_CN_TRA         "七月"
+    IDS_AUGUST_CN_TRA       "八月"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEPTEMBER_CN_TRA    "九月"
+    IDS_OCTOBER_CN_TRA      "十月"
+    IDS_NOVEMBER_CN_TRA     "十一月"
+    IDS_DECEMBER_CN_TRA     "十二月"
+    IDS_ON_CN_TRA           "打開"
+    IDS_OFF_CN_TRA          "關閉"
+    IDS_YES_CN_TRA          "是"
+    IDS_NO_CN_TRA           "否"
+    IDS_OK_CN_TRA           "確定"
+    IDS_CANCEL_CN_TRA       "取消"
+    IDS_RESET_CN_TRA        "複位"
+    IDS_CONFIRM_CN_TRA      "確定"
+    IDS_CONNECTING_CN_TRA   "正在連接..."
+    IDS_CONNECTED_CN_TRA    "已連接"
+    IDS_LOADING_CN_TRA      "正在加載..."
+    IDS_TITLE_REARVIEW_CN_TRA "後視攝像頭"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARKING_NOTICE_CN_TRA "注意周圍環境安全!"
+    IDS_NO_SIGNAL_CN_TRA    "無信號"
+    IDS_CAN_BELT_CN_TRA     "安全帶"
+    IDS_CAN_OUTSIDE_TEMP_CN_TRA "車外溫度"
+    IDS_CAN_BATTERY_CN_TRA  "蓄電池"
+    IDS_CAN_OIL_CN_TRA      "油量"
+    IDS_CAN_HANDBRAKE_CN_TRA "手刹"
+    IDS_CAN_TRIP_CN_TRA     "裏程"
+    IDS_CAN_ENGIN_SPEED_CN_TRA "發動機轉速"
+    IDS_CAN_CLEANINGWATER_CN_TRA "清洗液"
+    IDS_CAN_VELOCITY_CN_TRA "瞬時速度"
+    IDS_CAN_AIR_CN_TRA      "空調"
+    IDS_CAN_BODY_CN_TRA     "車身信息"
+    IDS_CAN_RADAR_CN_TRA    "雷達"
+    IDS_CAN_HANDBRAKE_UNRELEASED_CN_TRA "未釋放"
+    IDS_SETTINGS_HIGH_CN_TRA "高"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTINGS_LOW_CN_TRA "低"
+    IDS_SETTINGS_NORMAL_CN_TRA "正常"
+    IDS_PHONELINK_MAIN_PROMPT_CN_TRA "使用USB線纜連接手機,並連接藍牙."
+    IDS_PHONELINK_INSTALLING_CN_TRA "正在安裝..."
+    IDS_PHONELINK_INSTALL_OK_CN_TRA "安裝成功."
+    IDS_PHONELINK_NO_USB_DEBUG_CN_TRA "請在手機上打開調試模式."
+    IDS_PHONELINK_CONNECTING_CN_TRA "正在連接..."
+    IDS_MHL_MAIN_PROMPT_CN_TRA "用MHL或者HDMI線纜連接手機."
+    IDS_MHL_CONNECTING_CN_TRA "正在連接..."
+    IDS_MHL_CONNECTED_CN_TRA "已連接"
+    IDS_MHL_WAITING_CN_TRA  "等待設備..."
+    IDS_TITLE_PHONE_CN_TRA  "電話"
+    IDS_DEVICE_REMOVE_CN_TRA "設備移除"
+    IDS_DEVICE_INSERT_CN_TRA "設備插入"
+    IDS_DEVICE_RESIDENTFLASH_CN_TRA "車機存儲"
+    IDS_DEVICE_IPOD_CN_TRA  "iPod"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE_USB_CN_TRA   "USB"
+    IDS_DEVICE_BT_CN_TRA    "藍牙音樂"
+    IDS_DEVICE_SD_CN_TRA    "SD"
+    IDS_DEVICE_CD_CN_TRA    "CD"
+    IDS_DEVICE_LINEIN_FRONT_CN_TRA "前置 A/V輸入"
+    IDS_DEVICE_LINEIN_REAR_CN_TRA "後置A/V輸入"
+    IDS_NO_MEDIA_FILES_CN_TRA "無可播放的媒體文件"
+    IDS_WARNING_CN_TRA      "警告!"
+    IDS_CANNOT_WATCH_VIDEO_CN_TRA "禁止在行駛中觀看視頻!"
+    IDS_BROWSING_ACTIVE_CN_TRA "正在加載..."
+    IDS_LIBRARY_MENU_ALBUMS_CN_TRA "專輯"
+    IDS_LIBRARY_MENU_ARTISTS_CN_TRA "藝術家"
+    IDS_LIBRARY_MENU_COMPOSERS_CN_TRA "作曲家"
+    IDS_LIBRARY_MENU_GENRES_CN_TRA "流派"
+    IDS_LIBRARY_MENU_EXPLORE_CN_TRA "浏覽"
+    IDS_LIBRARY_MENU_TRACKS_CN_TRA "曲目"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LIBRARY_MENU_PLAYLISTS_CN_TRA "播放列表"
+    IDS_LIBRARY_MENU_PODCASTS_CN_TRA "播客"
+    IDS_LIBRARY_MENU_EPISODES_CN_TRA "插曲"
+    IDS_LIBRARY_MENU_AUDIOBOOKS_CN_TRA "有聲讀物"
+    IDS_NOWPLAYING_PLAYING_CN_TRA "%i/%i"
+    IDS_NOWPLAYING_INVALIDMEDIA_CN_TRA "無效的媒體文件"
+    IDS_TITLE_HOME_CN_TRA   "主頁"
+    IDS_TITLE_NOWPLAYING_CN_TRA "正在播放"
+    IDS_SEARCH_CN_TRA       "查找"
+    IDS_LOCATION_MOBILE_CN_TRA "手機"
+    IDS_LOCATION_WORK_CN_TRA "工作"
+    IDS_LOCATION_HOME_CN_TRA "家庭"
+    IDS_DISCONNECTING_CN_TRA "正在斷開連接..."
+    IDS_DISCONNECTED_CN_TRA "已斷開"
+    IDS_CALL_CN_TRA         "呼叫"
+    IDS_DISCONNECT_DEVICE_CN_TRA "斷開設備連接"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CS_HOLD_CN_TRA      "呼叫保持"
+    IDS_CS_DIALING_CN_TRA   "正在撥號..."
+    IDS_CS_INCOMING_CALL_CN_TRA "新來電"
+    IDS_CS_WAITING_CALL_CN_TRA "呼叫等待"
+    IDS_DOWNLOADING_CN_TRA  "正在下載..."
+    IDS_CAN_BELT_UNBUCKLED_CN_TRA "未系好"
+    IDS_STEREO_CN_TRA       "立體聲"
+    IDS_MONO_CN_TRA         "單聲道"
+    IDS_LOC_CN_TRA          "本地"
+    IDS_FAVORITE_CN_TRA     "收藏"
+    IDS_PAIRED_CN_TRA       "已配對"
+    IDS_DOWNLOAD_CN_TRA     "下載"
+    IDS_DEVICE_MGR_CN_TRA   "設備管理"
+    IDS_NO_DEVICE_PAIRED_CN_TRA "沒有已配對的設備"
+    IDS_PHONECORE_FINDME_NOTE_CN_TRA "使用手機, 媒體播放器, 或其他 \n藍牙設備, 嘗試連接到此車機."
+    IDS_NO_DEVICE_FOUND_CN_TRA "沒有找到藍牙設備"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_GENERAL_CN_TRA "一般設置"
+    IDS_SETTING_AUDIO_CN_TRA "音頻設置"
+    IDS_SETTING_BLUETOOTH_CN_TRA "藍牙設置"
+    IDS_SETTING_RADIO_CN_TRA "收音設置"
+    IDS_SETTING_ABOUT_CN_TRA "關於本機"
+    IDS_SETTING_HANDBRAKE_TEST_CN_TRA "手刹檢測"
+    IDS_SETTING_REVERSE_POLAR_CN_TRA "倒車電平"
+    IDS_SETTING_LAMP_CONTROL_CN_TRA "燈光控制"
+    IDS_SETTING_DATE_AND_TIME_CN_TRA "日期和時間"
+    IDS_SETTING_DATE_CN_TRA "日期"
+    IDS_SETTING_TIME_CN_TRA "時間"
+    IDS_SETTING_24H_MODE_CN_TRA "24小時模式"
+    IDS_SETTING_TIME_AUTO_ADJUST_CN_TRA "自動調整"
+    IDS_SETTING_NAVIGATION_CN_TRA "導航設置"
+    IDS_SETTING_NAVI_LAUNCH_LOCATION_CN_TRA "導航啓動路徑"
+    IDS_SETTING_NAVI_SPEECH_CN_TRA "導航語音"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LANGUAGE_CN_TRA "語言設置"
+    IDS_SETTING_LANG_CHN_SIM_CN_TRA "簡體中文"
+    IDS_SETTING_LANG_CHN_TRA_CN_TRA "繁體中文"
+    IDS_SETTING_LANG_ENGLISH_CN_TRA "英文"
+    IDS_SETTING_NAVI_SPEECH_ALWAYS_CN_TRA "總是提示"
+    IDS_SETTING_NAVI_SPEECH_CLOSED_CN_TRA "關閉"
+    IDS_SETTING_NAVI_SPEECH_MAP_CN_TRA "當顯示地圖時提示"
+    IDS_SETTING_MUTE_CN_TRA "靜音"
+    IDS_SETTING_LOUDNESS_CN_TRA "等響度"
+    IDS_SETTING_VOLUME_VELOCITY_ADJUST_CN_TRA "音量車速調整"
+    IDS_SETTING_AUDIO_EFFECT_CN_TRA "音效"
+    IDS_SETTING_CLASSIC_CN_TRA "經典"
+    IDS_SETTING_POP_CN_TRA  "流行"
+    IDS_SETTING_ROCK_CN_TRA "搖滾"
+    IDS_SETTING_JAZZ_CN_TRA "爵士"
+    IDS_SETTING_USER_CN_TRA "用戶"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_EQ_CN_TRA   "均衡器"
+    IDS_SETTING_BAL_FAD_CN_TRA "平衡"
+    IDS_SETTING_LOW_CN_TRA  "低"
+    IDS_SETTING_MID_CN_TRA  "中"
+    IDS_SETTING_HIGH_CN_TRA "高"
+    IDS_SETTING_BT_POWER_CN_TRA "藍牙開關"
+    IDS_SETTING_BT_DEVICE_NAME_CN_TRA "本機名稱"
+    IDS_SETTING_BT_PAIR_PIN_CN_TRA "配對碼"
+    IDS_SETTING_BT_AUTO_ANSWER_CN_TRA "自動接聽"
+    IDS_SETTING_BT_AUTO_DOWNLOAD_PB_CN_TRA "自動下載電話本"
+    IDS_SETTING_RADIO_SEEK_QUALITY_CN_TRA "掃描質量"
+    IDS_SETTING_RADIO_FM_CN_TRA "FM"
+    IDS_SETTING_RADIO_AM_CN_TRA "AM"
+    IDS_SETTING_RADIO_RESET_SEEK_QUALITY_CN_TRA "重置掃描質量"
+    IDS_SETTING_RADIO_REGION_CN_TRA "區域"
+    IDS_SETTING_EUROPE_CN_TRA "歐洲"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_USA_CN_TRA  "美洲"
+    IDS_SETTING_EASTERN_EUROPE_CN_TRA "東歐"
+    IDS_SETTING_JAPAN_CN_TRA "日本"
+    IDS_SETTING_RADIO_RDS_SWITCH_CN_TRA "RDS開關"
+    IDS_SETTING_OS_VERSION_CN_TRA "操作系統版本"
+    IDS_SETTING_SOFTWARE_VERSION_CN_TRA "軟件版本"
+    IDS_SETTING_MCU_VERSION_CN_TRA "MCU版本"
+    IDS_SETTING_HARDWARE_VERSION_CN_TRA "硬件版本"
+    IDS_VEHICLE_DRIVE_CN_TRA "駕駛信息"
+    IDS_VEHICLE_AC_CN_TRA   "空調"
+    IDS_VEHICLE_BODY_CN_TRA "車身"
+    IDS_VEHICLE_RADAR_CN_TRA "雷達"
+    IDS_NO_MEDIA_DEVICE_CN_TRA "沒有可播放的媒體源"
+    IDS_INPUT_NEW_DEVICE_NAME_CN_TRA "輸入新的名稱"
+    IDS_INPUT_NEW_PAIR_PIN_CN_TRA "輸入新的配對碼"
+    IDS_CALL_HISTORY_CN_TRA "通話記錄"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTACT_CN_TRA      "電話本"
+    IDS_SEARCHING_CN_TRA    "正在查找..."
+    IDS_CS_CONNECTED_CN_TRA "正在通話"
+    IDS_NOT_CONNECTED_CN_TRA "未連接"
+    IDS_BT_CONNECT_SETTING_CN_TRA "連接設置"
+    IDS_BT_PAIRING_CN_TRA   "正在配對和連接..."
+    IDS_BT_DEVICE_PAIRED_CN_TRA "已配對, 點擊連接該設備"
+    IDS_RESET_TO_TAKE_EFFECT_CN_TRA "重新啓動設備使設置生效."
+    IDS_SETTING_IDLE_SCREEN_CN_TRA "待機畫面"
+    IDS_CLOCK_ANALOG_CN_TRA "模擬時鍾"
+    IDS_CLOCK_DIGITAL_CN_TRA "數字時鍾"
+    IDS_NONE_CN_TRA         "無"
+    IDS_MEDIA_BROWSE_FOLDER_CN_TRA "文件夾"
+    IDS_MEDIA_BROWSE_TRACK_CN_TRA "全部曲目"
+    IDS_MEDIA_BROWSE_PARENT_FOLDER_CN_TRA "上一層"
+    IDS_SETTING_CAMERA_TYPE_CN_TRA "後視攝像頭"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE_CN_TRA       "升級"
+    IDS_MCU_UPDATE_CONFIRM_CN_TRA "確認升級MCU程序?"
+    IDS_MCU_UPDATE_PROMPT_CN_TRA "請按下RES按鈕重啓\n設備來完成升級"
+    IDS_MCU_UPDATING_CN_TRA "正在升級MCU程序..."
+    IDS_MCU_UPDATING_ALERT_CN_TRA "請勿切斷設備電源!"
+    IDS_MCU_UPDATING_INVALID_FILE_CN_TRA "沒有找到有效的升級文件!"
+    IDS_MCU_UPDATE_SUCCEED_CN_TRA "升級成功!"
+    IDS_MCU_UPDATE_FAILED_CN_TRA "升級失敗!"
+    IDS_SETTING_UI_CN_TRA   "界面設置"
+    IDS_SETTING_UI_SKIN_CN_TRA "主題設置"
+    IDS_SETTING_SUBWOOFER_CN_TRA "重低音"
+    IDS_SETTING_UI_BACKGROUND_CN_TRA "背景圖片"
+    IDS_RETURN_CN_TRA       "返回"
+    IDS_BT_STREAMING_AUDIO_CN_TRA "正在從手機傳送語音..."
+    IDS_BT_STREAMING_AUDIO_TERMINATE_CN_TRA "按挂斷鍵結束"
+    IDS_STRANGER_CN_TRA     "未知聯系人"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_UI_FACTORY_CN_TRA "出廠設置"
+    IDS_SETTING_UI_RESTORE_FACTORY_SETTINGS_CN_TRA "恢復出廠設置"
+    IDS_SETTING_UI_DEFAULT_CN_TRA "默認值"
+    IDS_SETTING_VOLUME_CN_TRA "音量"
+    IDS_UPDATE_PROMPT_0_CN_TRA "移除升級U盤,然後重啓設備."
+    IDS_UPDATE_PROMPT_1_CN_TRA "請再次插入升級U盤\n完成剩余的升級."
+    IDS_UPDATE_PROMPT_2_CN_TRA "正在安裝..."
+    IDS_UPDATE_PROMPT_3_CN_TRA "安裝失敗."
+    IDS_NO_LISTITEM_CN_TRA  "無條目"
+    IDS_SETTING_UI_BACK_LUMIN_CN_TRA "背景圖片亮度"
+    IDS_SETTING_KEY_BEEP_CN_TRA "按鍵音"
+    IDS_CARPLAY_MAIN_PROMPT_CN_TRA "使用USB lightning线缆连接iPhone."
+    IDS_SETTING_DISPLAY_CN_TRA "顯示設置"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LCD_GAMMA_CN_TRA "Gamma校正"
+    IDS_SETTING_BLUR_EFFECT_CN_TRA "毛玻璃效果"
+    IDS_RESET_DEFAULT_CN_TRA "恢複默認值"
+    IDS_ACTIVATE_PROMPT_0_CN_TRA "插入激活U盤"
+    IDS_SETTING_VOL_NAVI_SPEECH_CN_TRA "語音和導航提示"
+    IDS_SETTING_DRIVE_TYPE_CN_TRA "駕駛位置"
+    IDS_SETTING_DRIVE_LEFT_CN_TRA "左"
+    IDS_SETTING_DRIVE_RIGHT_CN_TRA "右"
+    IDS_SETTING_BT_RINGTONE_CN_TRA "來電鈴聲"
+    IDS_SETTING_ADVANCED_CN_TRA "高級設置"
+    IDS_PHONELINK_CONNECT_FAILED_CN_TRA "連接失敗! 請重試."
+    IDS_SETTING_TIMEZONE_CN_TRA "時區"
+    IDS_SETTING_BT_AUTO_CONNECT_CN_TRA "自動連接"
+    IDS_SETTING_PANEL_LIGHT_CN_TRA "面板燈"
+    IDS_SETTING_PANEL_LIGHT_DISC_CN_TRA "從當前選擇"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_PANEL_LIGHT_COLOR_CN_TRA "色彩"
+    IDS_SETTING_PANEL_LIGHT_BRIGHTNESS_CN_TRA "亮度"
+    IDS_DIAL_CHN_TRA        "撥號"
+    IDS_SETTING_KOREA_CN_TRA "韓國"
+    IDS_SETTING_ADVANCE_CN_TRA "高級"
+    IDS_SETTING_STEER_WHEEL_CN_TRA "方向盤"
+    IDS_SETTING_STEER_WHEEL_DESC_CN_TRA "先選擇功能鍵，再按下方控鍵"
+    IDS_SETTING_STEER_WHEEL_PROMPT_CN_TRA "按下方向盤\n對應的按鍵"
+    IDS_SETTING_STEER_WHEEL_RECALIBRATE_CN_TRA "重新校正方向盤鍵值"
+    IDS_IMAGE_UPDATING_CN_TRA "正在升級系統..."
+    IDS_IMAGE_UPDATE_CONFIRM_CN_TRA "確認升級"
+    IDS_RESTART_SYSTEM_CN_TRA "即將重啟"
+    IDS_SETTING_SOUTHAMERICA_CN_TRA "南美"
+    IDS_SETTING_HARDWARE_ID_CN_TRA "硬件ID"
+    IDS_SETTING_REARVIEW_SETTING_CN_TRA "倒車設置"
+    IDS_SETTING_REARVIEW_TITLE_CN_TRA "選擇攝像頭制式"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LED_ANIM_EFFECT_CN_TRA "動態變化特效"
+    IDS_SETTING_ENTER_PASSWORD_CN_TRA "輸入密碼"
+    IDS_SETTING_SCREEN_BRIGHTNESS_CN_TRA "屏幕亮度"
+    IDS_CONFIRM_DOWNLOAD_PB_CN_TRA "是否下載電話本"
+    IDS_SETTING_TIME_AUTO_ADJUST_DLST_CN_TRA "自動調整夏令時"
+    IDS_SETTING_ENABLE_REAR_VOL_CONTROL_CN_TRA "自動調整倒車音量"
+    IDS_SETTING_STW_CALIBRATE_CN_TRA "校準"
+    IDS_AUX_PLAYING_CN_TRA  "現在正在播放\nAUX IN"
+    IDS_AUX_TIP2_CN_TRA     "請確認您的接入\n設備音量是否打開"
+    IDS_CONFIRM_DOWNLOAD_CALLHISTORY_CN_TRA "是否下載通話記錄"
+    IDS_SETTING_WHEEL_CN_TRA "方向盤"
+    IDS_SETTING_RADIO_RBDS_SWITCH_CN_TRA "RBDS開關"
+    IDS_SETTING_AUDIO_SUBWOOFER_FREQ_CN_TRA "重低音頻率"
+    IDS_SETTING_DISPLAY_TITLE_LCD_CN_TRA "顯示屏"
+    IDS_BT_PHONEBOOK_SYNC_CN_TRA "同步"
+    IDS_BT_PHONEBOOK_BACK_CN_TRA "後退"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BT_PHONEBOOK_FIRST_NAME_FIRST_CN_TRA "名在前"
+    IDS_SETTING_CHARGING_ONLY_CN_TRA "僅充電"
+    IDS_TAIWAN_CN_TRA       "臺灣"
+    IDS_SOUTH_AMERICA_CN_TRA "南美"
+    IDS_ARABIA_AUSTRALIA_CN_TRA "阿拉伯，澳大利亞"
+    IDS_LATIN_AMERICA_CN_TRA "拉丁美洲"
+    IDS_MIDDLE_EAST_CN_TRA  "中東"
+    IDS_AUST_CN_TRA         "奧匈帝國"
+    IDS_BRAZIL_CN_TRA       "巴西"
+    IDS_RUSSIA_CN_TRA       "俄羅斯"
+    IDS_SETTING_ANDROID_TYPE_CN_TRA "安卓類型"
+    IDS_USB_HUB_UNSUPPORTED_CN_TRA "不支持USB HUB"
+    IDS_AUTO_LAUNCH_CN_TRA  "自动启动"
+    IDS_DAY_CN_TRA          "白天"
+    IDS_NIGHT_CN_TRA        "夜晚"
+    IDS_STW_VOL_ADD_CN_TRA  "音量+"
+    IDS_KEYPAD_CN_TRA "鍵盤"
+    IDS_HANGUP_CN_TRA "掛斷"
+    IDS_ANSWER_CN_TRA "接聽"
+    IDS_PRIVACY_CN_TRA "私密"
+    IDS_HANDS_FREE_CN_TRA "免提"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STW_VOL_SUB_CN_TRA  "音量-"
+    IDS_STW_MUTE_CN_TRA     "静音"
+    IDS_STW_PREVIOUS_CN_TRA "上一曲"
+    IDS_STW_NEXT_CN_TRA     "下一曲"
+    IDS_STW_SEEK_CN_TRA     "搜索"
+    IDS_STW_CALL_CN_TRA     "接听"
+    IDS_STW_HANGUP_CN_TRA   "挂断"
+    IDS_STW_SPEECH_CN_TRA   "语音"
+    IDS_STW_POWER_CN_TRA    "电源"
+    IDS_STW_MODE_CN_TRA     "模式"
+    IDS_STW_NAVI_CN_TRA     "导航"
+    IDS_STW_UNDEFINE_CN_TRA "未定义"
+    IDS_STW_ACTIVATED_CN_TRA "已激活"
+    IDS_AA_NOTE1_CN_TRA     "如果要使用Android Auto,"
+    IDS_AA_NOTE2_CN_TRA     "请安全停车，"
+    IDS_AA_NOTE3_CN_TRA     "并依照您手机上提示进行操作."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MHZ_CN_TRA          "MHz"
+    IDS_KHZ_CN_TRA          "KHz"
+END
+
+#endif    // Chinese (Singapore) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "LightningUI"
+    IDC_LIGHTNINGUI         "LIGHTNINGUI"
+    IDS_TITLE_MIRRORLINK    "MirrorLink"
+    IDS_TITLE_RADIO         "Radio"
+    IDS_TITLE_BLUETOOTH     "Bluetooth"
+    IDS_TITLE_MEDIA         "Media"
+    IDS_TITLE_PHONELINK     "Android Link"
+    IDS_TITLE_NAVI          "Navigation"
+    IDS_TITLE_TV            "TV"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE_MHL           "MHL/HDMI"
+    IDS_TITLE_DISK          "Disk"
+    IDS_TITLE_AUX           "AUX"
+    IDS_TITLE_IPOD          "iPod"
+    IDS_TITLE_SETTINGS      "Settings"
+    IDS_TITLE_VEHICLEINFO   "Vehicle"
+    IDS_TITLE_MUSIC         "Music"
+    IDS_TITLE_VIDEO         "Video"
+    IDS_TITLE_IMAGE         "Image"
+    IDS_TITLE_TIME          "Time"
+    IDS_TITLE_DATE          "Date"
+    IDS_TITLE_USB           "USB"
+    IDS_TITLE_SD            "SD"
+    IDS_TITLE_CD            "CD"
+    IDS_TITLE_DVD           "DVD"
+    IDS_TITLE_APPS          "Apps"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UNKNOWN             "Unknown"
+    IDS_SUNDAY              "Sunday"
+    IDS_MONDAY              "Monday"
+    IDS_TUESDAY             "Tuesday"
+    IDS_WEDNESDAY           "Wednesday"
+    IDS_THURSDAY            "Thursday"
+    IDS_FRIDAY              "Friday"
+    IDS_SATURDAY            "Saturday"
+    IDS_JANUARY             "January"
+    IDS_FEBRUARY            "February"
+    IDS_MARCH               "March"
+    IDS_APRIL               "April"
+    IDS_MAY                 "May"
+    IDS_JUNE                "June"
+    IDS_JULY                "July"
+    IDS_AUGUST              "August"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEPTEMBER           "September"
+    IDS_OCTOBER             "October"
+    IDS_NOVEMBER            "November"
+    IDS_DECEMBER            "December"
+    IDS_ON                  "ON"
+    IDS_OFF                 "OFF"
+    IDS_YES                 "YES"
+    IDS_NO                  "NO"
+    IDS_OK                  "OK"
+    IDS_CANCEL              "Cancel"
+    IDS_RESET               "Reset"
+    IDS_CONFIRM             "Confirm"
+    IDS_CONNECTING          "Connecting..."
+    IDS_CONNECTED           "Connected"
+    IDS_LOADING             "Loading..."
+    IDS_TITLE_REARVIEW      "Rear View"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARKING_NOTICE      "KEEP SAFE!"
+    IDS_NO_SIGNAL           "NO SIGNAL"
+    IDS_CAN_BELT            "Belt"
+    IDS_CAN_OUTSIDE_TEMP    "Outside T"
+    IDS_CAN_BATTERY         "Battery"
+    IDS_CAN_OIL             "Oil"
+    IDS_CAN_HANDBRAKE       "Handbrake"
+    IDS_CAN_TRIP            "Trip"
+    IDS_CAN_ENGIN_SPEED     "Engin"
+    IDS_CAN_CLEANINGWATER   "Clean Fluid"
+    IDS_CAN_VELOCITY        "Speed"
+    IDS_CAN_AIR             "AC"
+    IDS_CAN_BODY            "Vchicle"
+    IDS_CAN_RADAR           "Radar"
+    IDS_CAN_HANDBRAKE_UNRELEASED "Unreleased"
+    IDS_SETTINGS_HIGH       "HIGH"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTINGS_LOW        "LOW"
+    IDS_SETTINGS_NORMAL     "NORMAL"
+    IDS_PHONELINK_MAIN_PROMPT "Connect Device With USB Cable and Bluetooth."
+    IDS_PHONELINK_INSTALLING "Installing..."
+    IDS_PHONELINK_INSTALL_OK "Install Successfully."
+    IDS_PHONELINK_NO_USB_DEBUG "Please Open USB Debug Function On the Phone."
+    IDS_PHONELINK_CONNECTING "Connecting..."
+    IDS_MHL_MAIN_PROMPT     "Connect Device With MHL or HDMI Cable."
+    IDS_MHL_CONNECTING      "Connecting..."
+    IDS_MHL_CONNECTED       "Connected"
+    IDS_MHL_WAITING         "Waiting Device..."
+    IDS_TITLE_PHONE         "Phone"
+    IDS_DEVICE_REMOVE       "Device Remove"
+    IDS_DEVICE_INSERT       "Device Insert"
+    IDS_DEVICE_RESIDENTFLASH "Resident Flash"
+    IDS_DEVICE_IPOD         "iPod"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE_USB          "USB"
+    IDS_DEVICE_BT           "Bluetooth"
+    IDS_DEVICE_SD           "SD"
+    IDS_DEVICE_CD           "CD"
+    IDS_DEVICE_LINEIN_FRONT "Front A/V IN"
+    IDS_DEVICE_LINEIN_REAR  "Rear A/V IN"
+    IDS_NO_MEDIA_FILES      "No Supported File Found"
+    IDS_WARNING             "WARNING!"
+    IDS_CANNOT_WATCH_VIDEO  "Can't Watch Video While Driving!"
+    IDS_BROWSING_ACTIVE     "Loading..."
+    IDS_LIBRARY_MENU_ALBUMS "Albums"
+    IDS_LIBRARY_MENU_ARTISTS "Artists"
+    IDS_LIBRARY_MENU_COMPOSERS "Composers"
+    IDS_LIBRARY_MENU_GENRES "Genres"
+    IDS_LIBRARY_MENU_EXPLORE "Explore"
+    IDS_LIBRARY_MENU_TRACKS "Tracks"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LIBRARY_MENU_PLAYLISTS "Playlists"
+    IDS_LIBRARY_MENU_PODCASTS "Podcasts"
+    IDS_LIBRARY_MENU_EPISODES "Episodes"
+    IDS_LIBRARY_MENU_AUDIOBOOKS "Audiobooks"
+    IDS_NOWPLAYING_PLAYING  "%i/%i"
+    IDS_NOWPLAYING_INVALIDMEDIA "Invalid Media file"
+    IDS_TITLE_HOME          "Home"
+    IDS_TITLE_NOWPLAYING    "Playing"
+    IDS_SEARCH              "Search"
+    IDS_LOCATION_MOBILE     "Mobile"
+    IDS_LOCATION_WORK       "Work"
+    IDS_LOCATION_HOME       "Home"
+    IDS_DISCONNECTING       "Disconnecting..."
+    IDS_DISCONNECTED        "Disconnected"
+    IDS_CALL                "Call "
+    IDS_DISCONNECT_DEVICE   "Disconnect Device"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CS_HOLD             "Hold"
+    IDS_CS_DIALING          "Dialing"
+    IDS_CS_INCOMING_CALL    "Incoming Call"
+    IDS_CS_WAITING_CALL     "Waiting Call"
+    IDS_DOWNLOADING         "Downloading"
+    IDS_CAN_BELT_UNBUCKLED  "Unbuckled"
+    IDS_STEREO              "STEREO"
+    IDS_MONO                "MONO"
+    IDS_LOC                 "LOC"
+    IDS_FAVORITE            "Favorite"
+    IDS_PAIRED              "Paired"
+    IDS_DOWNLOAD            "Download"
+    IDS_DEVICE_MGR          "Device"
+    IDS_NO_DEVICE_PAIRED    "No Device Paired"
+    IDS_PHONECORE_FINDME_NOTE 
+                            "Using your phone, media, or other \nBluetooth device, try to connect to \nthis headunit."
+    IDS_NO_DEVICE_FOUND     "No Device Found"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_GENERAL     "General"
+    IDS_SETTING_AUDIO       "Audio"
+    IDS_SETTING_BLUETOOTH   "Bluetooth"
+    IDS_SETTING_RADIO       "Radio"
+    IDS_SETTING_ABOUT       "About"
+    IDS_SETTING_HANDBRAKE_TEST "Handbrake Test"
+    IDS_SETTING_REVERSE_POLAR "Reverse Polar"
+    IDS_SETTING_LAMP_CONTROL "Illumination Control"
+    IDS_SETTING_DATE_AND_TIME "Date & Time"
+    IDS_SETTING_DATE        "Date"
+    IDS_SETTING_TIME        "Time"
+    IDS_SETTING_24H_MODE    "24H Mode"
+    IDS_SETTING_TIME_AUTO_ADJUST "Auto Adjust"
+    IDS_SETTING_NAVIGATION  "Navigation"
+    IDS_SETTING_NAVI_LAUNCH_LOCATION "Launch Location"
+    IDS_SETTING_NAVI_SPEECH "Navigation Speech"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LANGUAGE    "Language"
+    IDS_SETTING_LANG_CHN_SIM "Chinese Simplified"
+    IDS_SETTING_LANG_CHN_TRA "Chinese Traditional"
+    IDS_SETTING_LANG_ENGLISH "English"
+    IDS_SETTING_NAVI_SPEECH_ALWAYS "Always"
+    IDS_SETTING_NAVI_SPEECH_CLOSED "Closed"
+    IDS_SETTING_NAVI_SPEECH_MAP "While Showing Map"
+    IDS_SETTING_MUTE        "Mute"
+    IDS_SETTING_LOUDNESS    "Loudness"
+    IDS_SETTING_VOLUME_VELOCITY_ADJUST "Volume Velocity Adjust"
+    IDS_SETTING_AUDIO_EFFECT "Audio Effect"
+    IDS_SETTING_CLASSIC     "Classic"
+    IDS_SETTING_POP         "Pop"
+    IDS_SETTING_ROCK        "Rock"
+    IDS_SETTING_JAZZ        "Jazz"
+    IDS_SETTING_USER        "User"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_EQ          "Equalizer"
+    IDS_SETTING_BAL_FAD     "Balance/Fader"
+    IDS_SETTING_LOW         "Low"
+    IDS_SETTING_MID         "Mid"
+    IDS_SETTING_HIGH        "High"
+    IDS_SETTING_BT_POWER    "Bluetooth Power"
+    IDS_SETTING_BT_DEVICE_NAME "Device Name"
+    IDS_SETTING_BT_PAIR_PIN "Pair Pin"
+    IDS_SETTING_BT_AUTO_ANSWER "Auto Answer"
+    IDS_SETTING_BT_AUTO_DOWNLOAD_PB "Auto Download Phonebook"
+    IDS_SETTING_RADIO_SEEK_QUALITY "Seek Quality"
+    IDS_SETTING_RADIO_FM    "FM"
+    IDS_SETTING_RADIO_AM    "AM"
+    IDS_SETTING_RADIO_RESET_SEEK_QUALITY "Reset Seek Quality"
+    IDS_SETTING_RADIO_REGION "Region"
+    IDS_SETTING_EUROPE      "Europe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_USA         "America"
+    IDS_SETTING_EASTERN_EUROPE "Eastern Europe"
+    IDS_SETTING_JAPAN       "Japan"
+    IDS_SETTING_RADIO_RDS_SWITCH "Enable RDS"
+    IDS_SETTING_OS_VERSION  "OS Version"
+    IDS_SETTING_SOFTWARE_VERSION "Software Version"
+    IDS_SETTING_MCU_VERSION "MCU Version"
+    IDS_SETTING_HARDWARE_VERSION "Hardware Version"
+    IDS_VEHICLE_DRIVE       "Drive"
+    IDS_VEHICLE_AC          "AC"
+    IDS_VEHICLE_BODY        "Body"
+    IDS_VEHICLE_RADAR       "Radar"
+    IDS_NO_MEDIA_DEVICE     "No Media Device"
+    IDS_INPUT_NEW_DEVICE_NAME "Input New Device Name"
+    IDS_INPUT_NEW_PAIR_PIN  "Input New Pair Pin"
+    IDS_CALL_HISTORY        "History"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTACT             "Contact"
+    IDS_SEARCHING           "Searching..."
+    IDS_CS_CONNECTED        "Connected"
+    IDS_NOT_CONNECTED       "Not Connected"
+    IDS_BT_CONNECT_SETTING  "Connect Setting"
+    IDS_BT_PAIRING          "Pairing and Connecting..."
+    IDS_BT_DEVICE_PAIRED    "Paired, Click to connect"
+    IDS_RESET_TO_TAKE_EFFECT "Reset to take effect."
+    IDS_SETTING_IDLE_SCREEN "Idle Screen"
+    IDS_CLOCK_ANALOG        "Analog Clock"
+    IDS_CLOCK_DIGITAL       "Digital Clock"
+    IDS_NONE                "None"
+    IDS_MEDIA_BROWSE_FOLDER "Folders"
+    IDS_MEDIA_BROWSE_TRACK  "Tracks"
+    IDS_MEDIA_BROWSE_PARENT_FOLDER ".."
+    IDS_SETTING_CAMERA_TYPE "Rearview Camera"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE              "Update"
+    IDS_MCU_UPDATE_CONFIRM  "Confirm Update MCU"
+    IDS_MCU_UPDATE_PROMPT   "Press RES button to \ncomplete update."
+    IDS_MCU_UPDATING        "Updating MCU..."
+    IDS_MCU_UPDATING_ALERT  "Do not cut off the power supply!"
+    IDS_MCU_UPDATING_INVALID_FILE "No valid update files found!"
+    IDS_MCU_UPDATE_SUCCEED  "Update Complete!"
+    IDS_MCU_UPDATE_FAILED   "Update Failed!"
+    IDS_SETTING_UI          "UI Settings"
+    IDS_SETTING_UI_SKIN     "Theme Settings"
+    IDS_SETTING_SUBWOOFER   "Subwoofer"
+    IDS_SETTING_UI_BACKGROUND "Background Picture"
+    IDS_RETURN              "Return"
+    IDS_BT_STREAMING_AUDIO  "Streaming Audio From Phone..."
+    IDS_BT_STREAMING_AUDIO_TERMINATE "Press Hangup to Terminate"
+    IDS_STRANGER            "Unknown Contact"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_UI_FACTORY  "Factory Settings"
+    IDS_SETTING_UI_RESTORE_FACTORY_SETTINGS "Restore Factory Settings"
+    IDS_SETTING_UI_DEFAULT  "Default"
+    IDS_SETTING_VOLUME      "Volume"
+    IDS_UPDATE_PROMPT_0     "Remove USB Disk and Reset Device."
+    IDS_UPDATE_PROMPT_1     "Insert Update USB Disk to Continue..."
+    IDS_UPDATE_PROMPT_2     "Installing..."
+    IDS_UPDATE_PROMPT_3     "Installation Failed."
+    IDS_NO_LISTITEM         "No Items"
+    IDS_SETTING_UI_BACK_LUMIN "Background Brightness"
+    IDS_SETTING_KEY_BEEP    "Key Beep"
+    IDS_CARPLAY_MAIN_PROMPT "Connect iPhone With USB lightning Cable."
+    IDS_SETTING_DISPLAY     "Display"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LCD_GAMMA   "Gamma"
+    IDS_SETTING_BLUR_EFFECT "Blur Effect"
+    IDS_RESET_DEFAULT       "Reset to Default"
+    IDS_ACTIVATE_PROMPT_0   "Insert Activate USB Disk"
+    IDS_SETTING_VOL_NAVI_SPEECH "Speech and Navigation"
+    IDS_SETTING_DRIVE_TYPE  "Driving Position"
+    IDS_SETTING_DRIVE_LEFT  "Left"
+    IDS_SETTING_DRIVE_RIGHT "Right"
+    IDS_SETTING_BT_RINGTONE "Ringtone"
+    IDS_SETTING_ADVANCED    "Advance Settings"
+    IDS_PHONELINK_CONNECT_FAILED "Connect Failed! Please Retry."
+    IDS_SETTING_TIMEZONE    "Time Zone"
+    IDS_SETTING_BT_AUTO_CONNECT "Auto Connect"
+    IDS_SETTING_PANEL_LIGHT "Panel-Light"
+    IDS_SETTING_PANEL_LIGHT_DISC "Choose from the Presets"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_PANEL_LIGHT_COLOR "Color"
+    IDS_SETTING_PANEL_LIGHT_BRIGHTNESS "Brightness"
+    IDS_DIAL                "Dial"
+    IDS_SETTING_KOREA       "Korea"
+    IDS_SETTING_ADVANCE     "Advance"
+    IDS_SETTING_STEER_WHEEL "Steering Wheel Control Input"
+    IDS_SETTING_STEER_WHEEL_DESC 
+                            "First select the function keys, then press the physical key."
+    IDS_SETTING_STEER_WHEEL_PROMPT 
+                            "Press the physical key\non the steering wheel"
+    IDS_SETTING_STEER_WHEEL_RECALIBRATE "Reset the steering-wheel"
+    IDS_IMAGE_UPDATING      "Updating ARM..."
+    IDS_IMAGE_UPDATE_CONFIRM "Confirm update"
+    IDS_RESTART_SYSTEM      "Going to restart"
+    IDS_SETTING_SOUTHAMERICA "South America"
+    IDS_SETTING_HARDWARE_ID "Hardware ID"
+    IDS_SETTING_REARVIEW_SETTING "Reverse Settings"
+    IDS_SETTING_REARVIEW_TITLE "Select the camera color signal"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTING_LED_ANIM_EFFECT "Animation Effect"
+    IDS_SETTING_ENTER_PASSWORD "Enter Password"
+    IDS_SETTING_SCREEN_BRIGHTNESS "Screen Brightness"
+    IDS_CONFIRM_DOWNLOAD_PB "Whether to download phonebook"
+    IDS_SETTING_TIME_AUTO_ADJUST_DLST "Auto Adjust Daylight Saving"
+    IDS_SETTING_ENABLE_REAR_VOL_CONTROL "Reversing Volume Adjustment"
+    IDS_SETTING_STW_CALIBRATE "Calibrate"
+    IDS_AUX_PLAYING         "Now Playing From AUX IN"
+    IDS_AUX_TIP2            "Make sure your device headphone level is turned up"
+    IDS_CONFIRM_DOWNLOAD_CALLHISTORY "Whether to download call history"
+    IDS_SETTING_WHEEL       "SWC"
+    IDS_SETTING_RADIO_RBDS_SWITCH "Enable RBDS"
+    IDS_SETTING_AUDIO_SUBWOOFER_FREQ "Subwoofer Frequency"
+    IDS_SETTING_DISPLAY_TITLE_LCD "Screen"
+    IDS_BT_PHONEBOOK_SYNC   "Sync"
+    IDS_BT_PHONEBOOK_BACK   "Back"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BT_PHONEBOOK_FIRST_NAME_FIRST "First Name First"
+    IDS_SETTING_CHARGING_ONLY "Charging Only"
+    IDS_TAIWAN              "Taiwan"
+    IDS_SOUTH_AMERICA       "South America"
+    IDS_ARABIA_AUSTRALIA    "S.Arabia,Australia"
+    IDS_LATIN_AMERICA       "Latin America"
+    IDS_MIDDLE_EAST         "Middle East"
+    IDS_AUST                "Aust"
+    IDS_BRAZIL              "Brazil"
+    IDS_RUSSIA              "Russia"
+    IDS_SETTING_ANDROID_TYPE "Android Type"
+    IDS_USB_HUB_UNSUPPORTED "USB HUB is unsupported"
+    IDS_AUTO_LAUNCH         "Auto Launch"
+    IDS_DAY                 "Day"
+    IDS_NIGHT               "Night"
+    IDS_STW_VOL_ADD         "Volume+"
+    IDS_KEYPAD "Keypad"
+    IDS_HANGUP "Hang up"
+    IDS_ANSWER "Answer"
+    IDS_PRIVACY "Privacy"
+    IDS_HANDS_FREE "Hands free"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STW_VOL_SUB         "Volume-"
+    IDS_STW_MUTE            "Mute"
+    IDS_STW_PREVIOUS        "Previous"
+    IDS_STW_NEXT            "Next"
+    IDS_STW_SEEK            "Seek"
+    IDS_STW_CALL            "Call"
+    IDS_STW_HANGUP          "Hang up"
+    IDS_STW_SPEECH          "Speech"
+    IDS_STW_POWER           "Power"
+    IDS_STW_MODE            "Mode"
+    IDS_STW_NAVI            "Navi"
+    IDS_STW_UNDEFINE        "Undefined"
+    IDS_STW_ACTIVATED       "Activated"
+    IDS_AA_NOTE1            "To use Android Auto,"
+    IDS_AA_NOTE2            "please stop your car and"
+    IDS_AA_NOTE3            "follow the instructions on your phone."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MHZ                 "MHz"
+    IDS_KHZ                 "KHz"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "LightningUI.rc2"  // non-Microsoft Visual C++ edited resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

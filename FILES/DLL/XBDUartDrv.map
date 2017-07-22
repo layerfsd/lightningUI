@@ -1,0 +1,249 @@
+ XBDUartDrv
+
+ Timestamp is 54f12dde (Sat Feb 28 10:54:22 2015)
+
+ Preferred load address is 00100000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000036d0H .text                   CODE
+ 0002:00000000 000002e0H .rdata                  DATA
+ 0002:000002e0 00000014H .idata$2                DATA
+ 0002:000002f4 00000014H .idata$3                DATA
+ 0002:00000308 000000b0H .idata$4                DATA
+ 0002:000003b8 0000000cH .idata$6                DATA
+ 0002:000003d0 00000106H .edata                  DATA
+ 0003:00000000 000000b0H .idata$5                DATA
+ 0003:000000b0 00000004H .CRT$XCA                DATA
+ 0003:000000b4 00000004H .CRT$XCZ                DATA
+ 0003:000000b8 00000004H .CRT$XIA                DATA
+ 0003:000000bc 00000004H .CRT$XIZ                DATA
+ 0003:000000c0 00000004H .CRT$XPA                DATA
+ 0003:000000c4 00000004H .CRT$XPZ                DATA
+ 0003:000000c8 00000004H .CRT$XTA                DATA
+ 0003:000000cc 00000004H .CRT$XTZ                DATA
+ 0003:000000d0 00000098H .data                   DATA
+ 0003:00000168 00000034H .bss                    DATA
+ 0004:00000000 000001e0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       CircBuffWrite              00101000 f   CircBuffer.obj
+ 0001:00000098       CircBuffRead               00101098 f   CircBuffer.obj
+ 0001:0000012c       DllMain                    0010112c f   KernelUart.obj
+ 0001:00000140       XBD_Open                   00101140 f   KernelUart.obj
+ 0001:0000017c       XBD_Close                  0010117c f   KernelUart.obj
+ 0001:000001a0       XBD_Deinit                 001011a0 f   KernelUart.obj
+ 0001:000001e0       XBD_Write                  001011e0 f   KernelUart.obj
+ 0001:000001e0       XBD_Read                   001011e0 f   KernelUart.obj
+ 0001:00000200       XBD_Seek                   00101200 f   KernelUart.obj
+ 0001:00000220       XBD_PowerDown              00101220 f   KernelUart.obj
+ 0001:00000220       XBD_PowerUp                00101220 f   KernelUart.obj
+ 0001:00000228       XBD_IOControl              00101228 f   KernelUart.obj
+ 0001:000004cc       XBD_Init                   001014cc f   KernelUart.obj
+ 0001:00000abc       _InsertTailList            00101abc f   sdkutils.obj
+ 0001:00000ad8       _RemoveHeadList            00101ad8 f   sdkutils.obj
+ 0001:00000af8       TBCSP_Init                 00101af8 f   BCSP_HciApi.obj
+ 0001:00000e34       TBCSP_Deinit               00101e34 f   BCSP_HciApi.obj
+ 0001:00000f58       TBCSP_SendData             00101f58 f   BCSP_HciApi.obj
+ 0001:0000102c       DoSend                     0010202c f i BCSPHandlers.obj
+ 0001:000010d4       BCSP_InitCommState         001020d4 f   BCSPHandlers.obj
+ 0001:00001198       InitBCSP                   00102198 f   BCSPHandlers.obj
+ 0001:0000135c       xa_rxmsg_create            0010235c f   BCSPHandlers.obj
+ 0001:000013e0       xa_rxmsg_getbuf            001023e0 f   BCSPHandlers.obj
+ 0001:00001574       xa_rxmsg_write             00102574 f   BCSPHandlers.obj
+ 0001:000015d8       xa_delivermsg              001025d8 f   BCSPHandlers.obj
+ 0001:00001624       xa_rxmsg_destroy           00102624 f   BCSPHandlers.obj
+ 0001:00001698       xa_start_bcsp_timer        00102698 f   BCSPHandlers.obj
+ 0001:000016f8       xa_start_tshy_timer        001026f8 f   BCSPHandlers.obj
+ 0001:00001758       xa_start_tconf_timer       00102758 f   BCSPHandlers.obj
+ 0001:000017b8       xa_cancel_bcsp_timer       001027b8 f   BCSPHandlers.obj
+ 0001:00001810       xa_cancel_tshy_timer       00102810 f   BCSPHandlers.obj
+ 0001:00001868       xa_cancel_tconf_timer      00102868 f   BCSPHandlers.obj
+ 0001:000018c0       xa_txmsg_init_read         001028c0 f   BCSPHandlers.obj
+ 0001:000018fc       xa_txmsg_length            001028fc f   BCSPHandlers.obj
+ 0001:0000195c       xa_txmsg_getbuf            0010295c f   BCSPHandlers.obj
+ 0001:00001a5c       xa_txmsg_taken             00102a5c f   BCSPHandlers.obj
+ 0001:00001af0       xa_txmsg_done              00102af0 f   BCSPHandlers.obj
+ 0001:00001b64       xa_uart_gettxbuf           00102b64 f   BCSPHandlers.obj
+ 0001:00001c0c       xa_uart_sendbytes          00102c0c f   BCSPHandlers.obj
+ 0001:00001c64       xa_event                   00102c64 f   BCSPHandlers.obj
+ 0001:00001d20       xa_rxmsg_complete          00102d20 f   BCSPHandlers.obj
+ 0001:00001d20       xa_panic                   00102d20 f   BCSPHandlers.obj
+ 0001:00001d24       xa_req_pumptxmsgs          00102d24 f   BCSPHandlers.obj
+ 0001:00001d3c       writeData                  00102d3c f   BCSPHandlers.obj
+ 0001:00001dd0       readData                   00102dd0 f   BCSPHandlers.obj
+ 0001:00001e6c       BCSPRxThread               00102e6c f   BCSPHandlers.obj
+ 0001:00001f5c       transmitData               00102f5c f   BCSPHandlers.obj
+ 0001:000020e0       DeinitBCSP                 001030e0 f   BCSPHandlers.obj
+ 0001:00002214       BCSPTxThread               00103214 f   BCSPHandlers.obj
+ 0001:00002330       HCITxThread                00103330 f   HciAPI.obj
+ 0001:000023fc       TDRIVER_Init               001033fc f   HciAPI.obj
+ 0001:00002724       TDRIVER_Deinit             00103724 f   HciAPI.obj
+ 0001:0000282c       TDRIVER_SetSpeed           0010382c f   HciAPI.obj
+ 0001:0000293c       CommandWatchdogFired       0010393c f   HciAPI.obj
+ 0001:0000296c       TDRIVER_SendData           0010396c f   HciAPI.obj
+ 0001:00002a98       InitCommState              00103a98 f   UartHandlers.obj
+ 0001:00002b54       RxThread                   00103b54 f   UartHandlers.obj
+ 0001:00002e08       WakeUpRadio                00103e08 f   UartHandlers.obj
+ 0001:00002ec0       memcpy                     00103ec0 f   coredll:COREDLL.dll
+ 0001:00002ed0       printf                     00103ed0 f   coredll:COREDLL.dll
+ 0001:00002ee0       GetTickCount               00103ee0 f   coredll:COREDLL.dll
+ 0001:00002ef0       DisableThreadLibraryCalls  00103ef0 f   coredll:COREDLL.dll
+ 0001:00002f00       LeaveCriticalSection       00103f00 f   coredll:COREDLL.dll
+ 0001:00002f10       EnterCriticalSection       00103f10 f   coredll:COREDLL.dll
+ 0001:00002f20       LocalFree                  00103f20 f   coredll:COREDLL.dll
+ 0001:00002f30       DeleteCriticalSection      00103f30 f   coredll:COREDLL.dll
+ 0001:00002f40       CloseHandle                00103f40 f   coredll:COREDLL.dll
+ 0001:00002f50       DeviceIoControl            00103f50 f   coredll:COREDLL.dll
+ 0001:00002f60       NKDbgPrintfW               00103f60 f   coredll:COREDLL.dll
+ 0001:00002f70       CreateFileW                00103f70 f   coredll:COREDLL.dll
+ 0001:00002f80       SetLastError               00103f80 f   coredll:COREDLL.dll
+ 0001:00002f90       RegCloseKey                00103f90 f   coredll:COREDLL.dll
+ 0001:00002fa0       RegQueryValueExW           00103fa0 f   coredll:COREDLL.dll
+ 0001:00002fb0       RegOpenKeyExW              00103fb0 f   coredll:COREDLL.dll
+ 0001:00002fc0       RegEnumKeyExW              00103fc0 f   coredll:COREDLL.dll
+ 0001:00002fd0       RegQueryInfoKeyW           00103fd0 f   coredll:COREDLL.dll
+ 0001:00002fe0       InitializeCriticalSection  00103fe0 f   coredll:COREDLL.dll
+ 0001:00002ff0       LocalAlloc                 00103ff0 f   coredll:COREDLL.dll
+ 0001:00003000       EventModify                00104000 f   coredll:COREDLL.dll
+ 0001:00003010       free                       00104010 f   coredll:COREDLL.dll
+ 0001:00003020       WaitForSingleObject        00104020 f   coredll:COREDLL.dll
+ 0001:00003030       EscapeCommFunction         00104030 f   coredll:COREDLL.dll
+ 0001:00003040       CreateThread               00104040 f   coredll:COREDLL.dll
+ 0001:00003050       CreateEventW               00104050 f   coredll:COREDLL.dll
+ 0001:00003060       SetCommTimeouts            00104060 f   coredll:COREDLL.dll
+ 0001:00003070       PurgeComm                  00104070 f   coredll:COREDLL.dll
+ 0001:00003080       SetupComm                  00104080 f   coredll:COREDLL.dll
+ 0001:00003090       GetLastError               00104090 f   coredll:COREDLL.dll
+ 0001:000030a0       malloc                     001040a0 f   coredll:COREDLL.dll
+ 0001:000030b0       memset                     001040b0 f   coredll:COREDLL.dll
+ 0001:000030c0       WriteFile                  001040c0 f   coredll:COREDLL.dll
+ 0001:000030d0       SetCommState               001040d0 f   coredll:COREDLL.dll
+ 0001:000030e0       GetCommState               001040e0 f   coredll:COREDLL.dll
+ 0001:000030f0       FreeLibrary                001040f0 f   coredll:COREDLL.dll
+ 0001:00003100       GetProcAddressW            00104100 f   coredll:COREDLL.dll
+ 0001:00003110       LoadLibraryW               00104110 f   coredll:COREDLL.dll
+ 0001:00003120       InterlockedExchange        00104120 f   coredll:COREDLL.dll
+ 0001:00003130       ReadFile                   00104130 f   coredll:COREDLL.dll
+ 0001:00003140       CeSetThreadPriority        00104140 f   coredll:COREDLL.dll
+ 0001:00003150       Sleep                      00104150 f   coredll:COREDLL.dll
+ 0001:00003160       GetCommModemStatus         00104160 f   coredll:COREDLL.dll
+ 0001:00003170       _DllMainCRTStartup         00104170 f   corelibc:pegdmain.obj
+ 0001:00003208       _cinit                     00104208 f   corelibc:crt0dat.obj
+ 0001:00003378       _cexit                     00104378 f   corelibc:crt0dat.obj
+ 0002:00000000       ??_C@_0CJ@BHLODJIP@IOCTL_BLC_BT_POWER_ON?5False?0Try?5@ 00105000     KernelUart.obj
+ 0002:0000002c       ??_C@_0BM@DFFNENO@IOCTL_BLC_BT_POWER_ON?5?$CFd?$CB?$AN?6?$AA@ 0010502c     KernelUart.obj
+ 0002:00000048       ??_C@_1DI@LPAAGINC@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAB?$AAL?$AAC?$AAH?$AAa?$AAn?$AAd?$AAl?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 00105048     KernelUart.obj
+ 0002:00000080       ??_C@_1M@CLFGPOBC@?$AAB?$AAL?$AAC?$AA1?$AA?3?$AA?$AA@ 00105080     KernelUart.obj
+ 0002:0000008c       ??_C@_1CI@LNGGBFNH@?$AA?$CL?$AAX?$AAB?$AAD?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$CB?$AA?$AN?$AA?6?$AA?$AA@ 0010508c     KernelUart.obj
+ 0002:000000b4       ??_C@_1BM@JGOGIOFN@?$AAI?$AAn?$AAs?$AAe?$AAr?$AAt?$AAD?$AAe?$AAl?$AAa?$AAy?$AAM?$AAs?$AA?$AA@ 001050b4     KernelUart.obj
+ 0002:000000d0       ??_C@_1M@EHDMPNDP@?$AAP?$AAn?$AAp?$AAI?$AAd?$AA?$AA@ 001050d0     KernelUart.obj
+ 0002:000000dc       ??_C@_1BC@MIOHADKO@?$AAB?$AAa?$AAu?$AAd?$AAR?$AAa?$AAt?$AAe?$AA?$AA@ 001050dc     KernelUart.obj
+ 0002:000000f0       ??_C@_1BC@PBEABLJJ@?$AAH?$AAc?$AAi?$AAR?$AAa?$AAd?$AAi?$AAo?$AA?$AA@ 001050f0     KernelUart.obj
+ 0002:00000104       ??_C@_1CA@PPJBHJJ@?$AAH?$AAc?$AAi?$AAU?$AAa?$AAr?$AAt?$AAP?$AAo?$AAr?$AAt?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 00105104     KernelUart.obj
+ 0002:00000124       ??_C@_1CC@KLOEOFJJ@?$AAH?$AAc?$AAi?$AAU?$AAa?$AAr?$AAt?$AAS?$AAl?$AAe?$AAe?$AAp?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 00105124     KernelUart.obj
+ 0002:00000148       ??_C@_1BO@DFJGDKHJ@?$AAH?$AAc?$AAi?$AAU?$AAa?$AAr?$AAt?$AAC?$AAT?$AAS?$AAF?$AAl?$AAo?$AAw?$AA?$AA@ 00105148     KernelUart.obj
+ 0002:00000168       ??_C@_1CC@MHDJGDAF@?$AAH?$AAc?$AAi?$AAU?$AAa?$AAr?$AAt?$AAR?$AAa?$AAd?$AAi?$AAo?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 00105168     KernelUart.obj
+ 0002:0000018c       ??_C@_1CA@HEJCKDKA@?$AAH?$AAc?$AAi?$AAU?$AAa?$AAr?$AAt?$AAB?$AAa?$AAu?$AAd?$AAR?$AAa?$AAt?$AAe?$AA?$AA@ 0010518c     KernelUart.obj
+ 0002:000001ac       ??_C@_17KACEIPNC@?$AAK?$AAe?$AAy?$AA?$AA@ 001051ac     KernelUart.obj
+ 0002:000001b8       ??_C@_1GA@LEAOJGBN@?$AAX?$AAB?$AAD?$AAU?$AAa?$AAr?$AAt?$AAD?$AAr?$AAv?$AA?3?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAo?$AAp?$AAe?$AAn?$AA?5?$AAp?$AAo?$AAr?$AAt?$AA?5@ 001051b8     BCSP_HciApi.obj
+ 0002:00000218       ??_C@_1BG@CEIKBIAI@?$AAa?$AAb?$AAc?$AAs?$AAp?$AA_?$AAb?$AAi?$AAn?$AAd?$AA?$AA@ 00105218     BCSPHandlers.obj
+ 0002:00000230       ??_C@_1BK@DLFOJAA@?$AAX?$AAc?$AAb?$AAA?$AAB?$AAC?$AAS?$AAP?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 00105230     BCSPHandlers.obj
+ 0002:0000024c       ??_C@_1BK@FKIKMKDF@?$AAa?$AAb?$AAc?$AAs?$AAp?$AA_?$AAu?$AAn?$AAb?$AAi?$AAn?$AAd?$AA?$AA@ 0010524c     BCSPHandlers.obj
+ 0002:00000268       ??_C@_1HI@MAKFLKPN@?$AAX?$AAB?$AAD?$AAU?$AAa?$AAr?$AAt?$AAD?$AAr?$AAv?$AA?3?$AAT?$AAD?$AAR?$AAI?$AAV?$AAE?$AAR?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?5?$AAC?$AAo?$AAu?$AAl?$AAd?$AA?5?$AAn?$AAo@ 00105268     HciAPI.obj
+ 0002:000002e0       __IMPORT_DESCRIPTOR_COREDLL 001052e0     coredll:COREDLL.dll
+ 0002:000002f4       __NULL_IMPORT_DESCRIPTOR   001052f4     coredll:COREDLL.dll
+ 0003:00000000       __imp_memcpy               00106000     coredll:COREDLL.dll
+ 0003:00000004       __imp_printf               00106004     coredll:COREDLL.dll
+ 0003:00000008       __imp_GetTickCount         00106008     coredll:COREDLL.dll
+ 0003:0000000c       __imp_DisableThreadLibraryCalls 0010600c     coredll:COREDLL.dll
+ 0003:00000010       __imp_LeaveCriticalSection 00106010     coredll:COREDLL.dll
+ 0003:00000014       __imp_EnterCriticalSection 00106014     coredll:COREDLL.dll
+ 0003:00000018       __imp_LocalFree            00106018     coredll:COREDLL.dll
+ 0003:0000001c       __imp_DeleteCriticalSection 0010601c     coredll:COREDLL.dll
+ 0003:00000020       __imp_CloseHandle          00106020     coredll:COREDLL.dll
+ 0003:00000024       __imp_DeviceIoControl      00106024     coredll:COREDLL.dll
+ 0003:00000028       __imp_NKDbgPrintfW         00106028     coredll:COREDLL.dll
+ 0003:0000002c       __imp_CreateFileW          0010602c     coredll:COREDLL.dll
+ 0003:00000030       __imp_SetLastError         00106030     coredll:COREDLL.dll
+ 0003:00000034       __imp_RegCloseKey          00106034     coredll:COREDLL.dll
+ 0003:00000038       __imp_RegQueryValueExW     00106038     coredll:COREDLL.dll
+ 0003:0000003c       __imp_RegOpenKeyExW        0010603c     coredll:COREDLL.dll
+ 0003:00000040       __imp_RegEnumKeyExW        00106040     coredll:COREDLL.dll
+ 0003:00000044       __imp_RegQueryInfoKeyW     00106044     coredll:COREDLL.dll
+ 0003:00000048       __imp_InitializeCriticalSection 00106048     coredll:COREDLL.dll
+ 0003:0000004c       __imp_LocalAlloc           0010604c     coredll:COREDLL.dll
+ 0003:00000050       __imp_EventModify          00106050     coredll:COREDLL.dll
+ 0003:00000054       __imp_free                 00106054     coredll:COREDLL.dll
+ 0003:00000058       __imp_WaitForSingleObject  00106058     coredll:COREDLL.dll
+ 0003:0000005c       __imp_EscapeCommFunction   0010605c     coredll:COREDLL.dll
+ 0003:00000060       __imp_CreateThread         00106060     coredll:COREDLL.dll
+ 0003:00000064       __imp_CreateEventW         00106064     coredll:COREDLL.dll
+ 0003:00000068       __imp_SetCommTimeouts      00106068     coredll:COREDLL.dll
+ 0003:0000006c       __imp_PurgeComm            0010606c     coredll:COREDLL.dll
+ 0003:00000070       __imp_SetupComm            00106070     coredll:COREDLL.dll
+ 0003:00000074       __imp_GetLastError         00106074     coredll:COREDLL.dll
+ 0003:00000078       __imp_malloc               00106078     coredll:COREDLL.dll
+ 0003:0000007c       __imp_memset               0010607c     coredll:COREDLL.dll
+ 0003:00000080       __imp_WriteFile            00106080     coredll:COREDLL.dll
+ 0003:00000084       __imp_SetCommState         00106084     coredll:COREDLL.dll
+ 0003:00000088       __imp_GetCommState         00106088     coredll:COREDLL.dll
+ 0003:0000008c       __imp_FreeLibrary          0010608c     coredll:COREDLL.dll
+ 0003:00000090       __imp_GetProcAddressW      00106090     coredll:COREDLL.dll
+ 0003:00000094       __imp_LoadLibraryW         00106094     coredll:COREDLL.dll
+ 0003:00000098       __imp_InterlockedExchange  00106098     coredll:COREDLL.dll
+ 0003:0000009c       __imp_ReadFile             0010609c     coredll:COREDLL.dll
+ 0003:000000a0       __imp_CeSetThreadPriority  001060a0     coredll:COREDLL.dll
+ 0003:000000a4       __imp_Sleep                001060a4     coredll:COREDLL.dll
+ 0003:000000a8       __imp_GetCommModemStatus   001060a8     coredll:COREDLL.dll
+ 0003:000000ac       \177COREDLL_NULL_THUNK_DATA 001060ac     coredll:COREDLL.dll
+ 0003:000000b0       __xc_a                     001060b0     corelibc:crt0init.obj
+ 0003:000000b4       __xc_z                     001060b4     corelibc:crt0init.obj
+ 0003:000000b8       __xi_a                     001060b8     corelibc:crt0init.obj
+ 0003:000000bc       __xi_z                     001060bc     corelibc:crt0init.obj
+ 0003:000000c0       __xp_a                     001060c0     corelibc:crt0init.obj
+ 0003:000000c4       __xp_z                     001060c4     corelibc:crt0init.obj
+ 0003:000000c8       __xt_a                     001060c8     corelibc:crt0init.obj
+ 0003:000000cc       __xt_z                     001060cc     corelibc:crt0init.obj
+ 0003:000000d0       stBcspDriverEntryTable     001060d0     BCSP_HciApi.obj
+ 0003:000000e8       stBcspCallback             001060e8     BCSPHandlers.obj
+ 0003:00000144       stHciDriverEntryTable      00106144     HciAPI.obj
+ 0003:0000015c       ulBytesToRead              0010615c     HciAPI.obj
+ 0003:00000160       pbReadPtr                  00106160     HciAPI.obj
+ 0003:00000164       iRxState                   00106164     HciAPI.obj
+ 0003:0000016c       g_hSdkUtilsMutex           0010616c     sdkutils.obj
+ 0003:00000170       g_pstGlobalBCSPCtx         00106170     BCSPHandlers.obj
+ 0003:00000174       g_pstStackEntry            00106174     BCSPHandlers.obj
+ 0003:00000178       g_pstDevContext            00106178     BCSPHandlers.obj
+ 0003:0000017c       g_pstBcspEntry             0010617c     BCSPHandlers.obj
+ 0003:00000180       g_hBCSPLib                 00106180     BCSPHandlers.obj
+ 0003:00000184       bEventType                 00106184     HciAPI.obj
+ 0003:00000188       rxBuffHandle               00106188     HciAPI.obj
+ 0003:0000018c       __onexitend                0010618c     <common>
+ 0003:00000190       __onexitbegin              00106190     <common>
+ 0003:00000194       _exitflag                  00106194     <common>
+ 0003:00000198       _pRawDllMain               00106198     <common>
+
+ entry point at        0001:00003170
+
+ Static symbols
+
+ 0001:00001294       xa_timerfire               00102294 f   BCSPHandlers.obj
+ 0001:00003274       doexit                     00104274 f   corelibc:crt0dat.obj
+
+ Exports
+
+  ordinal    name
+
+        1    XBD_Init
+        2    XBD_Open
+        3    XBD_Close
+        4    XBD_Deinit
+        5    XBD_Read
+        6    XBD_Write
+        7    XBD_IOControl
+        8    XBD_PowerUp
+        9    XBD_PowerDown
+       10    XBD_Seek
